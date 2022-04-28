@@ -1,0 +1,8 @@
+
+
+@printer Fullscreen
+@char Test
+
+Test.Delete : Hello
+@hide Test
+stop
