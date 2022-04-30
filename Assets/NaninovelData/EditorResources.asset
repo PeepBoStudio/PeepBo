@@ -171,8 +171,55 @@ MonoBehaviour:
       guid: 72d819877a510a74d9124c08e8f821ba
   - Id: Characters/1bf256a8-2304-449f-b5a7-ccfda577d5b2
     Resources:
-    - name: Delete
-      pathPrefix: Characters/Test
-      guid: ef559e1f08449964f9d0fd623a0168d0
+    - name: Default
+      pathPrefix: Characters/N
+      guid: 71208e5b2e9b3e348908630e00b12ede
+    - name: Talk
+      pathPrefix: Characters/N
+      guid: 10d422b76f50da6498ef9f654ef01557
   - Id: CharacterAvatars
     Resources: []
+  - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Y
+      guid: 4b1df5be663088e4186e30cb0872947c
+    - name: Smile
+      pathPrefix: Characters/Y
+      guid: 8f76de956ec7b4848a6dc3432534cebc
+    - name: Cry
+      pathPrefix: Characters/Y
+      guid: 7d39e2994ce71034c90bad957d432eab
+    - name: Surprised
+      pathPrefix: Characters/Y
+      guid: 75327ee6502db88439ffde07e10ce984
+    - name: Wink
+      pathPrefix: Characters/Y
+      guid: b9b3ca4e7a09a1743b3aeb0451517401
+    - name: DropEyes
+      pathPrefix: Characters/Y
+      guid: 02f6f502b8dc1f845a83132a3619b2cb
+  - Id: Backgrounds/81f4d5bd-eb19-4c54-a1f8-ca53f4f17845
+    Resources:
+    - name: JianRoom
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5a284a6c0d602744f91ef8b1e25440d0
+    - name: StreetDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5445f5f14815b574587e9313bc91df6d
+    - name: Dock
+      pathPrefix: Backgrounds/MainBackground
+      guid: a88f759698b14e7499d96b296bdce8e2
+    - name: YIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: 30c93ce3321cb404eb6e02c80d7fecb2
+  - Id: Characters/1d3108a1-685d-45db-b23b-33ed0e3ea76c
+    Resources:
+    - name: Square
+      pathPrefix: Characters/J
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/333b7453-a471-41ee-a4d5-5c125e28553f
+    Resources:
+    - name: Square
+      pathPrefix: Characters/First
+      guid: 4726cf0d034b1734a962f4a4f437f05f
