@@ -22,7 +22,7 @@ namespace PeepBo.Scene
         private async void Start1_1()
         {
             var player = Engine.GetService<IScriptPlayer>();
-            await player.PreloadAndPlayAsync("Script001");
+            await player.PreloadAndPlayAsync("Script102");
         }
 
         private async void InitNaniNovel()

@@ -166,7 +166,16 @@ MonoBehaviour:
     - name: NewScript
       pathPrefix: Scripts
       guid: bdd99d31b26d056468b2f92ed1769733
-    - name: Script001
+    - name: Script101
+      pathPrefix: Scripts
+      guid: 2aee5ceb46c6f564fa83fe64b9d7122a
+    - name: Script110
+      pathPrefix: Scripts
+      guid: d933b7131ab15fb43a885c73c0acc2cb
+    - name: Script206
+      pathPrefix: Scripts
+      guid: f7e5bb8901f5c4240961028d01ba5591
+    - name: Script102
       pathPrefix: Scripts
       guid: 72d819877a510a74d9124c08e8f821ba
   - Id: Characters/1bf256a8-2304-449f-b5a7-ccfda577d5b2
@@ -201,18 +210,39 @@ MonoBehaviour:
       guid: 02f6f502b8dc1f845a83132a3619b2cb
   - Id: Backgrounds/81f4d5bd-eb19-4c54-a1f8-ca53f4f17845
     Resources:
-    - name: JianRoom
+    - name: JianRoomDay
       pathPrefix: Backgrounds/MainBackground
       guid: 5a284a6c0d602744f91ef8b1e25440d0
+    - name: JianRoomNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2f819926ce0ea6f498fa86a29736506e
     - name: StreetDay
       pathPrefix: Backgrounds/MainBackground
       guid: 5445f5f14815b574587e9313bc91df6d
+    - name: StreetNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 68014db632d88be4db6db07af164661a
     - name: Dock
       pathPrefix: Backgrounds/MainBackground
       guid: a88f759698b14e7499d96b296bdce8e2
+    - name: StoreDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3be969e174206cc4ab16f133b59ea4a2
+    - name: HallDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: d82d8f20d2407c84bad3b8995bd0f565
+    - name: ForestNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 78584917595c236468ad79dde0bfb0f2
+    - name: ParadiseOutsideDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5fc19a49777083543a06c3fb28840dd5
     - name: YIllust
       pathPrefix: Backgrounds/MainBackground
       guid: 30c93ce3321cb404eb6e02c80d7fecb2
+    - name: WIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: e0fbd3a2f79f2ba4796f61f285d103be
   - Id: Characters/1d3108a1-685d-45db-b23b-33ed0e3ea76c
     Resources:
     - name: Square
@@ -223,3 +253,14 @@ MonoBehaviour:
     - name: Square
       pathPrefix: Characters/First
       guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/dba19237-489d-48a1-8a25-60bb73cdf88d
+    Resources:
+    - name: Default
+      pathPrefix: Characters/W
+      guid: 467bf2b8115843147b1a2e027c668466
+    - name: Angry
+      pathPrefix: Characters/W
+      guid: 020c4a64707786244a41169401d1efa5
+    - name: ColdSmile
+      pathPrefix: Characters/W
+      guid: 5fc25b5554c56b4449f3f65cff862430
