@@ -161,12 +161,15 @@ MonoBehaviour:
     - name: ToastUI
       pathPrefix: UI
       guid: dd85ce99288c2f8488447fa511b1c0d6
+    - name: TopUI
+      pathPrefix: UI
+      guid: c3996255676b9de4cb30c8097ce2ad32
   - Id: Scripts
     Resources:
-    - name: NewScript
+    - name: Script1-1
       pathPrefix: Scripts
-      guid: bdd99d31b26d056468b2f92ed1769733
-    - name: Script001
+      guid: 48712d6ce960b6348aebf08c4d929ad8
+    - name: Script1-2
       pathPrefix: Scripts
       guid: 72d819877a510a74d9124c08e8f821ba
   - Id: Characters/1bf256a8-2304-449f-b5a7-ccfda577d5b2
@@ -223,3 +226,18 @@ MonoBehaviour:
     - name: Square
       pathPrefix: Characters/First
       guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: TextPrinters/eb01c2ff-047c-4ee5-98dd-3b3a9c5b3b09
+    Resources:
+    - name: Author
+      pathPrefix: TextPrinters
+      guid: fbfaa8d2d32ec404797c79199e111a51
+  - Id: Characters/61b42dc9-4244-42fc-bf8c-a6c6b5b42a04
+    Resources:
+    - name: CellPhone
+      pathPrefix: Characters/CellPhone
+      guid: d86b4add009b6cc4bb21463cbd72e2ad
+  - Id: TextPrinters/b42510fd-4a29-4086-81a6-bb933eb56468
+    Resources:
+    - name: NoAuthor
+      pathPrefix: TextPrinters
+      guid: c4e2abcbfafd6aa4691f8bace26429ec

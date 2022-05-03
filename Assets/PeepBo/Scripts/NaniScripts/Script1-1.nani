@@ -1,0 +1,22 @@
+@back StreetDay
+; 메인 BG ON
+@printer Author
+J: 아니~ 무슨 무인도도 아니고 어떻게 개미 한 마리도 안 보이냐고오~!
+@printer NoAuthor
+20분 째 무거운 캐리어를 끌고 섬을 돌아다녔지만,
+주민들의 머리카락 조차 보이지 않았다.
+아무리 작은 섬이라지만 어쩜 이렇게 휑할 수 있지?
+자급자족 하는 섬이라고 들었는데 다들 일하러 갔나?
+하긴 농사는 새벽부터 하니까
+@printer Author
+J: 아이참, 그래도 이건 너무 심한 거 아니야?
+지도라도 찾아보기 위해 휴대폰을 켰다.
+@char CellPhone.CellPhone scale:0.5
+J: 으악, 심지어 핸드폰도 안 터지잖아
+@hide CellPhone
+J: 주변에 뭔가 ~~~
+@room scriptname:"Script1-1" label:"RoomBack"
+Test
+# RoomBack
+Hello
+@stop
