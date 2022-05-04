@@ -216,33 +216,42 @@ MonoBehaviour:
     - name: JianRoomNight
       pathPrefix: Backgrounds/MainBackground
       guid: 2f819926ce0ea6f498fa86a29736506e
+    - name: HallDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: d82d8f20d2407c84bad3b8995bd0f565
     - name: StreetDay
       pathPrefix: Backgrounds/MainBackground
       guid: 5445f5f14815b574587e9313bc91df6d
     - name: StreetNight
       pathPrefix: Backgrounds/MainBackground
       guid: 68014db632d88be4db6db07af164661a
-    - name: Dock
+    - name: DockDay
       pathPrefix: Backgrounds/MainBackground
       guid: a88f759698b14e7499d96b296bdce8e2
-    - name: StoreDay
+    - name: LighthouseDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 3be969e174206cc4ab16f133b59ea4a2
-    - name: HallDay
+      guid: 21af9e9f52a69204b850b397fff54f0c
+    - name: ForestDay
       pathPrefix: Backgrounds/MainBackground
-      guid: d82d8f20d2407c84bad3b8995bd0f565
+      guid: 692b272cbdd02124288161fdf8d2bb49
     - name: ForestNight
       pathPrefix: Backgrounds/MainBackground
       guid: 78584917595c236468ad79dde0bfb0f2
-    - name: ParadiseOutsideDay
+    - name: StoreDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 5fc19a49777083543a06c3fb28840dd5
+      guid: 3be969e174206cc4ab16f133b59ea4a2
     - name: YIllust
       pathPrefix: Backgrounds/MainBackground
-      guid: 30c93ce3321cb404eb6e02c80d7fecb2
+      guid: 2e0a200c3d62c404ba4d0c62f2be1d28
     - name: WIllust
       pathPrefix: Backgrounds/MainBackground
-      guid: e0fbd3a2f79f2ba4796f61f285d103be
+      guid: 62f4c96bf249f2741bde92dc0bc6211b
+    - name: GIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: 05941b43bf23387448bb2634ed2bf019
+    - name: DIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: 57bdaccc495d41e4281436fb7513566f
   - Id: Characters/1d3108a1-685d-45db-b23b-33ed0e3ea76c
     Resources:
     - name: Square
@@ -264,3 +273,23 @@ MonoBehaviour:
     - name: ColdSmile
       pathPrefix: Characters/W
       guid: 5fc25b5554c56b4449f3f65cff862430
+  - Id: Characters/e7176b69-1c7a-4549-a3a7-b17b2c6b1df1
+    Resources:
+    - name: Default
+      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      guid: ec6c8944c9bd29c4289a7ecbb1a68c8d
+    - name: Smile
+      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      guid: eb619748598749642b53660cdd430d60
+    - name: Redmark-Default
+      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      guid: 863afb66839f0264cace9f776234d5d1
+    - name: Redmark-Embrass
+      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      guid: 1e9823503f6bd964d81351c0ad4ad8e0
+    - name: Blank-Redmark
+      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      guid: 17a976a2523f05541ae4a1a97ab757f2
+    - name: Far-Redmark
+      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      guid: 8c3ca8cf74eca6d48a905e05bc94de04
