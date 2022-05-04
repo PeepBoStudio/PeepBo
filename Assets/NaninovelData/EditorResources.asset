@@ -293,3 +293,20 @@ MonoBehaviour:
     - name: Far-Redmark
       pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
       guid: 8c3ca8cf74eca6d48a905e05bc94de04
+  - Id: Characters/1028d037-171f-4ca5-947e-4f042a71163f
+    Resources: []
+  - Id: Characters/cd421d86-f7a1-446d-81ca-364da8cbc1ef
+    Resources:
+    - name: Women
+      pathPrefix: Characters/Woman
+      guid: 851ee04113b1e5b498780ebeeaab8a57
+  - Id: Characters/c99abe0a-ac72-4d60-ab0d-aa1526acab73
+    Resources:
+    - name: Headman
+      pathPrefix: "Characters/\uC8FC\uBBFC(\uB0A8)"
+      guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
+  - Id: Characters/69eeeeb1-1679-4f45-a45b-6beb71d6ac50
+    Resources:
+    - name: Headman
+      pathPrefix: Characters/Headman
+      guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
