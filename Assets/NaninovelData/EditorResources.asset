@@ -115,7 +115,7 @@ MonoBehaviour:
       guid: 702c32b2de0c0784b9a66ec90601874f
     - name: BacklogUI
       pathPrefix: UI
-      guid: 7fba909c66b25324cb77db18679c2c96
+      guid: e74c2ef535f21ed4086fce2a2dc619e2
     - name: CGGalleryUI
       pathPrefix: UI
       guid: 71da50c8dae82bd42ba67528804e820c
@@ -160,10 +160,13 @@ MonoBehaviour:
       guid: 480f5db62ea305c46b89a86496d2a0c9
     - name: ToastUI
       pathPrefix: UI
-      guid: dd85ce99288c2f8488447fa511b1c0d6
-    - name: TopUI
+      guid: 90ebbca669bb9464d9a17315169aee35
+    - name: RightTopUI
       pathPrefix: UI
       guid: c3996255676b9de4cb30c8097ce2ad32
+    - name: LeftTopUI
+      pathPrefix: UI
+      guid: 4bfb885f3af2d75439e3bf894c81aac7
   - Id: Scripts
     Resources:
     - name: Script1-1
@@ -241,3 +244,5 @@ MonoBehaviour:
     - name: NoAuthor
       pathPrefix: TextPrinters
       guid: c4e2abcbfafd6aa4691f8bace26429ec
+  - Id: Unlockables
+    Resources: []

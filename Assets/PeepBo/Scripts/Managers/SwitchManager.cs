@@ -33,6 +33,11 @@ namespace PeepBo.Managers
             var hidePrinter = new HidePrinter();
             hidePrinter.ExecuteAsync(asyncToken).Forget();
 
+            GameManager.Switch.ScriptName = ScriptName;
+            GameManager.Switch.Label = Label;
+
+            GameManager.Room.StartRoomMode(ScriptName, Label, asyncToken);
+
             // 3. Reset state.
             //var stateManager = Engine.GetService<IStateManager>();
             //await stateManager.ResetStateAsync();
@@ -46,11 +51,6 @@ namespace PeepBo.Managers
             // 5. Enable character control.
             //var controller = Object.FindObjectOfType<CharacterController3D>();
             //controller.IsInputBlocked = false;
-
-            GameManager.Switch.ScriptName = ScriptName;
-            GameManager.Switch.Label = Label;
-
-            GameManager.Room.Test();
         }
     }
 
