@@ -121,7 +121,7 @@ MonoBehaviour:
       guid: 71da50c8dae82bd42ba67528804e820c
     - name: ConfirmationUI
       pathPrefix: UI
-      guid: 88d03f19bcbff914ba33a7c9895e2d7c
+      guid: afcf812068df3634284878e0cb9e4552
     - name: ContinueInputUI
       pathPrefix: UI
       guid: 1add671f8348e8443bcc56290e82fc5e
