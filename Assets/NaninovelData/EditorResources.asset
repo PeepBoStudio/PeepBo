@@ -276,22 +276,22 @@ MonoBehaviour:
   - Id: Characters/e7176b69-1c7a-4549-a3a7-b17b2c6b1df1
     Resources:
     - name: Default
-      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      pathPrefix: Characters/Kitaek
       guid: ec6c8944c9bd29c4289a7ecbb1a68c8d
     - name: Smile
-      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      pathPrefix: Characters/Kitaek
       guid: eb619748598749642b53660cdd430d60
     - name: Redmark-Default
-      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      pathPrefix: Characters/Kitaek
       guid: 863afb66839f0264cace9f776234d5d1
     - name: Redmark-Embrass
-      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+      pathPrefix: Characters/Kitaek
       guid: 1e9823503f6bd964d81351c0ad4ad8e0
-    - name: Blank-Redmark
-      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+    - name: Redmark-Blank
+      pathPrefix: Characters/Kitaek
       guid: 17a976a2523f05541ae4a1a97ab757f2
-    - name: Far-Redmark
-      pathPrefix: "Characters/\uC8FC\uAE30\uD0DD"
+    - name: Redmark-Far
+      pathPrefix: Characters/Kitaek
       guid: 8c3ca8cf74eca6d48a905e05bc94de04
   - Id: Characters/1028d037-171f-4ca5-947e-4f042a71163f
     Resources: []
@@ -310,3 +310,10 @@ MonoBehaviour:
     - name: Headman
       pathPrefix: Characters/Headman
       guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
+  - Id: Unlockables
+    Resources: []
+  - Id: TextPrinters/e5f62f8b-db2c-416e-828a-bf2768c4de73
+    Resources:
+    - name: Narration
+      pathPrefix: TextPrinters
+      guid: 75afd4694df44dd43ac3831a34704391
