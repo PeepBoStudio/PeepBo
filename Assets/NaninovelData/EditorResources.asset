@@ -340,3 +340,8 @@ MonoBehaviour:
     - name: Square
       pathPrefix: Characters/Aram
       guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/d52f8e69-2ae4-4cbd-8a00-49da76d5ce32
+    Resources:
+    - name: cut_phone
+      pathPrefix: Characters/Phone
+      guid: 26db4d66d57989342b335e64b4b37252
