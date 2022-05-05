@@ -240,6 +240,9 @@ MonoBehaviour:
     - name: StoreDay
       pathPrefix: Backgrounds/MainBackground
       guid: 3be969e174206cc4ab16f133b59ea4a2
+    - name: CamelliaDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: e19adec3bd0c1124e9fb3e2a7ed15f95
     - name: YIllust
       pathPrefix: Backgrounds/MainBackground
       guid: 2e0a200c3d62c404ba4d0c62f2be1d28
@@ -303,7 +306,7 @@ MonoBehaviour:
   - Id: Characters/c99abe0a-ac72-4d60-ab0d-aa1526acab73
     Resources:
     - name: Headman
-      pathPrefix: "Characters/\uC8FC\uBBFC(\uB0A8)"
+      pathPrefix: Characters/Man
       guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
   - Id: Characters/69eeeeb1-1679-4f45-a45b-6beb71d6ac50
     Resources:
