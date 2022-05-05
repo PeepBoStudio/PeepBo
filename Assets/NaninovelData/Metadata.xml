@@ -83,7 +83,9 @@
       &lt;Actor&gt;
         &lt;Id&gt;Man&lt;/Id&gt;
         &lt;Type&gt;Characters&lt;/Type&gt;
-        &lt;Appearances /&gt;
+        &lt;Appearances&gt;
+          &lt;string&gt;Headman&lt;/string&gt;
+        &lt;/Appearances&gt;
         &lt;Description&gt;주민(남)&lt;/Description&gt;
       &lt;/Actor&gt;
       &lt;Actor&gt;
@@ -108,6 +110,7 @@
           &lt;string&gt;ForestDay&lt;/string&gt;
           &lt;string&gt;ForestNight&lt;/string&gt;
           &lt;string&gt;StoreDay&lt;/string&gt;
+          &lt;string&gt;CamelliaDay&lt;/string&gt;
           &lt;string&gt;YIllust&lt;/string&gt;
           &lt;string&gt;WIllust&lt;/string&gt;
           &lt;string&gt;GIllust&lt;/string&gt;
@@ -422,6 +425,10 @@
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
+        &lt;Path&gt;CamelliaDay&lt;/Path&gt;
+        &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
         &lt;Path&gt;YIllust&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
@@ -487,11 +494,11 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;Headman&lt;/Path&gt;
-        &lt;Type&gt;Characters/주민(남)&lt;/Type&gt;
+        &lt;Type&gt;Characters/Man&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;Headman&lt;/Path&gt;
-        &lt;Type&gt;Characters/주민(남)&lt;/Type&gt;
+        &lt;Type&gt;Characters/Man&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;Narration&lt;/Path&gt;

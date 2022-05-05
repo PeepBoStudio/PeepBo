@@ -70,9 +70,9 @@ J: 으아, 눈부셔...
 ; 눈 깜박이듯
 @printer Narration
 천천히 감았던 눈을 뜨자 눈꺼풀 사이로 보이는 건….
-@back YIllust
-@spawn SunShafts wait:true
-@despawn SunShafts
+@back YIllust wait:false
+@spawn SunShafts
+@despawn SunShafts wait:false
 @back YIllust visible:false
 ; 효과음
 @back StreetDay

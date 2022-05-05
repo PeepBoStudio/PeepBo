@@ -320,3 +320,23 @@ MonoBehaviour:
     - name: Narration
       pathPrefix: TextPrinters
       guid: 75afd4694df44dd43ac3831a34704391
+  - Id: Characters/02dcbd0b-6da9-487e-ab23-b4f1f44c5fcc
+    Resources:
+    - name: Square
+      pathPrefix: Characters/Boy1
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/7965c0c0-d14e-4bde-bb0a-930482673e68
+    Resources:
+    - name: Square
+      pathPrefix: Characters/Boy2
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/8036479c-651c-4f9c-94dd-f8fb935adb24
+    Resources:
+    - name: Square
+      pathPrefix: Characters/Girl
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/f51a3560-5e6c-4cb6-b004-448baf885272
+    Resources:
+    - name: Square
+      pathPrefix: Characters/Aram
+      guid: 4726cf0d034b1734a962f4a4f437f05f
