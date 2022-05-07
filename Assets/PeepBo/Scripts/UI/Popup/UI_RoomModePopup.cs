@@ -1,6 +1,7 @@
 using UnityEngine;
 using PeepBo.Utils;
 using UnityEngine.EventSystems;
+using PeepBo.Managers;
 
 namespace PeepBo.UI.Popup
 {
@@ -35,6 +36,7 @@ namespace PeepBo.UI.Popup
         private void OnClickExitButton(PointerEventData evt)
         {
             Debug.Log("Click");
+            GameManager.Room.RoomExitButtonCliked();
             // TODO : 탐색 종료 조건 확인하기
         }
     }

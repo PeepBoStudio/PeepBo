@@ -1,4 +1,4 @@
-@back StreetDay
+@back StreetDay id:MainBackground
 ; 메인 BG ON
 @printer Author
 J: 아니~ 무슨 무인도도 아니고 어떻게 개미 한 마리도 안 보이냐고오~!
@@ -15,8 +15,35 @@ J: 아이참, 그래도 이건 너무 심한 거 아니야?
 J: 으악, 심지어 핸드폰도 안 터지잖아
 @hide CellPhone
 J: 주변에 뭔가 ~~~
+@back RoomBackground id:RoomBackground
+# RoomStart
 @room scriptname:"Script1-1" label:"RoomBack"
-Test
+# Wait
+@stopscript
+@stop
+
+# Flower
+어쩌구
+저쩌구
+@gosub .Wait
+
+# House
+집 클릭 스크립트
+@gosub .Wait
+
+# DongBaek
+동백꽃 클릭 스크립트
+@gosub .Wait
+
+# Wall
+벽 클릭 스크립트
+@gosub .Wait
+
+# Roof
+지붕 클릭 스크립트
+@gosub .Wait
+
 # RoomBack
-Hello
+방탈출 종료
+메인스크립트 진행
 @stop

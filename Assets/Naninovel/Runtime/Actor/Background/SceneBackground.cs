@@ -134,7 +134,7 @@ namespace Naninovel
 
         private static async UniTask<Scene> LoadSceneAsync (string appearance)
         {
-            const string sceneRoot = "Assets/Scenes";
+            const string sceneRoot = "Assets/PeepBo/Scenes/RoomMode";
             var scenePath = $"{sceneRoot}/{appearance}.unity";
             await SceneManager.LoadSceneAsync(scenePath, LoadSceneMode.Additive);
             var scene = SceneManager.GetSceneByPath(scenePath);

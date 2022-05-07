@@ -212,7 +212,7 @@ MonoBehaviour:
       guid: 5a284a6c0d602744f91ef8b1e25440d0
     - name: StreetDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 5445f5f14815b574587e9313bc91df6d
+      guid: 5851f828544f22d43b6ea165349e7a30
     - name: Dock
       pathPrefix: Backgrounds/MainBackground
       guid: a88f759698b14e7499d96b296bdce8e2
@@ -246,3 +246,8 @@ MonoBehaviour:
       guid: c4e2abcbfafd6aa4691f8bace26429ec
   - Id: Unlockables
     Resources: []
+  - Id: Backgrounds/0b7a40ea-4f8a-476f-863a-229a86bc3c6b
+    Resources:
+    - name: RoomBackground
+      pathPrefix: Backgrounds
+      guid: e560388d0f6c7ae47950e373d8244861
