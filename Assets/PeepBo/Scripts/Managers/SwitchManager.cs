@@ -11,7 +11,27 @@ namespace PeepBo.Managers
     public class SwitchManager
     {
         public StringParameter ScriptName { get; set; } = null;
-        public StringParameter Label { get; set; } = null;
+        public StringParameter RoomBackLabel { get; set; } = null;
+    }
+
+    [CommandAlias("stopscript")]
+    public class StopScript : Command
+    {
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            // 1. Disable Naninovel input.
+            var inputManager = Engine.GetService<IInputManager>();
+            inputManager.ProcessInput = false;
+
+            // 2. Stop script player.
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            scriptPlayer.Stop();
+
+            var hidePrinter = new HidePrinter();
+            hidePrinter.ExecuteAsync(asyncToken).Forget();
+
+            GameManager.Room.IsScriptPlaying = false;
+        }
     }
 
     [CommandAlias("room")]
@@ -34,9 +54,10 @@ namespace PeepBo.Managers
             hidePrinter.ExecuteAsync(asyncToken).Forget();
 
             GameManager.Switch.ScriptName = ScriptName;
-            GameManager.Switch.Label = Label;
+            GameManager.Switch.RoomBackLabel = Label;
 
             GameManager.Room.StartRoomMode(ScriptName, Label, asyncToken);
+
 
             // 3. Reset state.
             //var stateManager = Engine.GetService<IStateManager>();
@@ -72,8 +93,8 @@ namespace PeepBo.Managers
             //var naniCamera = Engine.GetService<ICameraManager>().Camera;
             //naniCamera.enabled = true;
 
-            Debug.Log(ScriptName);
             Debug.Log(Label);
+            
             // 3. Load and play specified script (if assigned).
             if (Assigned(ScriptName))
             {

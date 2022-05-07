@@ -108,6 +108,9 @@ MonoBehaviour:
     - name: Blur
       pathPrefix: Spawn
       guid: e466d9326b30a4b49a3dad428b4d9968
+    - name: ShakeRoomBackground_101
+      pathPrefix: Spawn
+      guid: d6635595b2b688c46836701041eb380d
   - Id: UI
     Resources:
     - name: ClickThroughPanel
@@ -115,13 +118,13 @@ MonoBehaviour:
       guid: 702c32b2de0c0784b9a66ec90601874f
     - name: BacklogUI
       pathPrefix: UI
-      guid: 7fba909c66b25324cb77db18679c2c96
+      guid: e74c2ef535f21ed4086fce2a2dc619e2
     - name: CGGalleryUI
       pathPrefix: UI
       guid: 71da50c8dae82bd42ba67528804e820c
     - name: ConfirmationUI
       pathPrefix: UI
-      guid: 88d03f19bcbff914ba33a7c9895e2d7c
+      guid: afcf812068df3634284878e0cb9e4552
     - name: ContinueInputUI
       pathPrefix: UI
       guid: 1add671f8348e8443bcc56290e82fc5e
@@ -160,7 +163,16 @@ MonoBehaviour:
       guid: 480f5db62ea305c46b89a86496d2a0c9
     - name: ToastUI
       pathPrefix: UI
-      guid: dd85ce99288c2f8488447fa511b1c0d6
+      guid: 90ebbca669bb9464d9a17315169aee35
+    - name: LeftTopUI
+      pathPrefix: UI
+      guid: 4bfb885f3af2d75439e3bf894c81aac7
+    - name: RightTopUI
+      pathPrefix: UI
+      guid: c3996255676b9de4cb30c8097ce2ad32
+    - name: 1-1RoomPopup
+      pathPrefix: UI
+      guid: ea17e4fa02015bb48868867e8906f88d
   - Id: Scripts
     Resources:
     - name: NewScript
@@ -221,7 +233,7 @@ MonoBehaviour:
       guid: d82d8f20d2407c84bad3b8995bd0f565
     - name: StreetDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 5445f5f14815b574587e9313bc91df6d
+      guid: 5851f828544f22d43b6ea165349e7a30
     - name: StreetNight
       pathPrefix: Backgrounds/MainBackground
       guid: 68014db632d88be4db6db07af164661a
@@ -345,3 +357,8 @@ MonoBehaviour:
     - name: cut_phone
       pathPrefix: Characters/Phone
       guid: 26db4d66d57989342b335e64b4b37252
+  - Id: Backgrounds/0b7a40ea-4f8a-476f-863a-229a86bc3c6b
+    Resources:
+    - name: RoomBackground
+      pathPrefix: Backgrounds
+      guid: e560388d0f6c7ae47950e373d8244861

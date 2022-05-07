@@ -7,12 +7,13 @@ namespace Naninovel.FX
     /// <summary>
     /// Shakes a <see cref="IBackgroundActor"/> or the main one.
     /// </summary>
-    public class ShakeBackground : ShakeTransform
+    public class ShakeRoomBackground : ShakeTransform
     {
+        [SerializeField] string backgroundName;
         protected override Transform GetShakenTransform ()
         {
-            var id = string.IsNullOrEmpty(ObjectName) ? BackgroundsConfiguration.MainActorId : ObjectName;
-            var go = GameObject.Find(id);
+            //var id = string.IsNullOrEmpty(ObjectName) ? BackgroundsConfiguration.MainActorId : ObjectName;
+            var go = GameObject.Find(backgroundName);
             return ObjectUtils.IsValid(go) ? go.transform : null;
         }
     }
