@@ -54,7 +54,7 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 @printer Narration time:0
 그런데 아침부터 찾아온 손님이 대체 누굴까? 해록도에는 나를 찾는 사람이 없을텐데…
 일단, 씻고 얼른 나가보자.
-@back JianRoom visible:false time:0
+@back JianRoomDay visible:false time:0
 ; @back 암전
 ; 쓸쓸 bgm
 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야.
