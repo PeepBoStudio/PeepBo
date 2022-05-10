@@ -30,5 +30,15 @@ namespace Naninovel.UI
             OnSummaryTextChanged?.Invoke(choiceState.Summary);
             onSummaryTextChanged?.Invoke(choiceState.Summary);
         }
+
+        public void OnPress()
+        {
+            GetComponentInChildren<Text>().color = Color.black;
+        }
+
+        public void DePress()
+        {
+            GetComponentInChildren<Text>().color = Color.white;
+        }
     }
 }
