@@ -21,7 +21,7 @@ MonoBehaviour:
   DefaultPrinterId: Dialogue
   DefaultBaseRevealSpeed: 0.5
   DefaultBaseAutoDelay: 0.5
-  MaxRevealDelay: 0.06
+  MaxRevealDelay: 0.15
   MaxAutoWaitDelay: 0.02
   ScaleAutoWait: 1
   DefaultMetadata:
