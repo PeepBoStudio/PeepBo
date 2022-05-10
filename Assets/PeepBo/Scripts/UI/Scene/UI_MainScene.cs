@@ -23,6 +23,10 @@ namespace PeepBo.UI.Scene
             base.Init();
             Bind<GameObject>(typeof(GameObjects));
             BindObjects();
+
+            var canvas = GetComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            canvas.worldCamera = Camera.main;
         }
 
         private void BindObjects()
