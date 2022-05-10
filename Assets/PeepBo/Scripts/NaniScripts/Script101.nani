@@ -16,6 +16,9 @@ J: 아이참, 그래도 이건 너무 심한 거 아니야?
 J: 으악, 심지어 핸드폰도 안 터지잖아
 @hide Phone
 J: 주변에 뭔가…….
+@hidePrinter
+@showUI ToastUI wait:true time:1.5
+@hideUI ToastUI
 
 ; ------------ 탐색 -------------
 @back RoomBackground id:RoomBackground

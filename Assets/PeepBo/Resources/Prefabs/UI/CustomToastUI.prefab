@@ -256,8 +256,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7d24045dcfc9abb4b809014e4a26b613, type: 3}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 01f032dfefaed014cb9befd840969169, type: 3}
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -268,7 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Notification message.
+  m_Text: "\uB3C4\uC6C0\uC774 \uB420 \uB9CC\uD55C \uAC83\uC744 \uCC3E\uC544\uBCF4\uC790."
 --- !u!1 &4361364299805318958
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   disableInteraction: 0
   visibleOnAwake: 0
   controlOpacity: 1
-  fadeTime: 0.3
+  fadeTime: 1.5
   ignoreTimeScale: 1
   focusObject: {fileID: 0}
   focusMode: 0
@@ -663,7 +663,7 @@ MonoBehaviour:
       m_Calls: []
   hideOnLoad: 1
   saveVisibilityState: 0
-  blockInputWhenVisible: 0
+  blockInputWhenVisible: 1
   allowedSamplers: []
   modalUI: 0
   fontChangeConfiguration: []

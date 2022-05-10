@@ -43,10 +43,10 @@ namespace PeepBo.Managers
 
 
             // 매칭했다고 가정
-            ShowToastUI("도움이 될 만한 것들을 찾아보자.", asyncToken);
+            //ShowToastUI("도움이 될 만한 것들을 찾아보자.", asyncToken);
             HideUI(new List<string> { "RightTopUI" }, asyncToken);
-
-            GameManager.UI.ShowPopupUI<UI_RoomModePopup>();
+            ShowUI(new List<string> { "RoomModeUI" }, asyncToken);
+            //GameManager.UI.ShowPopupUI<UI_RoomModePopup>();
 
             IsScriptPlaying = false;
         }
@@ -61,6 +61,7 @@ namespace PeepBo.Managers
 
             GameManager.UI.ClosePopupUI();
             ShowUI(new List<string> { "RightTopUI" });
+            HideUI(new List<string> { "RoomModeUI" });
 
         }
 

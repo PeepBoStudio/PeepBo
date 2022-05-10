@@ -173,6 +173,9 @@ MonoBehaviour:
     - name: 1-1RoomPopup
       pathPrefix: UI
       guid: ea17e4fa02015bb48868867e8906f88d
+    - name: RoomModeUI
+      pathPrefix: UI
+      guid: 4602ffa6f460e88479fbe8c6a5d596a6
   - Id: Scripts
     Resources:
     - name: NewScript
