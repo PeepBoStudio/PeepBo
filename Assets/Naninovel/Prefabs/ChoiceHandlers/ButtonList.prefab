@@ -94,8 +94,7 @@ MonoBehaviour:
   modalUI: 0
   fontChangeConfiguration: []
   buttonsContainer: {fileID: 224198401566905306}
-  defaultButtonPrefab: {fileID: 114935234543976500, guid: 42edc7aecc2c80841908c954370cb307,
-    type: 3}
+  defaultButtonPrefab: {fileID: 114935234543976500, guid: 42edc7aecc2c80841908c954370cb307, type: 3}
   focusChoiceButtons: 1
 --- !u!225 &225470808532994266
 CanvasGroup:
@@ -124,13 +123,14 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &114704911712777760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,9 +207,10 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildScaleHeight: 1
+  m_ReverseArrangement: 0
 --- !u!114 &2274056889583601738
 MonoBehaviour:
   m_ObjectHideFlags: 0
