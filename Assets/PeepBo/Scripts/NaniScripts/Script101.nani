@@ -11,13 +11,13 @@ J: 아니~ 무슨 무인도도 아니고 어떻게 개미 한 마리도 안 보�
 J: 아이참, 그래도 이건 너무 심한 거 아니야?
 @printer Narration time:0
 지도라도 찾아보기 위해 휴대폰을 켰다.
-@char Phone position:0,0 scale:0.5 time:0
+@char Phone position:0,0 scale:0.8
 @printer Dialogue time:0
 J: 으악, 심지어 핸드폰도 안 터지잖아
 @hide Phone
 J: 주변에 뭔가…….
-@hidePrinter
-@showUI ToastUI wait:true time:1.5
+@hidePrinter 
+@showUI ToastUI time:1.5 wait:true
 @hideUI ToastUI
 
 ; ------------ 탐색 -------------
@@ -133,17 +133,19 @@ J: 으악!
 갑자기 들려오는 목소리에 깜짝 놀라 스텝이 꼬이고 말았다.
 저항할 새도 없이 땅과 충돌하려는 순간,
 누군가 내 팔목을 붙들었다.
-; 고결 일러스트
+@hidePrinter 
+@back StreetDay visible:false time:0
 @back GIllust wait:false
 @spawn SunShafts
 ; 효과음
+@wait i
 곧게 뻗은 눈썹, 색소가 옅은 눈동자가 담긴 날카로운 눈매.
 티끌 만한 오차도 없이 완벽하게 자리잡은 남자의 이목구비에선,
 왠지 모를 오만함이 느껴졌다.
 이 작은 섬이 이토록 잘생긴 남자라니…
 @despawn SunShafts wait:false
 @back GIllust visible:false time:0
-@back StreetDay time:0
+@back StreetDay
 @printer Dialogue time:0
 J: 누, 누구…
 @char G
@@ -272,7 +274,8 @@ J: 졸업여행 삼아 온 거예요
 @printer Narration time:0
 고결은 별로 내 말을 믿는 눈치가 아니었다
 시시콜콜한 대화를 하며 10분 정도 걸었을까-
-@back HallDay time:0
+@back StreetDay visible:false wait:false
+@back HallDay
 ; <장소를 발견했습니다! ‘마을회관’ >
 @char G
 @printer Dialogue time:0
@@ -290,6 +293,7 @@ G: 아는 지 모르겠지만 해록도 사람들은 외지인에게 친절한 �
 ; 고결 비웃음
 G: 아마 너한테 제일 친절한 사람은 나일걸?
 J: 아하... 네...
+; 클로즈업 -> 캐릭터 나오면 수정
 @char G position:0,-16 scale:1 time:0 wait:true
 G: 감사하지?
 @char G position:0,-5.5 scale:0.5 time:0
@@ -316,7 +320,7 @@ J: 윽, 진짜…! 참자 참아!
 @hide G
 @printer Narration time:0
 그나저나 여기가 마을의 중심인 것 같은데 여기라면 핸드폰이 터지지 않을까?!
-@char Phone position:0,0 scale:0.5 time:0
+@char Phone position:0,0 scale:0.8
 서둘러 핸드폰을 켜봤지만 기대완 달리 여전히 핸드폰은 먹통이었다.
 @hide Phone
 ; 문 여는 효과
@@ -336,8 +340,7 @@ G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것�
 @printer Narration time:0
 곧 다시 문이 열리고, 
 방금 나간 아주머니와 또 다른 아저씨 한 명이 함께 들어왔다.
-@char Man position:-1.8,-1.2 scale:0.2 wait:false
-@char Woman position:1.8,-1.2 scale:0.2
+@char Man position:0,-3 scale:0.5
 아저씨는 나를 보며 어색한 미소로 말을 건냈다
 @printer Dialogue time:0
 Man: 혹시 해록도에 관광오기로 한 아가씨인가?
@@ -345,6 +348,8 @@ J: 아, 네 안녕하세요. 저 출입허가서도 받았어요! 이상한 애 
 @printer Narration time:0
 주민들 눈에 경계심이 어려있어 다급히 입꼬리를 최대한 끌어올려 빠르게 말했다
 @printer Dialogue time:0
+@hide Man wait:false
+@char Woman scale:0.5 position:0,-3
 Woman: 아~ 그 아가씨구나, 관광 온다는 얘기 들었어요.
 Woman: 나는 또 처음보는 사람이라 놀랐지 뭐야
 Woman: 해록도가 원채 오가는 사람도 없고 주민들도 적어~
@@ -352,6 +357,8 @@ Woman: 그래서 누가 들어온다고 하면 우리끼리 다 알거든
 @printer Narration time:0
 경계가 풀렸는지 아주머니는 인자하게 웃으며 다가왔다
 @printer Dialogue time:0
+@hide Woman wait:false
+@char Man scale:0.5 position:0,-3
 Man: 여기가 다 흙길이라서 가방 끌고 오기 힘들었을 텐데
 Man: 선착장에서 조금만 기다리고 있지 그랬어
 Man: 아가씨 오늘 온다는 얘기 듣고 지금 다른 주민이 선착장에 마중나갔는데
@@ -362,14 +369,17 @@ J: 마중까지 나와주시고 정말 감사합니다.
 결이 묘한 눈으로 주민들을 빤히 쳐다보고 있었다.
 왜 저렇게 쳐다보지?
 @printer Dialogue time:0
+@hide Man wait:false
+@char Woman scale:0.5 position:0,-3
 Woman: 여기 얼마나 있을 거에요? 해록도가 그 뭐냐, 
 Woman: 무슨 보호? 생태보호? 그걸로 지정 돼 있는 건 알죠?
 Woman: 나무들이 건강해서 공기도 좋고 해안가 경치도 정말 좋아요.
 Woman: 오래오래 있으면 좋겠다, 오랜만에 외지인 보니까 정말 반갑네~
+@hide Woman wait:false
+@char Man scale:0.5 position:0,-3
 Man: 그러게 말이야, 오랜만에 온 귀한 손님이네
 Man: 머물 곳은 우리가 다 마련해 놨으니까 따라와요
-@hide Man wait:false
-@hide Woman
+@hide Man
 @printer Narration time:0
 아저씨를 따라 회관을 나서려다 뒤를 돌아 고결에게 말했다
 @char G
@@ -381,6 +391,8 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 @hide G
 어? 그런데 이상하다,
 해록도 주민들은 외지인을 경계한다고 하지 않았나?
+
+@back HallDay visible:false wait:false
 @back JianRoomDay
 ; 나연 집 외경(낮)
 아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와
@@ -396,7 +408,7 @@ Headman: 나연 자매 있어? 손님 왔어!
 ; 문 여는 소리
 @printer Narration time:0
 잠시 뒤 문이 열리며 앳되보이는 여자아이가 고개를 빼꼼 내밀었다
-@char N
+@char N position:0,-12
 여자애는 인사도 없이 무표정한 얼굴로 가만히 나를 관찰하듯 쳐다볼 뿐이었다
 아니 여긴 왜 나를 자꾸 빤히 쳐다보는 사람 밖에 없지?
 외지인이 드물다더니, 내가 신기한가?
@@ -408,8 +420,9 @@ Headman: 나연 자매 혼자 사는 집이라서 불편하진 않을 거야
 @printer Narration time:0
 나연은 따라오라며 고개짓을 한 뒤 성큼 성큼 집 안으로 들어갔다
 나는 나연의 뒤를 쫓으며 이장님을 향해 고개를 꾸벅였다
+@back JianRoomDay visible:false wait:false
 @back JianRoomDay
-@char N
+@char N position:0,-12
 @printer Dialogue time:0
 N: 여기 쓰면 돼.
 @hide N
@@ -424,6 +437,7 @@ N: 여기 쓰면 돼.
 @printer Dialogue time:0
 J: 아, 이대로 잠들어버릴지도 모르겠어…
 ; 암전
-@back JianRoodDay visible:false time:0
+@back JianRoodDay visible:false
+
 @stop
 ; 종료
