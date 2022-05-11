@@ -134,7 +134,7 @@ J: 으악!
 저항할 새도 없이 땅과 충돌하려는 순간,
 누군가 내 팔목을 붙들었다.
 @hidePrinter 
-@back StreetDay visible:false time:0
+@back StreetDay visible:false time:0 wait:false
 @back GIllust wait:false
 @spawn SunShafts
 ; 효과음
@@ -144,11 +144,11 @@ J: 으악!
 왠지 모를 오만함이 느껴졌다.
 이 작은 섬이 이토록 잘생긴 남자라니…
 @despawn SunShafts wait:false
-@back GIllust visible:false time:0
+@back GIllust visible:false time:0 wait:false
 @back StreetDay
 @printer Dialogue time:0
 J: 누, 누구…
-@char G
+@char G position:0,-12
 @printer Narration time:0
 충돌 직전의 나를 붙잡은 이 그림 같은 남자는,
 어이없다는 표정으로 나를 훑어보며 말했다.
@@ -202,7 +202,7 @@ J: 감사합니다.
 J: 왜… 왜 자꾸 따라오세요?
 @printer Narration time:0
 나는 걸음을 멈추고 남자를 향해 물었다
-@char G
+@char G position:0,-12
 @printer Dialogue time:0
 ; 고결 무표정
 G: 너 안 따라가는데?
@@ -274,10 +274,10 @@ J: 졸업여행 삼아 온 거예요
 @printer Narration time:0
 고결은 별로 내 말을 믿는 눈치가 아니었다
 시시콜콜한 대화를 하며 10분 정도 걸었을까-
-@back StreetDay visible:false wait:false
+@back StreetDay visible:false wait:false time:0
 @back HallDay
 ; <장소를 발견했습니다! ‘마을회관’ >
-@char G
+@char G position:0,-12
 @printer Dialogue time:0
 ; 고결 무표정
 G: 다 왔어.
@@ -294,9 +294,9 @@ G: 아는 지 모르겠지만 해록도 사람들은 외지인에게 친절한 �
 G: 아마 너한테 제일 친절한 사람은 나일걸?
 J: 아하... 네...
 ; 클로즈업 -> 캐릭터 나오면 수정
-@char G position:0,-16 scale:1 time:0 wait:true
+@char G position:0,-34 scale:2 time:0 wait:true
 G: 감사하지?
-@char G position:0,-5.5 scale:0.5 time:0
+@char G position:0,-12 scale:1 time:0
 @choice "...네, 감사합니다..." goto:.C
 @choice "근데 왜 자꾸 반말을 하세요?" goto:.D
 @hidePrinter 
@@ -332,7 +332,7 @@ Woman: 아이고!
 날 보자마자 소스라치게 놀라며 뒷걸음질 친 아주머니는,
 황급히 문을 닫고 회관을 나갔다.
 @printer Dialogue time:0
-@char G
+@char G position:0,-12
 ; 고결 무표정
 G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것처럼 저런다니까
 ; 문 여는 효과
@@ -392,7 +392,7 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 어? 그런데 이상하다,
 해록도 주민들은 외지인을 경계한다고 하지 않았나?
 
-@back HallDay visible:false wait:false
+@back HallDay visible:false wait:false time:0
 @back JianRoomDay
 ; 나연 집 외경(낮)
 아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와
@@ -420,7 +420,7 @@ Headman: 나연 자매 혼자 사는 집이라서 불편하진 않을 거야
 @printer Narration time:0
 나연은 따라오라며 고개짓을 한 뒤 성큼 성큼 집 안으로 들어갔다
 나는 나연의 뒤를 쫓으며 이장님을 향해 고개를 꾸벅였다
-@back JianRoomDay visible:false wait:false
+@back JianRoomDay visible:false wait:false time:0
 @back JianRoomDay
 @char N position:0,-12
 @printer Dialogue time:0

@@ -29,7 +29,7 @@ J: 아침부터 너무 기운을 뺐다. 집에 돌아가서 한 숨 자야겠�
 # Con1
 선락원의 목사님이었다.
 @printer Dialogue time:0
-@char Kitaek scale:0.5
+@char Kitaek position:0,-12
 Kitaek: 해록도에 오랜만에 손님이 찾아왔다고 들었는데…
 J: 아, 안녕하세요 목사님.
 Kitaek: 이런 자리에서 인사를 나누게 돼 유감이군요.
@@ -54,7 +54,7 @@ Kitaek.Default: 우리야 말로 잘 부탁합니다, 언제 한 번 선락원�
 ; 당황 효과음
 @printer Dialogue time:0
 J: 헉!
-@char Kitaek.Redmark-Default scale:0.5
+@char Kitaek.Redmark-Default
 @printer Narration time:0
 나는 황급히 손을 거둬들였다.
 그의 소매가 붉게 물들어있었다.
@@ -91,12 +91,13 @@ J: 정말 참 종교인이시네?
 @back JianRoomNight
 ; 노이즈 효과
 ; 눈 뜨는
-@printer Narration
+@printer Narration time:0
 으…. 추워….
 …. 으으….
 ; 눈 감는
 ; 암전
 여기가… 어디지…?
+@back JianRoomNight visible:false time:0 wait:true
 @back StreetNight
 ; 노이즈 효과
 ; 눈 뜨는
@@ -159,15 +160,16 @@ First: 멈추라고!!!
 발소리의 주인은 곧장 내 허리를 낚아채 날 돌려세웠다.
 @printer Dialogue time:0
 First: 정신차려...!
+@hidePrinter
+@back ForestNight visible:false time:0 wait:true
 @back WIllust wait:false
-@spawn SunShafts
+@wait i
 ; 차우준 메인 bgm
 @printer Narration time:0
 시간이 멈춘 것 같았다.
 귓가를 새차게 때리던 바람 소리가 멀어지고 오감마저 정지된 느낌
 날 멈춰세운 남자는 내가 조금이라도 움직이는 걸 허락하지 않겠다는 듯 
 내 온 몸을 꽉 붙들었다.
-@despawn SunShafts wait:false
 @printer Dialogue time:0
 First: 숨 쉬어.
 @printer Narration time:0
@@ -186,12 +188,13 @@ J: 피, 피가…!
 First: 그런 거 없어, 정신차리고 봐.
 First: 그냥…
 First: ...꽃일 뿐이야.
-@back WIllust visible:false time:0
-@back StreetNight time:0
+@back WIllust visible:false time:0 wait:true
+@back StreetNight
 ; 붉은 필터
 @printer Narration time:0
 서서히 손 끝에서부터 감각이 돌아오며 주변이 자각되기 시작했다.
 남자의 어깨에 묻고 있던 고개를 들어 천천히 주위를 살폈다.
+@back StreetNight visible:false time:0 wait:true
 @back CamelliaDay
 ; 동백나무 군락(밤)
 ; 차우준 실루엣 in
@@ -213,7 +216,7 @@ J: 저기 잠시만, 앗!
 @printer Narration time:0
 매몰차게 내 팔을 뿌리친 남자는 서늘하게 가라앉은 눈으로 날 바라봤다.
 @printer Dialogue time:0
-@char W scale:0.5
+@char W position:0,-12
 J: …
 @printer Narration time:0
 하려던 말을 잊어버릴 만큼 차가운 눈빛.

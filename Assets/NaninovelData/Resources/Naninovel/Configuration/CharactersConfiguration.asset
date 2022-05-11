@@ -527,7 +527,7 @@ MonoBehaviour:
         width: 1
         height: 1
       BakedLookDirection: 1
-      DisplayName: "\uB0A8\uC790\uC544\uC7741"
+      DisplayName: "\uB0A8\uC790\uC544\uC774"
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
@@ -569,7 +569,7 @@ MonoBehaviour:
         width: 1
         height: 1
       BakedLookDirection: 1
-      DisplayName: "\uB0A8\uC790\uC544\uC7742"
+      DisplayName: "\uB0A8\uC790\uC544\uC774"
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}

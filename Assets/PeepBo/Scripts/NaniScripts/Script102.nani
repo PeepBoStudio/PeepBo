@@ -19,11 +19,10 @@ First: 야! 일어나라니까!
 N: 진짜 귀찮게 한다, 너.
 @printer Narration time:0
 익숙한 목소리에 고개를 돌리니.
-@char N scale:0.5
+@char N position:0,-12
 ; 짜증
 @printer Dialogue time:0
 N: 벌써 해가 중천인데 아직도 자고 있으면 어떡해? 여기 요양왔어?
-@char N 
 @printer Narration time:0
 놀라서 시계를 바라보자 오후 12시가 넘어가고 있었다.
 @spawn ShakeBackground
@@ -45,7 +44,7 @@ N: 나 너 좋아서 우리집에 머물게 한 거 아니고 어쩔 수 없이 
 ; 짜증
 N: 그러니까 거슬리는 행동하지 말고 최대한 조용히 있다가 떠나,
 N: 나한테나 다른 주민들한테나.
-@hide N time:0
+@hide N time:0 wait:false
 @spawn ShakeBackground
 @printer Narration time:0
 나연은 차갑게 쏘아 붙인채 부셔져라 문을 닫고 나갔다.
@@ -54,14 +53,14 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 @printer Narration time:0
 그런데 아침부터 찾아온 손님이 대체 누굴까? 해록도에는 나를 찾는 사람이 없을텐데…
 일단, 씻고 얼른 나가보자.
-@back JianRoomDay visible:false time:0
+@back JianRoomDay visible:false
 ; @back 암전
 ; 쓸쓸 bgm
 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야.
 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든.
 그야말로 신이 내린 선물이지.
 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심하니.
-@back StreetDay 
+@back StreetDay
 ; @back 나연 집 외경(낮)
 ; 메인 bgm
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.
@@ -70,13 +69,16 @@ J: 으아, 눈부셔...
 ; 눈 깜박이듯
 @printer Narration time:0
 천천히 감았던 눈을 뜨자 눈꺼풀 사이로 보이는 건….
+@hidePrinter
+@back StreetDay visible:false time:0 wait:true
 @back YIllust wait:false
 @spawn SunShafts
+@wait i
 @despawn SunShafts wait:false
-@back YIllust visible:false time:0
+@back YIllust visible:false time:0 wait:true
 ; 효과음
-@back StreetDay time:0
-@char Y scale:0.5
+@back StreetDay
+@char Y position:0,-12
 @printer Dialogue time:0
 Y: 기다렸어요, 누나. 잘 잤어요?
 J: 설마 그쪽이...제 손님이세요...?
@@ -111,9 +113,9 @@ Y.Smile: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네�
 # Continue
 J: 저기 그런데,
 J: 그쪽은 대체 누구신데요?
-@char Y position:0,-16 scale:1 wait:true time:0
+@char Y position:0,-34 scale:2 time:0 wait:true
 Y.Smile: 전 홍! 유! 겸! 이에요. 스물 한 살이니까 말 편하게 해요. 누나!
-@char Y position:0,-5.5 scale:0.5 time:0
+@char Y position:0,-12 scale:1 time:0
 @printer Narration time:0
 자기가 스물 한 살인 건 그렇다 쳐도 내 나이도 모르면서 왜 누나라고 부르는 거야?
 나는 눈동자만 도르륵 굴려 홍유겸이라는 남자를 쭉 훑어봤다.
@@ -138,8 +140,8 @@ Y: 주민이 아니면 길을 잃기 쉬워요.
 안 그래도 오늘부터 해록도를 탐방하려고 하긴 했지...
 자기가 먼저 안내해주겠다고 하는데 나쁠 건 없어 보이기도 하고,
 어떡할까?
-@choice "어색한 건 딱 질색, 혼자 다닌다" goto:.Alone set:y_score=0
-@choice "의외로 좋은 기회일지도. 같이 다닌다." goto:.Together set:y_score=5
+@choice "어색한 건 딱 질색, 혼자 다닌다" goto:.Alone set:y_score+=0
+@choice "의외로 좋은 기회일지도. 같이 다닌다." goto:.Together set:y_score+=5
 @hidePrinter 
 @stop
 
@@ -167,6 +169,8 @@ Y.Wink: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
 @printer Narration time:0
 저 동글동글한 눈빛을 보고도 차갑게 거절할 수 있는 사람이 어딨겠어?
 # Walk
+; 나연 집 외경(낮) 안보이게
+@back StreetDay visible:false time:0 wait:false
 @back StreetDay
 @printer Dialogue time:0
 Y.Default: 누나가 묵고 있는 곳에서 조금만 더 나오면 바로 큰 길가에요.
@@ -181,14 +185,15 @@ Y.Wink: 필요한 게 생기거나 궁금한 게 있을 땐 마을 회관으로 
 @printer Dialogue time:0
 Y.Smile: 흠, 이제 어디 먼저 가볼래요?
 @choice 선착장 goto:.Dock
-@choice 등대 goto:.Lighthouse set:y_score=0
-@choice "아니 됐어, 그냥 산책이나 하자" goto:.Walkagain set:y_score=5
+@choice 등대 goto:.Lighthouse
+@choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
 @hidePrinter 
 @stop
 # Dock
 J: 선착장 먼저 가보자!
 @hide Y
-@back Dock scale:0.8
+@back StreetDay visible:false time:0 wait:false
+@back DockDay
 ; 파도소리
 @char Y
 ; <장소를 발견했습니다! “선착장” >	다이어리에 'N'
@@ -206,13 +211,15 @@ Y: 보다시피 해록도가 너무너무 아름답잖아요?
 유겸은 눈을 내리깐 채 조용히 웃으며 말을 이었다
 @printer Dialogue time:0
 Y: 한 번 오면... 다신 떠나고 싶지 않을 만큼.
+@char Y.Default
 @printer Narration time:0
 뭐지, 방금 분위기가 갑자기 묘하게 어른스러워졌는데?	
 @printer Dialogue time:0
 J: 맞아 아름답긴 하더라
+@char Y.Smile
 J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @printer Narration time:0
 나는 어제 배 위에서 처음 본 해록도의 전경을 다시 되뇌었다.
 # Lighthouse
-
-# Walkagain
+ 
+# Forest
