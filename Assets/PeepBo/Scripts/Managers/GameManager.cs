@@ -23,6 +23,9 @@ namespace PeepBo.Managers
         public static SwitchManager Switch { get => Instance.switchManager; }
         public static InputManager Input { get => Instance.inputManager; }
 
+
+        public static string DummyEpisode;
+
         static void Init()
         {
             if (instance == null)

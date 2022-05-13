@@ -1,4 +1,6 @@
 using Naninovel;
+using PeepBo.Managers;
+using PeepBo.UI.Popup;
 using PeepBo.Utils;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -38,7 +40,7 @@ namespace PeepBo.UI.Scene
 
         private void OnClickStartButton(PointerEventData evt)
         {
-            SceneManager.LoadScene("InGameScene");
+            GameManager.UI.ShowPopupUI<UI_EpisodePopup>();
         }
     }
 }

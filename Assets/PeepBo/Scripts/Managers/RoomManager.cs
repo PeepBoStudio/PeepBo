@@ -59,7 +59,6 @@ namespace PeepBo.Managers
 
             //ShowUI(new List<string>)
 
-            GameManager.UI.ClosePopupUI();
             ShowUI(new List<string> { "RightTopUI" });
             HideUI(new List<string> { "RoomModeUI" });
 
