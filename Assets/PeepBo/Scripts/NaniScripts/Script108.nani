@@ -91,13 +91,12 @@ J: 여긴…
 ; 주다함 실루엣 in
 @printer Dialogue time:0
 First: 달이 타오를 듯 밝은 밤이군요.
-J: ….!
+J: …!
 First: 이 야심한 시각에,
 First: 당신은 무엇에 이끌려 여기까지 오셨습니까.
-@char D position:0,-12
-First: 차림을 보니 밤 산책을 나온 것도, 새벽 예배를 온 것도 
-@char D.Smile
-First: 아닌 것 같은데
+@char D.Face>기본,Body>가슴에손 position:0,-18
+First: 차림을 보니 밤 산책을 나온 것도, 새벽 예배를 온 것도 아닌 것 같은데
+@char D.Face>웃는,Body>가슴에손
 First: 제가 어떤 인사를 드려야 할 지.
 @printer Narration time:0
 남자가 다가오며 희미하게 웃었다.
@@ -116,23 +115,24 @@ J: 이런...
 @printer Narration time:0
 나는 그대로 뒤돌아 나가기로 했다
 여기서 설명해봤자, 미친 여자밖에 더 되겠어...?
-@char D.Faint
 @printer Dialogue time:0
+@char D.Face>아련,Body>기본
 First: 제 앞에 갑자기 나타나더니, 또 갑자기 사라지려 하시네요.
 @printer Narration time:0
 윽, 나는 움직이던 걸 멈추고 어색하게 웃었다.
 그래, 이대로 나가는 건 예의가 아니겠지.
 @printer Dialogue time:0
 J: …죄송해요. 많이 놀라셨죠…
-@char D.Smile
+@char D.Face>웃는,Body>입에손
 First: 네, 놀랐습니다.
 @printer Narration time:0
 그는 전혀 놀라지 않은 평온한 얼굴로 답했다.
 @goto .Con1
 #B
 @printer Dialogue time:0
+@char D.Face>웃는,Body>기본
 J: …죄송해요. 많이 놀라셨죠…
-@char D.Smile
+@char D.Face>웃는,Body>입에손
 First: 네, 놀랐습니다.
 @printer Narration time:0
 그는 전혀 놀라지 않은 평온한 얼굴로 답했다.
@@ -145,31 +145,32 @@ J: 그러니까... 제가 좀 아파요. 아니, 병이 있다는 게 아니라
 @printer Dialogue time:0
 J: 그... 가끔 자다가 저도 모르게 막 돌아다닐 때가 있어서…
 J: 아, 자주는 아니고요! 가끔요, 가끔! 아주... 가끔!
+@char D.Face>아련,Body>가슴에손
 First: 신께서 당신을 이곳으로 인도했나 보군요.
 J: 네? 아... 신께서…
 @printer Narration time:0
 갑작스러운 신의 등장에 당황했지만, 가만히 있기로 했다.
 @printer Dialogue time:0
 J: 혹시 교회, 아니... 이름이 뭐였더라...
-; 1-2 플래시백
-@camera set:*.true
-@back StreetDay time:0
-@hide D
-@char Y position:0,-12
+@camera set:*.true wait:false
+@back StreetDay time:0 wait:false
+@hide D wait:false
+@char Y.Face>기본,Body>기본 position:-0.25,-17
 J: 근데, 이 위로 쭉 올라가면 뭐가 있는데?
 Y: 선락원이요, 그냥 교회인데 저희 마을에선 선락원이라고 부르고 있어요
 J: 무슨 교회가 이렇게 산 중턱에 있어?
+@char Y.Face>웃는,Body>기본
 Y: 산 중턱이자, 해록도의 중심이거든요
-@hide Y
-; 1-2 플래시백 종료
-@camera set:*.false
+@hide Y wait:false
+@camera set:*.false wait:false
 @back StreetDay visible:false time:0
 @back ParadiseInsideNight
-@char D
+@char D.Face>아련,Body>가슴에손 position:0,-18
 @printer Narration time:0
 맞아, 선락원이라고 했지.
 @printer Dialogue time:0
 J: 선락원의 목사님이신가요…? 그러기엔 굉장히 젊어 보이시긴 한데...
+@char D.Face>기본,Body>가슴에손
 First: 아뇨. 전 여기 선락원을 관리하는 평범한 신도입니다.
 D: 주다함, 이라고 해요.
 @choice "이름이 특이하네요?" goto:.C
@@ -179,11 +180,13 @@ D: 주다함, 이라고 해요.
 
 #C
 J: 주다함…? 이름이 특이하네요?
+@char D.Face>웃는,Body>입에손
 D: 그런가요? 전 익숙해서, 잘 모르겠네요.
 @goto .Con2
 #D
 ; 주다함 호감도 +5
 J: 주다함…? 이름이 참 예쁘네요
+@char D.Face>웃는,Body>입에손
 D: 고마워요. 이름이 예쁘다는 말은... 오랜만에 듣네요.
 #Con2
 @printer Narration time:0
@@ -191,23 +194,28 @@ D: 고마워요. 이름이 예쁘다는 말은... 오랜만에 듣네요.
 @printer Dialogue time:0
 J: 안녕하세요. 이렇게 첫인사를 드릴 생각은 없었는데...
 J: 저는 며칠 전에 해록도에 들어온 김지안이라고 해요.
+@char D.Face>아련,Body>입에손
 D: …김지안.
 @printer Narration time:0
 그가 나지막히 내 이름을 중얼거렸다.
 @printer Dialogue time:0
+@char D.Face>기본,Body>기본
 J: 으, 생각해보니까 잠결에 도착한 곳이 여기라 다행이네요.
 J: 혹시 선착장이나 등대 쪽으로 갔다면...
 J: 지금쯤 물고기 밥이 되어 있을지도 모르겠어요. 끔찍해라…
 @printer Narration time:0
 그는 살풋 입꼬리를 떨어뜨리며 걱정스럽다는 표정을 지었다.
 @printer Dialogue time:0
+@char D.Face>걱정,Body>가슴에손
 D: 네, 정말 다행이에요. 교회 너머 더 깊숙이 올라가기라도 했다면 위험했을 겁니다.
+@char D.Face>걱정,Body>가슴에손
 D: 그쪽은 사방이 절벽이거든요.
 J: 헉…
 @printer Narration time:0
 점점 이 어처구니 없는 상황이 와닿기 시작했다.
 아니, 게다가 나 잠옷차림이잖아?! 어서 돌아가야겠다.
 @printer Dialogue time:0
+@char D.Face>기본,Body>기본
 J: 갑자기 찾아와서 많이 놀라셨죠, 전 이만 돌아가볼게요. 감사했습니다!
 @hide D
 @printer Narration time:0
@@ -219,10 +227,11 @@ J: 갑자기 찾아와서 많이 놀라셨죠, 전 이만 돌아가볼게요. �
 응…? 다시 닫혔다?
 의아해서 고개를 돌리니,
 어느새 기척도 없이 다가온 다함의 곧게 뻗은 팔이 보였다
-@char D
 @printer Dialogue time:0
+@char D.Face>기본,Body>기본 position:0,-18
 J: …?
 J: 문을 왜 닫으시는…
+@char D.Face>걱정,Body>입에손
 D: 상처가...
 J: 네?
 @printer Narration time:0
@@ -240,19 +249,23 @@ J: 아야....!
 여기저기 난 상처엔 새빨간 피가 맺혀있었고 
 그제서야 잊었던 감각이 되살아나듯 고통이 밀려오기 시작했다
 @printer Dialogue time:0
-으아 쓰라려..!
-이대로 돌아갈 수는 없으니 우선 간단히 치료해 드리겠습니다.
-아 괜, 괜찮아요. 천천히 내려가면 돼요!
+J: 으아 쓰라려..!
+@char D.Face>기본,Body>가슴에손
+D: 이대로 돌아갈 수는 없으니 우선 간단히 치료해 드리겠습니다.
+J: 아 괜, 괜찮아요. 천천히 내려가면 돼요!
 @printer Narration time:0
 내가 허둥지둥대자 그가 가볍게 내 손을 맞잡았다.
 @printer Dialogue time:0
-이대로 걸으면 상처가 덧 날 겁니다. 
-안쪽에 간단하게 치료할 수 있는 약이 있으니 잠시 기다리세요.
+@char D.Face>걱정,Body>가슴에손
+D: 이대로 걸으면 상처가 덧 날 겁니다.
+@char D.Face>웃는,Body>가슴에손
+D: 안쪽에 간단하게 치료할 수 있는 약이 있으니 잠시 기다리세요.
 @printer Narration time:0
 그는 나를 올려다보며 부드럽게 웃었다.
 어쩐지 거부할 수 없는 목소리였다.
 @printer Dialogue time:0
-...감사합니다.
+@char D.Face>기본,Body>기본
+J: ...감사합니다.
 @printer Narration time:0
 결국 나는 그가 이끄는대로 의자에 앉았다
 작은 구급상자를 들고 온 다함은, 역시나 한 쪽 무릎을 꿇고 앉아 내 발을 살폈다
@@ -267,7 +280,8 @@ J: 아야....!
 @printer Dialogue time:0
 J: 제가 할게요, 저 주세요.
 @printer Narration time:0
-연고를 향해 황급히 뻗은 내 손을 잡아내리며 
+연고를 향해 황급히 뻗은 내 손을 잡아내리며
+@char D.Face>기본,Body>기본
 그는 대답 대신 온화한 미소로 내 말을 가볍게 무시했다.
 @goto .Con3
 #F
@@ -294,7 +308,8 @@ D: 약이 스며들고나면 괜찮아질 겁니다.
 다함이 치료하다 말고 갑작스럽게 고개를 들어 눈을 맞춰왔다.
 @back DIllust visible:false time:0
 @back ParadiseInsideNight
-@char D
+@printer Dialogue
+@char D.Face>웃는,Body>가슴에손 position:0,-18
 D: 기다리고 있었습니다.
 @choice "저도요" goto:.G
 @choice "저를요?" goto:.H
@@ -308,6 +323,7 @@ D: 기다리고 있었습니다.
 나는 그를 빤히 바라보다가 입을 뗐다.
 @printer Dialogue time:0
 J: …실은 저도요.
+@char D.Face>기본,Body>기본
 D: …
 J: 자다가 낯선 곳에서 눈을 떴을 때,
 J: 누군가 저를 기다리고 있었으면 좋겠다고 생각한 적이 있어요.
@@ -321,11 +337,15 @@ J: 저를 동정하거나 두려워하지 않고, 상처를 치료해주는 그�
 나는 대답마저 잊은채 그를 빤히 바라보다 곧장 정신을 차렸다.
 @printer Dialogue time:0
 J: 네? 아... 기다려요? 누구를… 저를요?
+@char D.Face>기본,Body>가슴에손
 D: 네, 당신을요.
+@char D.Face>웃는,Body>가슴에손
 D: 아마도... 신께서?
 @printer Narration time:0
+@char D.Face>웃는,Body>기본
 무슨 말을 했냐는 듯 다함은 다시 시선을 내리고 반창고로 내 발을 감쌌다.
 #Con4
+@hide D
 @printer Narration time:0
 그의 목에 걸려있는 십자가 때문인지, 나긋한 말투 때문인지.
 치료보다는 하나의 경건한 의식처럼 보였다.
@@ -333,7 +353,7 @@ D: 아마도... 신께서?
 온몸이 뜨겁게 달아오르는 기분이 들었다.
 어찌됐든… 나쁜 사람은 아닌 것 같아.
 그러자 혼자서 팽팽히 붙잡고 있던 긴장이 풀렸다.
-@back ParadiseInsideNight visible:false time:0
+@back ParadiseInsideNight visible:false
 @back Black
 결국 해가 뜨고 나서야, 집에 돌아온 나는
 말 그대로 기절하듯 쓰러져 잠에 들고 말았다.

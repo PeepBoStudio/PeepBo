@@ -166,6 +166,7 @@
           &lt;string&gt;ForestNight&lt;/string&gt;
           &lt;string&gt;StoreDay&lt;/string&gt;
           &lt;string&gt;CamelliaDay&lt;/string&gt;
+          &lt;string&gt;CamelliaNight&lt;/string&gt;
           &lt;string&gt;ParadiseOutsideDay&lt;/string&gt;
           &lt;string&gt;ParadiseOutsideNight&lt;/string&gt;
           &lt;string&gt;ParadiseInsideNight&lt;/string&gt;
@@ -648,6 +649,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;CamelliaDay&lt;/Path&gt;
+        &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;CamelliaNight&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;

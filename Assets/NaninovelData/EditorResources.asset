@@ -198,34 +198,16 @@ MonoBehaviour:
       guid: 0b15e88b7a0d9d9488c4d121b9f21b52
   - Id: Characters/1bf256a8-2304-449f-b5a7-ccfda577d5b2
     Resources:
-    - name: Default
-      pathPrefix: Characters/N
-      guid: 71208e5b2e9b3e348908630e00b12ede
-    - name: Talk
-      pathPrefix: Characters/N
-      guid: 10d422b76f50da6498ef9f654ef01557
+    - name: N
+      pathPrefix: Characters
+      guid: 4586b504f73cff143bcb8ed85b211b30
   - Id: CharacterAvatars
     Resources: []
   - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
     Resources:
-    - name: Default
-      pathPrefix: Characters/Y
-      guid: 4b1df5be663088e4186e30cb0872947c
-    - name: Smile
-      pathPrefix: Characters/Y
-      guid: 8f76de956ec7b4848a6dc3432534cebc
-    - name: Cry
-      pathPrefix: Characters/Y
-      guid: 7d39e2994ce71034c90bad957d432eab
-    - name: Surprised
-      pathPrefix: Characters/Y
-      guid: 75327ee6502db88439ffde07e10ce984
-    - name: Wink
-      pathPrefix: Characters/Y
-      guid: b9b3ca4e7a09a1743b3aeb0451517401
-    - name: DropEyes
-      pathPrefix: Characters/Y
-      guid: 02f6f502b8dc1f845a83132a3619b2cb
+    - name: Y
+      pathPrefix: Characters
+      guid: 6e8669f8065e7774c9d5ef638b523540
   - Id: Backgrounds/81f4d5bd-eb19-4c54-a1f8-ca53f4f17845
     Resources:
     - name: Black
@@ -300,37 +282,19 @@ MonoBehaviour:
       guid: 4726cf0d034b1734a962f4a4f437f05f
   - Id: Characters/dba19237-489d-48a1-8a25-60bb73cdf88d
     Resources:
-    - name: Default
-      pathPrefix: Characters/W
-      guid: 467bf2b8115843147b1a2e027c668466
-    - name: Angry
-      pathPrefix: Characters/W
-      guid: 020c4a64707786244a41169401d1efa5
-    - name: ColdSmile
-      pathPrefix: Characters/W
-      guid: 5fc25b5554c56b4449f3f65cff862430
+    - name: W
+      pathPrefix: Characters
+      guid: d66b759034bf95e4db605e37edc6653f
   - Id: Characters/e7176b69-1c7a-4549-a3a7-b17b2c6b1df1
     Resources:
-    - name: Default
-      pathPrefix: Characters/Kitaek
-      guid: ec6c8944c9bd29c4289a7ecbb1a68c8d
-    - name: Smile
-      pathPrefix: Characters/Kitaek
-      guid: eb619748598749642b53660cdd430d60
-    - name: Redmark-Default
-      pathPrefix: Characters/Kitaek
-      guid: 863afb66839f0264cace9f776234d5d1
-    - name: Redmark-Embrass
-      pathPrefix: Characters/Kitaek
-      guid: 1e9823503f6bd964d81351c0ad4ad8e0
-    - name: Redmark-Blank
-      pathPrefix: Characters/Kitaek
-      guid: 17a976a2523f05541ae4a1a97ab757f2
-    - name: Redmark-Far
-      pathPrefix: Characters/Kitaek
-      guid: 8c3ca8cf74eca6d48a905e05bc94de04
+    - name: Kitaek
+      pathPrefix: Characters
+      guid: 071f9642b73d40a42a0f97b74301a803
   - Id: Characters/1028d037-171f-4ca5-947e-4f042a71163f
-    Resources: []
+    Resources:
+    - name: G
+      pathPrefix: Characters
+      guid: 1b75d46c57c71ae4d87935967fe00de1
   - Id: Characters/cd421d86-f7a1-446d-81ca-364da8cbc1ef
     Resources:
     - name: Women
@@ -389,4 +353,7 @@ MonoBehaviour:
       pathPrefix: Characters/Uncle
       guid: 4726cf0d034b1734a962f4a4f437f05f
   - Id: Characters/f2398f00-ebde-4f0d-a8f2-ce60497f41a5
-    Resources: []
+    Resources:
+    - name: D
+      pathPrefix: Characters
+      guid: 30d5403ddf41d6a499389b21e8ad5466
