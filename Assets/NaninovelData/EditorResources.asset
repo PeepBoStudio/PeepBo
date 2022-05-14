@@ -264,6 +264,9 @@ MonoBehaviour:
     - name: CamelliaDay
       pathPrefix: Backgrounds/MainBackground
       guid: e19adec3bd0c1124e9fb3e2a7ed15f95
+    - name: CamelliaNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 64d7ac77f5fd84b46978fe4b62020be4
     - name: ParadiseOutsideDay
       pathPrefix: Backgrounds/MainBackground
       guid: 5fc19a49777083543a06c3fb28840dd5

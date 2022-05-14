@@ -154,6 +154,7 @@
         &lt;Id&gt;MainBackground&lt;/Id&gt;
         &lt;Type&gt;Backgrounds&lt;/Type&gt;
         &lt;Appearances&gt;
+          &lt;string&gt;Black&lt;/string&gt;
           &lt;string&gt;JianRoomDay&lt;/string&gt;
           &lt;string&gt;JianRoomNight&lt;/string&gt;
           &lt;string&gt;HallDay&lt;/string&gt;
@@ -600,6 +601,10 @@
       &lt;Resource&gt;
         &lt;Path&gt;DropEyes&lt;/Path&gt;
         &lt;Type&gt;Characters/Y&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;Black&lt;/Path&gt;
+        &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;JianRoomDay&lt;/Path&gt;

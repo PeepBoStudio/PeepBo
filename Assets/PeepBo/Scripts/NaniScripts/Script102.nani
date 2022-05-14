@@ -1,3 +1,4 @@
+@camera set:*.false
 @back Black
 ; 메인 bgm
 First: ....어나...
