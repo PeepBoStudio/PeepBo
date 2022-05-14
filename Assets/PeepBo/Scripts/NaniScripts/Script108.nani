@@ -285,6 +285,8 @@ D: 약이 스며들고나면 괜찮아질 겁니다.
 D: 기다리고 있었습니다.
 @choice "저도요" goto:.G
 @choice "저를요?" goto:.H
+@hidePrinter
+@stop
 
 #G
 ; 호감도 +5

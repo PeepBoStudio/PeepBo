@@ -60,8 +60,7 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든.
 그야말로 신이 내린 선물이지.
 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심하니.
-@back StreetDay
-; @back 나연 집 외경(낮)
+@back StreetDay position:8.8,0
 ; 메인 bgm
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.
 @printer Dialogue time:0
@@ -71,16 +70,16 @@ J: 으아, 눈부셔...
 천천히 감았던 눈을 뜨자 눈꺼풀 사이로 보이는 건….
 @hidePrinter
 @back StreetDay visible:false time:0 wait:true
-@back YIllust wait:false
-@spawn SunShafts
+@spawn SunShafts wait:false
+@back YIllust position:0,0
 @wait i
+@printer Dialogue time:0
+Y: 기다렸어요, 누나. 잘 잤어요?
 @despawn SunShafts wait:false
 @back YIllust visible:false time:0 wait:true
 ; 효과음
-@back StreetDay
+@back StreetDay position:8.8,0
 @char Y position:0,-12
-@printer Dialogue time:0
-Y: 기다렸어요, 누나. 잘 잤어요?
 J: 설마 그쪽이...제 손님이세요...?
 Y.Smile: 하핫, 반가워요! 육지에서 손님이 왔다 길래 얼른 보러 왔지요!
 @printer Narration time:0
@@ -169,9 +168,7 @@ Y.Wink: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
 @printer Narration time:0
 저 동글동글한 눈빛을 보고도 차갑게 거절할 수 있는 사람이 어딨겠어?
 # Walk
-; 나연 집 외경(낮) 안보이게
-@back StreetDay visible:false time:0 wait:false
-@back StreetDay
+@back StreetDay position:0,0
 @printer Dialogue time:0
 Y.Default: 누나가 묵고 있는 곳에서 조금만 더 나오면 바로 큰 길가에요.
 @printer Narration time:0

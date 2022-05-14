@@ -393,8 +393,7 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 해록도 주민들은 외지인을 경계한다고 하지 않았나?
 
 @back HallDay visible:false wait:false time:0
-@back JianRoomDay
-; 나연 집 외경(낮)
+@back StreetDay position:8.8,0
 아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와
 본인이 해록도의 이장이라는 것을 알려줬다.
 회관을 나와 15분 쯤 걸었을까,
@@ -420,8 +419,8 @@ Headman: 나연 자매 혼자 사는 집이라서 불편하진 않을 거야
 @printer Narration time:0
 나연은 따라오라며 고개짓을 한 뒤 성큼 성큼 집 안으로 들어갔다
 나는 나연의 뒤를 쫓으며 이장님을 향해 고개를 꾸벅였다
-@back JianRoomDay visible:false wait:false time:0
-@back JianRoomDay
+@back StreetDay visible:false wait:false time:0
+@back JianRoomDay position:0,0
 @char N position:0,-12
 @printer Dialogue time:0
 N: 여기 쓰면 돼.

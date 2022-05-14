@@ -115,6 +115,7 @@ J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기
 @spawn ShakeBackground
 ; 메인 bgm out
 ; 세게 문 닫히는 소리
+@back StoreDay position:10,0 time:0
 @printer Dialogue time:0
 J: !!!
 @printer Narration time:0
@@ -235,7 +236,7 @@ J: 조, 좋아... 안 열리면 부수지 뭐!
 ; 빛 효과
 ; 문 열리는 효과음
 @back StoreDay visible:false time:0 wait:false
-@back ForestDay
+@back ForestDay position:0,0
 ; 메인 bgm
 @printer Dialogue time:0
 J: 어?
