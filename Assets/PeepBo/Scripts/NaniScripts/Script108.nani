@@ -1,4 +1,4 @@
-; 암전
+@back Black id:MainBackground
 ; 심각한 bgm
 First: 지안 님, 오랜만에 오시네요.
 First: 요즘도 잠에서 깨면 모르는 상처가 생겨있거나 
@@ -17,7 +17,8 @@ J: 미안해요, 삼촌. 그리고 고마워…
 성인이 되고, 대학교를 졸업하고, 또 삼촌이 돌아가시고 난 후에도
 삼촌과 내가 걱정하는 일은 일어나지 않았다.
 나는 이제 완전히, 치료되었다고 생각했다.
-@back StreetNight
+@back Black visible:false time:0
+@back StreetNight id:MainBackground
 ; 노이즈 효과
 ; 눈 떠지는 효과
 @printer Dialogue time:0
@@ -29,8 +30,10 @@ J: 여긴...
 어딘가 익숙한 담과 집들이 보였다
 아, 여기가 어디더라.
 ; 눈 감기는 효과
-@back StreetNight visible:false
-; 암전
+@back Black
+@hidePrinter
+@wait i
+@back Black visible:false time:0
 @back ForestNight
 ; 눈 떠지는 효과
 …숲이다
@@ -40,8 +43,10 @@ J: 여긴...
 그것도 아니라면…
 기운이 빠진 나는 쓰러지듯 다시 눈을 감았다
 ; 눈 감기는 효과
-@back ForestNight visible:false
-; 암전
+@back Black
+@hidePrinter
+@wait i
+@back Black visible:false time:0
 @back ForestNight
 ; 눈 떠지는 효과
 ; 나뭇가지 사이로 보이는 교회 십자가 CUT
@@ -59,8 +64,10 @@ J: 삼…촌…
 저기에 뭐가 있길래?
 ; 눈 감기는 효과
 ; 바스락 효과음 out
-@back ForestNight visible:false
-; 암전
+@back Black
+@hidePrinter
+@wait i
+@back Black visible:false time:0
 @back ParadiseOutsideNight
 ; 눈 떠지는 효과
 ; 당황 효과음
@@ -74,6 +81,7 @@ J: 삼…촌…
 ; 끼익 문열리는 소리
 @printer Dialogue time:0
 J: 여긴…
+@back ParadiseOutsideNight visible:false time:0
 @back ParadiseInsideNight
 @printer Narration time:0
 아무도 없다고 생각했는데…
@@ -85,7 +93,7 @@ First: 달이 타오를 듯 밝은 밤이군요.
 J: ….!
 First: 이 야심한 시각에,
 First: 당신은 무엇에 이끌려 여기까지 오셨습니까.
-@char D
+@char D position:0,-12
 First: 차림을 보니 밤 산책을 나온 것도, 새벽 예배를 온 것도 
 @char D.Smile
 First: 아닌 것 같은데
@@ -145,7 +153,7 @@ J: 혹시 교회, 아니... 이름이 뭐였더라...
 ; 1-2 플래시백
 @back StreetDay time:0
 @hide D
-@char Y
+@char Y position:0,-12
 J: 근데, 이 위로 쭉 올라가면 뭐가 있는데?
 Y: 선락원이요, 그냥 교회인데 저희 마을에선 선락원이라고 부르고 있어요
 J: 무슨 교회가 이렇게 산 중턱에 있어?
@@ -266,6 +274,7 @@ J: 제가 할게요, 저 주세요.
 #Con3
 @hide D
 @hidePrinter
+@back ParadiseInsideNight visible:false time:0
 @back DIllust
 @wait i
 @spawn ShakeCamera
@@ -280,6 +289,7 @@ D: 약이 스며들고나면 괜찮아질 겁니다.
 그는 부지런히 내 상처를 치료했다.
 1분이 1시간처럼 느껴지는 고요하고 무거운 침묵을 고스란히 견디던 그때,
 다함이 치료하다 말고 갑작스럽게 고개를 들어 눈을 맞춰왔다.
+@back DIllust visible:false time:0
 @back ParadiseInsideNight
 @char D
 D: 기다리고 있었습니다.
@@ -320,7 +330,7 @@ D: 아마도... 신께서?
 온몸이 뜨겁게 달아오르는 기분이 들었다.
 어찌됐든… 나쁜 사람은 아닌 것 같아.
 그러자 혼자서 팽팽히 붙잡고 있던 긴장이 풀렸다.
-@back ParadiseInsideNight visible:false
-; 암전
+@back ParadiseInsideNight visible:false time:0
+@back Black
 결국 해가 뜨고 나서야, 집에 돌아온 나는
 말 그대로 기절하듯 쓰러져 잠에 들고 말았다.

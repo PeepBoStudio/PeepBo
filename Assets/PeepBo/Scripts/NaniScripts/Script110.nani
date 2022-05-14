@@ -85,9 +85,13 @@ Kitaek.Smile: 다음엔 웃으며 만날 수 있길.
 J: 도대체 무슨 말을 하신 거지?
 J: 헉, 설마… 날 전도하려고 한 건가?
 J: 정말 참 종교인이시네?
-; 암전
+@back HallDay visible:false time:0
+@back Black
+@hidePrinter
+@wait i
 ; 심각한 bgm
 ; 영사기 효과음
+@back Black visible:false time:0
 @back JianRoomNight
 ; 노이즈 효과
 ; 눈 뜨는
@@ -95,9 +99,10 @@ J: 정말 참 종교인이시네?
 으…. 추워….
 …. 으으….
 ; 눈 감는
-; 암전
+@back JianRoomNight visible:false time:0
+@back Black
 여기가… 어디지…?
-@back JianRoomNight visible:false time:0 wait:true
+@back Black visible:false time:0
 @back StreetNight
 ; 노이즈 효과
 ; 눈 뜨는
@@ -189,14 +194,13 @@ First: 그런 거 없어, 정신차리고 봐.
 First: 그냥…
 First: ...꽃일 뿐이야.
 @back WIllust visible:false time:0 wait:true
-@back StreetNight
+@back ForestNight
 ; 붉은 필터
 @printer Narration time:0
 서서히 손 끝에서부터 감각이 돌아오며 주변이 자각되기 시작했다.
 남자의 어깨에 묻고 있던 고개를 들어 천천히 주위를 살폈다.
-@back StreetNight visible:false time:0 wait:true
-@back CamelliaDay
-; 동백나무 군락(밤)
+@back ForestNight visible:false time:0 wait:true
+@back CamelliaNight
 ; 차우준 실루엣 in
 @printer Dialogue time:0
 J: 동백…꽃?

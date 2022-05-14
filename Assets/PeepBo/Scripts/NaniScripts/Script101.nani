@@ -125,7 +125,7 @@ J: 하압-!
 J: 저기요오오!!! 아무도오오!!! 없어요오오!!!
 J: 도와주세요오오오!!!!!!
 First: 귀청 떨어지겠네
-@spawn ShakeBackground
+@spawn ShakeCamera
 ; 진동
 ; 쾅 효과음
 J: 으악!

@@ -228,6 +228,9 @@ MonoBehaviour:
       guid: 02f6f502b8dc1f845a83132a3619b2cb
   - Id: Backgrounds/81f4d5bd-eb19-4c54-a1f8-ca53f4f17845
     Resources:
+    - name: Black
+      pathPrefix: Backgrounds/MainBackground
+      guid: f9e756495a1eb7540b78e72ed381176a
     - name: JianRoomDay
       pathPrefix: Backgrounds/MainBackground
       guid: 5a284a6c0d602744f91ef8b1e25440d0

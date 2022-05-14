@@ -1,4 +1,4 @@
-; @back 암전
+@back Black
 ; 메인 bgm
 First: ....어나...
 @printer Narration time:0
@@ -15,6 +15,7 @@ First: 야...
 @printer Dialogue time:0
 First: 야! 일어나라니까!
 ; 이불 걷히는 효과음
+@back Black visible:false time:0
 @back JianRoomDay
 N: 진짜 귀찮게 한다, 너.
 @printer Narration time:0
@@ -53,13 +54,14 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 @printer Narration time:0
 그런데 아침부터 찾아온 손님이 대체 누굴까? 해록도에는 나를 찾는 사람이 없을텐데…
 일단, 씻고 얼른 나가보자.
-@back JianRoomDay visible:false
-; @back 암전
+@back JianRoomDay visible:false wait:false
+@back Black
 ; 쓸쓸 bgm
 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야.
 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든.
 그야말로 신이 내린 선물이지.
 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심하니.
+@back Black visible:false time:0
 @back StreetDay position:8.8,0
 ; 메인 bgm
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.

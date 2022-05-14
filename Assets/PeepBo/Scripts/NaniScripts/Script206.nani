@@ -233,15 +233,16 @@ J: 조, 좋아... 안 열리면 부수지 뭐!
 #Con2
 @printer Narration time:0
 문고리를 부수려 촛대를 높이 치켜든 순간,
-; 빛 효과
 ; 문 열리는 효과음
-@back StoreDay visible:false time:0 wait:false
+@spawn SunShafts wait:false
+@back StoreDay visible:false time:0
 @back ForestDay position:0,0
 ; 메인 bgm
 @printer Dialogue time:0
 J: 어?
 @printer Narration time:0
 갑자기 쏟아지는 밝은 빛에 눈을 찡그렸다.
+@despawn SunShafts
 @printer Dialogue time:0
 Aram: 언니, 문 고리를 부수려고 한거야?
 J: 너… 어떻게 여기에…
