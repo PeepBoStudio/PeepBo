@@ -710,6 +710,8 @@
     &lt;Constants /&gt;
     &lt;Variables&gt;
       &lt;string&gt;y_score&lt;/string&gt;
+      &lt;string&gt;IsVisitDO&lt;/string&gt;
+      &lt;string&gt;IsVisitLH&lt;/string&gt;
     &lt;/Variables&gt;
     &lt;Functions /&gt;
   &lt;/Metadata&gt;
