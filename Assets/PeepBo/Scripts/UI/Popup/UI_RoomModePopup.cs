@@ -36,7 +36,7 @@ namespace PeepBo.UI.Popup
         private void OnClickExitButton(PointerEventData evt)
         {
             Debug.Log("Click");
-            GameManager.Room.RoomExitButtonCliked();
+            GameManager.Room.ExitRoomMode();
             // TODO : 탐색 종료 조건 확인하기
         }
     }

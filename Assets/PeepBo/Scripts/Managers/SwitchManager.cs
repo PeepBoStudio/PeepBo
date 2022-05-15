@@ -14,25 +14,6 @@ namespace PeepBo.Managers
         public StringParameter RoomBackLabel { get; set; } = null;
     }
 
-    [CommandAlias("stopscript")]
-    public class StopScript : Command
-    {
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
-        {
-            // 1. Disable Naninovel input.
-            var inputManager = Engine.GetService<IInputManager>();
-            inputManager.ProcessInput = false;
-
-            // 2. Stop script player.
-            var scriptPlayer = Engine.GetService<IScriptPlayer>();
-            scriptPlayer.Stop();
-
-            var hidePrinter = new HidePrinter();
-            hidePrinter.ExecuteAsync(asyncToken).Forget();
-
-            GameManager.Room.IsScriptPlaying = false;
-        }
-    }
 
     [CommandAlias("room")]
     public class SwitchToRoomMode : Command

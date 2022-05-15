@@ -46,7 +46,7 @@ public class Room : MonoBehaviour
         {
             delta = new Vector2(mainCamera.ScreenToWorldPoint(Input.mousePosition).x - touchPosition.x, mainCamera.ScreenToWorldPoint(Input.mousePosition).y - touchPosition.y);
             touchPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector2(Mathf.Clamp(transform.position.x + delta.x, -limitX, limitX), Mathf.Clamp(transform.position.y + delta.y, -limitY, limitY));
+            transform.localPosition = new Vector3(Mathf.Clamp(transform.position.x + delta.x, -limitX, limitX), Mathf.Clamp(transform.position.y + delta.y, -limitY, limitY), 0);
         }
     }
 }

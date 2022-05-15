@@ -27,41 +27,37 @@ namespace PeepBo.Managers
         }
 
         public bool IsScriptPlaying { get; set; } = true;
-        public bool isEnd = false;
+
+        private RoomModeUI roomModeUI;
+
+        public void InitRoomModeUI(RoomModeUI target) => roomModeUI = target;
 
 
-        public void Test()
+        public void OnFind(string name)
         {
-            //var switchCommand = new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = GameManager.Switch.Label };
-            //switchCommand.ExecuteAsync().Forget();
+            roomModeUI.OnFinishInteraction(name);
         }
 
         public void StartRoomMode(StringParameter scriptName, StringParameter label, AsyncToken asyncToken = default)
         {
             // TODO : scriptName과 label로 어떤 탐색내용인지 매칭
 
-
-
             // 매칭했다고 가정
-            //ShowToastUI("도움이 될 만한 것들을 찾아보자.", asyncToken);
             HideUI(new List<string> { "RightTopUI" }, asyncToken);
             ShowUI(new List<string> { "RoomModeUI" }, asyncToken);
-            //GameManager.UI.ShowPopupUI<UI_RoomModePopup>();
 
             IsScriptPlaying = false;
         }
 
-        private void ExitRoomMode()
+        public void ExitRoomMode()
         {
             // TODO : StateLess하게 유지
             IsScriptPlaying = true;
-            isEnd = false;
-
-            //ShowUI(new List<string>)
 
             ShowUI(new List<string> { "RightTopUI" });
             HideUI(new List<string> { "RoomModeUI" });
 
+            new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = GameManager.Switch.RoomBackLabel }.ExecuteAsync().Forget();
         }
 
         public void RoomInteractionOccured(string roomName, string interactionName)
@@ -89,32 +85,15 @@ namespace PeepBo.Managers
             }
         }
 
-        public void RoomExitButtonCliked()
-        {
-            if(!isEnd)
-            {
-                isEnd = true;
-                // 아직 탐색이 남았다고 화면 표시
-            }
-            else
-            {
-                ExitRoomMode();
-                new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = GameManager.Switch.RoomBackLabel }.ExecuteAsync().Forget();
-            }
-        }
-
         public void ScriptStopped()
         {
             IsScriptPlaying = false;
         }
 
-
-        private void ShowToastUI(string toastText, AsyncToken asyncToken = default)
+        public List<string> GetFindList()
         {
-            if (toastText == null) return;
-
-            var testToast = new ShowToastUI { Text = toastText, Duration = 1 };
-            testToast.ExecuteAsync(asyncToken).Forget();
+            // TODO : 리스트 정규화
+            return new List<string> { "Roof", "Wall" };
         }
 
         private void HideUI(List<string> uiList, AsyncToken asyncToken = default)
@@ -131,6 +110,36 @@ namespace PeepBo.Managers
 
             var showUI = new ShowUI { UINames = uiList };
             showUI.ExecuteAsync(asyncToken).Forget();
+        }
+    }
+
+    [CommandAlias("stopscript")]
+    public class StopScript : Command
+    {
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            // 1. Disable Naninovel input.
+            var inputManager = Engine.GetService<IInputManager>();
+            inputManager.ProcessInput = false;
+
+            // 2. Stop script player.
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            scriptPlayer.Stop();
+
+            var hidePrinter = new HidePrinter();
+            hidePrinter.ExecuteAsync(asyncToken).Forget();
+
+            GameManager.Room.IsScriptPlaying = false;
+        }
+    }
+
+    [CommandAlias("find")]
+    public class FindSomething : Command
+    {
+        [ParameterAlias("name")] public StringParameter Name;
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            GameManager.Room.OnFind(Name);
         }
     }
 }

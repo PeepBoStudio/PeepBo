@@ -161,7 +161,7 @@ MonoBehaviour:
     - name: PauseUI
       pathPrefix: UI
       guid: 480f5db62ea305c46b89a86496d2a0c9
-    - name: ToastUI
+    - name: StartRoomModeUI
       pathPrefix: UI
       guid: 90ebbca669bb9464d9a17315169aee35
     - name: LeftTopUI
@@ -176,6 +176,12 @@ MonoBehaviour:
     - name: RoomModeUI
       pathPrefix: UI
       guid: 4602ffa6f460e88479fbe8c6a5d596a6
+    - name: NoExitRoomModeUI
+      pathPrefix: UI
+      guid: f3df7abf44c7c864eb21ea17275b86c6
+    - name: ExitRoomModeUI
+      pathPrefix: UI
+      guid: cf958e958def4a947b470929c9223694
   - Id: Scripts
     Resources:
     - name: NewScript
