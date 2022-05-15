@@ -203,15 +203,15 @@ Y: 필요한 게 생기거나 궁금한 게 있을 땐 마을 회관으로 가�
 @printer Dialogue time:0
 @char Y.Face>웃는,Body>기본
 Y: 흠, 이제 어디 먼저 가볼래요?
-@choice 선착장 goto:.Dock
-@choice 등대 goto:.Lighthouse
+@choice 선착장 goto:.Dock set:IsVisitDO+=1
+@choice 등대 goto:.Lighthouse set:IsVisitLH+=1
 @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
 @hidePrinter 
 @stop
+
 # Dock
 J: 선착장 먼저 가보자!
 @hide Y
-@back StreetDay visible:false time:0 wait:false
 @back DockDay
 ; 파도소리
 ; 다이어리에 'N'
@@ -246,6 +246,115 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @char Y.Face>웃는,Body>기본
 @printer Narration time:0
 나는 어제 배 위에서 처음 본 해록도의 전경을 다시 되뇌었다.
+@if IsVisitLH==0
+    @choice 등대 goto:.Lighthouse set:IsVisitLH+=1
+    @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
+@else
+    @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
+@endIf
+@hidePrinter 
+@stop
+
 # Lighthouse
- 
+@hide Y
+@back LighthouseDay
+; 파도소리
+; 다이어리에 'N'
+@hidePrinter
+@toast "장소를 발견했습니다! '등대'" time:3
+@wait i
+@printer Narration time:0
+등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯 하다.
+@printer Dialogue time:0
+@char Y.Face>기본,Body>기본 position:-0.25,-17
+Y: 여긴 진짜 별게 없어요!
+Y: 등대 안에 들어가봤자 계단 뿐이죠.
+Y: 예전에는 여기로 불법 어선들이 자주 나타났대요.
+@char Y.Face>웃는,Body>기본
+Y: 그래서 주민들이 돌아가면서 등대지기를 하고 있어요
+J: 그렇구나, 너도 해본 적 있어?
+@char Y.Face>놀란,Body>입에손
+Y: 엑…! 저는 이런 어둡고 음침한 곳과 안 어울리죠….! 그리고 제가 잠도 많은 편이라...
+J: 무서워서 빠졌구나.
+@char Y.Face>놀란,Body>기본
+Y: 당연….이 아니고! 아, 누나!
+@printer Narration time:0
+그가 꽥 소리를 지르는 바람에 귀가 멀 뻔 했다
+@printer Dialogue time:0
+@char Y.Face>아련,Body>기본
+Y: 아무튼 누나도 여기 혼자 오지말아요!
+Y: 새빨간 데다가 엄청 낡아서 뭔가…. 으스스 하다구요!
+@char Y.Face>웃는,Body>기본
+Y: 자 다음은 어디로 가볼까요?
+@if IsVisitDO==0
+    @choice 선착장 goto:.Dock set:IsVisitDO+=1
+    @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
+@else
+    @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
+@endIf
+@hidePrinter 
+@stop
+
 # Forest
+@hide Y
+@back ForestDay
+; 다이어리에 'N'
+@hidePrinter
+@toast "장소를 발견했습니다! '숲속'" time:3
+@wait i
+@printer Dialogue time:0
+J: 으흠. 공기 좋다.
+J: 섬에 이런 숲 길이 있었구나. 낮에는 산책하기에도 딱 좋겠어!
+@char Y.Face>놀란,Body>입에손 position:-0.25,-17
+Y: 누나… 보기보다 액티비티를 좋아하나봐요. 이런 산에서 산책이라니… 
+@char Y.Face>아련,Body>기본
+Y: 전 여기 오르내릴때마다 힘들어 죽겠던데.
+J: 유겸이 넌 보기보다 연약하구나. 길도 고르고 별로 경사도 없는데, 엄살은…
+@printer Narration time:0
+내가 혀를 끌끌 차자 유겸은 못 들은 척 고개를 돌린다.
+@printer Dialogue time:0
+J: 근데, 이 위로 쭉 올라가면 뭐가 있는데?
+@char Y.Face>기본,Body>기본
+Y: 선락원이요, 그냥 교회인데 저희 마을에선 선락원이라고 부르고 있어요
+J: 무슨 교회가 산 중턱에 있어?
+@char Y.Face>윙크,Body>기본
+Y: 그곳이 해록도의 중심이거든요
+@printer Narration time:0
+그때, 맞은 편에서 이장님과 주민 한 분이 내려오는 게 보였다.
+@printer Dialogue time:0
+Headman: 어어, 유겸이~
+Woman: 이쪽은 그 해록도 관광왔다는 아가씨야? 세상에 얼굴 하얀 것 봐. 너무 곱다.
+J: 아, 안녕하세요.
+Woamn: 반가워요. 근데 어디가는 길이야?
+Y: 제가 또 한 친절 하잖아요? 육지에서 온 귀한 손님에게 섬을 안내해주고 있었지요.
+Headman: 아가씨가 잘 만났네! 우리 유겸이가 얼마나 해록도에 빠삭한 지,
+Headman: 이보다 더 유능한 가이드는 없을거야.
+Woman: 해록도만 잘 알게? 요리면 요리, 바느질이면 바느질. 못하는 게 없다니까.
+@printer Narration time:0
+아주 해록도 주민들에게 사랑과 관심을 듬뿍 받고 있나보네?
+@printer Dialogue time:0
+@char Y.Face>웃는,Body>입에손
+Y: 에헤이, 지금 외부인 앞이라고 저 띄워주시는 거죠? 사양말고 더 띄워줘도 돼요. 엣헴.
+Woman: 아, 요리하니까 생각났는데
+Woman: 유겸이가 알려준 레시피대로 빵을 구웠는데도 자꾸 실패해!
+Woman: 왜 그럴까, 으응? 우리 집에 와서 한번만 더 알려줘~
+Woman: 이러다 남은 재료들마저 다 버리겠어
+@char Y.Face>놀란,Body>기본
+Y: 에이 정말! 제가 하란대로 안 한거 아니에요? 진짜 쉬운데…
+Woman: 말도 마. 계속 타고, 터지고 난리도 아니더라니까.
+@printer Narration time:0
+주민의 하소연에 유겸은 제 머리를 긁적이며 내 눈치를 봤다.
+@printer Dialogue time:0
+@char Y.Face>아련,Body>기본
+Y: 흐음… 오늘은 지안 누나를 위해 하루를 비우기로 했으니까, 그럼 내일…
+J: 난 괜찮아! 웬만한 곳은 다 둘러봤고
+J: 이왕 여기까지 온 거 산책 좀 하다가 돌아가려고.
+@char Y.Face>기본,Body>기본
+Y: 흐음… 알겠어요!
+@printer Narration time:0
+유겸은 아쉬운 듯했지만, 이내 주민과 자연스럽게 팔짱을 꼈다.
+@printer Dialogue time:0
+@char Y.Face>윙크,Body>브이
+Y: 자자, 우리 누님은 유겸이의 베이킹 교실로 가보자고요!
+Headman: 그럼 지안씨도 조금만 둘러보다 해 지기 전에 어서 들어가요.
+J: 네네. 다음에 뵈어요.

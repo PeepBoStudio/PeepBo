@@ -15,3 +15,7 @@ MonoBehaviour:
   PredefinedVariables:
   - name: y_score
     value: 0
+  - name: IsVisitDO
+    value: 0
+  - name: IsVisitLH
+    value: 0

@@ -155,7 +155,7 @@ J: 네? 아... 신께서…
 @printer Dialogue time:0
 J: 혹시 교회, 아니... 이름이 뭐였더라...
 @camera set:*.true wait:false
-@back StreetDay time:0 wait:false
+@back ForestDay time:0 wait:false
 @hide D wait:false
 @char Y.Face>기본,Body>기본 position:-0.25,-17
 J: 근데, 이 위로 쭉 올라가면 뭐가 있는데?
