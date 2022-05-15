@@ -64,6 +64,7 @@ namespace PeepBo.Managers
         {
             if (IsScriptPlaying)
                 return;
+            IsScriptPlaying = true;
 
             switch (interactionName)
             {
@@ -83,11 +84,6 @@ namespace PeepBo.Managers
                     new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = "Wall" }.ExecuteAsync().Forget();
                     break;
             }
-        }
-
-        public void ScriptStopped()
-        {
-            IsScriptPlaying = false;
         }
 
         public List<string> GetFindList()
