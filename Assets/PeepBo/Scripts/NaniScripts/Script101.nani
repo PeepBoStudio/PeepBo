@@ -279,9 +279,12 @@ J: 졸업여행 삼아 온 거예요
 고결은 별로 내 말을 믿는 눈치가 아니었다
 @hide G
 시시콜콜한 대화를 하며 10분 정도 걸었을까-
-@back StreetDay visible:false wait:false time:0
+@hidePrinter 
+@back StreetDay visible:false time:0 wait:false
 @back HallDay
-; <장소를 발견했습니다! ‘마을회관’ >
+; 다이어리에 장소발견
+@toast "장소를 발견했습니다! '마을회관'" time:3
+@wait i
 @printer Dialogue time:0
 @char G.Body>기본,Face>기본 position:-0.5,-17
 G: 다 왔어.
@@ -352,7 +355,7 @@ J: 아, 네 안녕하세요. 저 출입허가서도 받았어요! 이상한 애 
 주민들 눈에 경계심이 어려있어 다급히 입꼬리를 최대한 끌어올려 빠르게 말했다
 @printer Dialogue time:0
 @hide Man wait:false
-@char Woman scale:0.5 position:0,-3
+@char Woman position:0,-3 scale:0.5
 Woman: 아~ 그 아가씨구나, 관광 온다는 얘기 들었어요.
 Woman: 나는 또 처음보는 사람이라 놀랐지 뭐야
 Woman: 해록도가 원채 오가는 사람도 없고 주민들도 적어~
@@ -361,7 +364,7 @@ Woman: 그래서 누가 들어온다고 하면 우리끼리 다 알거든
 경계가 풀렸는지 아주머니는 인자하게 웃으며 다가왔다
 @printer Dialogue time:0
 @hide Woman wait:false
-@char Man scale:0.5 position:0,-3
+@char Man position:0,-3 scale:0.5
 Man: 여기가 다 흙길이라서 가방 끌고 오기 힘들었을 텐데
 Man: 선착장에서 조금만 기다리고 있지 그랬어
 Man: 아가씨 오늘 온다는 얘기 듣고 지금 다른 주민이 선착장에 마중나갔는데
@@ -373,13 +376,13 @@ J: 마중까지 나와주시고 정말 감사합니다.
 왜 저렇게 쳐다보지?
 @printer Dialogue time:0
 @hide Man wait:false
-@char Woman scale:0.5 position:0,-3
+@char Woman position:0,-3 scale:0.5
 Woman: 여기 얼마나 있을 거에요? 해록도가 그 뭐냐, 
 Woman: 무슨 보호? 생태보호? 그걸로 지정 돼 있는 건 알죠?
 Woman: 나무들이 건강해서 공기도 좋고 해안가 경치도 정말 좋아요.
 Woman: 오래오래 있으면 좋겠다, 오랜만에 외지인 보니까 정말 반갑네~
 @hide Woman wait:false
-@char Man scale:0.5 position:0,-3
+@char Man position:0,-3 scale:0.5
 Man: 그러게 말이야, 오랜만에 온 귀한 손님이네
 Man: 머물 곳은 우리가 다 마련해 놨으니까 따라와요
 @hide Man
@@ -395,7 +398,7 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 어? 그런데 이상하다,
 해록도 주민들은 외지인을 경계한다고 하지 않았나?
 
-@back HallDay visible:false wait:false time:0
+@back HallDay visible:false time:0 wait:false
 @back StreetDay position:8.8,0
 아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와
 본인이 해록도의 이장이라는 것을 알려줬다.
@@ -403,7 +406,9 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 이장님과 함께 도착한 곳은 소담스런 2층짜리 주택이었다.
 지나오면서 본 해록도의 집 중에 제일 큰 것 같은데, 
 어딘지 모르게 쓸쓸함이 느껴지는 집이었다.
-; <장소를 발견했습니다! ‘나연의 집’ >
+@hidePrinter
+@toast "장소를 발견했습니다! '나연의 집'" time:3
+@wait i
 ; 문 두드리는 소리
 @printer Dialogue time:0
 Headman: 나연 자매 있어? 손님 왔어!
@@ -422,7 +427,7 @@ Headman: 나연 자매 혼자 사는 집이라서 불편하진 않을 거야
 @printer Narration time:0
 나연은 따라오라며 고개짓을 한 뒤 성큼 성큼 집 안으로 들어갔다
 나는 나연의 뒤를 쫓으며 이장님을 향해 고개를 꾸벅였다
-@back StreetDay visible:false wait:false time:0
+@back StreetDay visible:false time:0 wait:false
 @back JianRoomDay position:0,0
 @printer Dialogue time:0
 @char N.Face>기본,Body>기본 position:0,-16

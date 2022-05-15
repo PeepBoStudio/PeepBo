@@ -97,7 +97,9 @@ J: 여기말고는 더이상 찾아볼 곳도 없는데…
 #Con1
 @back ForestDay visible:false time:0 wait:false
 @back StoreDay
-; <장소를 발견했습니다 '창고'>
+@hidePrinter
+@toast "장소를 발견했습니다! '창고'" time:3
+@wait i
 @printer Dialogue time:0
 J: 역시 창고가 맞긴 했구나?
 J: 그런데 애들은 여기도 없네…

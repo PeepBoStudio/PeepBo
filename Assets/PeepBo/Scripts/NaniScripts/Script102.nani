@@ -214,9 +214,11 @@ J: 선착장 먼저 가보자!
 @back StreetDay visible:false time:0 wait:false
 @back DockDay
 ; 파도소리
-@char Y
-; <장소를 발견했습니다! “선착장” >	다이어리에 'N'
-@char Y.Face>기본,Body>기본
+; 다이어리에 'N'
+@hidePrinter
+@toast "장소를 발견했습니다! '선착장'" time:3
+@wait i
+@char Y.Face>기본,Body>기본 position:-0.25,-17
 Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요
 Y: 이주에 한 번 물자선이 오는 정도?	
 J: 그럼 해록도 사람들은 육지로 잘 안 나가?
