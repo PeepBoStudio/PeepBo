@@ -160,8 +160,9 @@ J: 누, 누구…
 @printer Dialogue time:0
 First: 고맙다는 말이 먼저일텐데?
 J: 아… 앗 네! 감사합니다. 그런데 누구세요?
-; 고결 찡그림
+@char G.Body>기본,Face>찡그림
 G: 그쪽은 누군데 그렇게 해록도 떠나가라 소리를 지르고 있어?
+@char G.Body>기본,Face>무표정
 J: 제가 먼저 물어봤잖아요.
 @printer Narration time:0
 자리에서 일어나 그를 흘겨봤다.
@@ -180,7 +181,7 @@ G: 주민은 아니고 주민 조사하러 나온 공무원이야
 @char G.Body>팔짱,Face>무표정
 G: 여기 외지인은 안 받는다는데 그쪽이야 말로 누구?
 J: 그냥 휴양하러 온 관광객인데요
-@char G.Body>팔짱,Face>비웃는
+@char G.Body>팔짱,Face>비웃음
 G: 특이하네 무슨 이런 오지에 관광을 와?
 J: 아, 아무튼 며칠 묵을 곳을 찾고 있어요. 여기 여관 같은 곳이 있을까요?
 @char G.Body>기본,Face>기본

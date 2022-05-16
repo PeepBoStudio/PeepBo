@@ -212,7 +212,7 @@ First: ...꽃일 뿐이야.
 남자의 어깨에 묻고 있던 고개를 들어 천천히 주위를 살폈다.
 @back ForestNight visible:false time:0 wait:true
 @back CamelliaNight
-; 차우준 실루엣 in
+@char WSilhouette position:0,-19.4 scale:1.37
 @printer Dialogue time:0
 J: 동백…꽃?
 @printer Narration time:0
@@ -231,6 +231,7 @@ J: 저기 잠시만, 앗!
 @printer Narration time:0
 매몰차게 내 팔을 뿌리친 남자는 서늘하게 가라앉은 눈으로 날 바라봤다.
 @printer Dialogue time:0
+@hide WSilhouette wait:false
 @char W.Face>기본,Body>기본 position:0,-19.7
 J: …
 @printer Narration time:0

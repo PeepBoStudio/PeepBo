@@ -164,7 +164,7 @@ Y: 주민이 아니면 길을 잃기 쉬워요.
 역시 처음 보는 사람과 단둘이 다니는 건, 생각만 해도 어색해.
 @printer Dialogue time:0
 J: 아니, 괜찮아. 나는 혼자 다니는 게 편하거든.
-@char Y.Face>아련,Body>입에손
+@char Y.Face>울먹,Body>입에손
 Y: 앗… 제가 불편해요…?
 @printer Narration time:0
 그가 갑자기 내 소매 끝을 잡았다.
@@ -320,6 +320,7 @@ J: 무슨 교회가 산 중턱에 있어?
 @char Y.Face>윙크,Body>기본
 Y: 그곳이 해록도의 중심이거든요
 @printer Narration time:0
+@char Y.Face>기본,Body>기본
 그때, 맞은 편에서 이장님과 주민 한 분이 내려오는 게 보였다.
 @printer Dialogue time:0
 Headman: 어어, 유겸이~
@@ -356,5 +357,6 @@ Y: 흐음… 알겠어요!
 @printer Dialogue time:0
 @char Y.Face>윙크,Body>브이
 Y: 자자, 우리 누님은 유겸이의 베이킹 교실로 가보자고요!
+@hide Y
 Headman: 그럼 지안씨도 조금만 둘러보다 해 지기 전에 어서 들어가요.
 J: 네네. 다음에 뵈어요.

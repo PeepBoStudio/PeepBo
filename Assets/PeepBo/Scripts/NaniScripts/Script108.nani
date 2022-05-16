@@ -90,12 +90,13 @@ J: 여긴…
 아무도 없다고 생각했는데…
 스테인글라스를 뚫고 쏟아지는 달빛 가운데, 한 남자가 서 있었다.
 남자는 나를 돌아보지 않은 채 말했다.
-; 주다함 실루엣 in
+@char DSilhouette scale:1.38 position:0,-18.2
 @printer Dialogue time:0
 First: 달이 타오를 듯 밝은 밤이군요.
 J: …!
 First: 이 야심한 시각에,
 First: 당신은 무엇에 이끌려 여기까지 오셨습니까.
+@hide DSilhouette wait:false
 @char D.Face>기본,Body>가슴에손 position:0,-18
 First: 차림을 보니 밤 산책을 나온 것도, 새벽 예배를 온 것도 아닌 것 같은데
 @char D.Face>웃는,Body>가슴에손

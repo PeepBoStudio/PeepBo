@@ -365,3 +365,13 @@ MonoBehaviour:
       guid: 30d5403ddf41d6a499389b21e8ad5466
   - Id: Audio
     Resources: []
+  - Id: Characters/611adc6c-abb9-4fcd-a674-8c61b8a1e81d
+    Resources:
+    - name: "\uC6B0\uC900 \uC2E4\uB8E8\uC5E3"
+      pathPrefix: Characters/WSilhouette
+      guid: 8b7f706b709e603428ddc70f1e82c12b
+  - Id: Characters/24fdc5e3-0c35-485c-bea5-b3e0e26eb5c5
+    Resources:
+    - name: "\uB2E4\uD568 \uC2E4\uB8E8\uC5E3"
+      pathPrefix: Characters/DSilhouette
+      guid: f64bf3a1984b78644b5e7bcc42f9ed95
