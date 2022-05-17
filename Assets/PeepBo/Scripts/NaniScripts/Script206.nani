@@ -98,7 +98,7 @@ J: 여기말고는 더이상 찾아볼 곳도 없는데…
 @back ForestDay visible:false time:0 wait:false
 @back StoreDay
 @hidePrinter
-@toast "장소를 발견했습니다! '창고'" time:3
+@toast "장소를 발견했습니다! <창고>" time:1.5
 @wait i
 @printer Dialogue time:0
 J: 역시 창고가 맞긴 했구나?
@@ -309,4 +309,4 @@ Aram: 여기 있어! 난 놀이 시간 끝났으니까 이제 갈거야.
 J: 하, 오빠는 도대체 누구야. 힐링하러 왔다가 이게 무슨 꼴이람.
 @printer Narration time:0
 아무튼 빨리 여기를 나가자
-@stop
+@loadScene MainScene

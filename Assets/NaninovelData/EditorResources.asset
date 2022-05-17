@@ -161,6 +161,9 @@ MonoBehaviour:
     - name: PauseUI
       pathPrefix: UI
       guid: 480f5db62ea305c46b89a86496d2a0c9
+    - name: FIndToastUI
+      pathPrefix: UI
+      guid: 709ae441c06a2ce489f5b482f645ce55
     - name: StartRoomModeUI
       pathPrefix: UI
       guid: 90ebbca669bb9464d9a17315169aee35
