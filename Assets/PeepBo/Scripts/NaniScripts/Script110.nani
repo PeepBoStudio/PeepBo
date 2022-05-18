@@ -62,10 +62,10 @@ Kitaek: 우리야 말로 잘 부탁합니다, 언제 한 번 선락원에도 들
 J: 헉!
 @printer Narration time:0
 나는 황급히 손을 거둬들였다.
-@char Kitaek.Face>기본,Body>기본피
+@char Kitaek.Face>기본,Body>기본피 scale:1.2 position:0,-23.5
 그의 소매가 붉게 물들어있었다.
 @printer Dialogue time:0
-@char Kitaek.Face>당황,Body>기본피
+@char Kitaek.Face>당황,Body>기본피 scale:1 position:0,-18.5
 Kitaek: 아, 이런….
 @printer Narration time:0
 살펴보니 소매 뿐 아니라 목사님의 옷 여기저기 붉게 번져있는 자국들이 보였다.
@@ -140,12 +140,13 @@ J: 아, 머리가 깨질 것 같아….
 @printer Narration time:0
 지끈거리는 머리를 부여잡으려는 순간,
 @printer Dialogue time:0
-; 피 묻은 손
+@char BloodHand
+@wait i
 J: 아악!!
 J: 이, 이게 뭐… 피? 왜, 왜 내 손에 피가,
 @printer Narration time:0
 피 묻은 손을 연신 옷에 닦아내려했지만,
-; 피 묻은 손 out
+@hide BloodHand wait:false
 @printer Dialogue time:0
 J: 왜… 왜 안 지워지는 거야 왜…!
 J: 누, 누가 좀 도와주….!

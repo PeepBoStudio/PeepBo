@@ -6,27 +6,27 @@ J: 아, 정말 정신이 쏙 빠지겠네…
 아이들의 왁자지껄한 웃음 소리를 베개 삼아 잔디 위에 풀썩 쓰러지듯 누웠다.
 천사의 집에 도착해 호기롭게 아이들에게 같이 놀자고 외친게 불과 한 시간 전이건만.
 @printer Dialogue time:0
-@char Boy1
+@char Boy1 scale:0.5 position:0,-2.2
 Boy1: 누나!!! 우리랑 놀아주러 왔다면서요!!! 빨리 일어나요!!!
 J: 얘들아 벌써 한 시간 째 술래잡기 중이야… 너넨 지치지도 않아?
 @printer Narration time:0
 쉬지 않고 뛰어다녔더니 혈중 산소 농도가 낮아지는 느낌이라고.
 @printer Dialogue time:0
 @hide Boy1 wait:false
-@char Girl
+@char Girl scale:0.5 position:0,-2.2
 Girl: 언니 힘들어요? 그럼 우리 다른 놀이해요!
 J: 너무 힘들어... 안 뛰어다니는 놀이는 없어?
 Girl: 숨바꼭질 해요. 나 진짜 짱 잘 숨어요!
 J: 언니 조금만 쉬면 안돼? 진짜 조금만..
 @hide Girl wait:false
-@char Boy2
+@char Boy2 scale:0.5 position:0,-2.2
 Boy2: 안돼! 빨리 빨리! 놀이 시간 끝나간단 말이야!!
 @printer Narration time:0
 @hide Boy2
 정신없이 내 주변을 뛰어다니며 재촉하는 아이들 때문에 더는 쉴수가 없었다.
 @printer Dialogue time:0
 J: 으, 알겠어. 그럼 술래는 누구,
-@char Boy2
+@char Boy2 scale:0.5 position:0,-2.2
 Boy2: 당연히 누나가 술래지! 10초씩 다섯 번 세고 우리 찾으면 돼!
 @printer Narration time:0
 @hide Boy2
@@ -162,8 +162,9 @@ J: 안되겠어, 문을 부수기라도 해야지
 J: 아니야 괜찮아, 괜찮아.
 @printer Narration time:0
 스스로를 달래며 고개를 드는 순간,
-; 문 사이로 보이는 눈동자
 @spawn ShakeCamera
+@back StoreDay visible:false wait:false
+@back StoreEye position:0,0 time:0
 @printer Dialogue time:0
 J: !!!
 @printer Narration time:0
@@ -180,7 +181,8 @@ J: 언제부터 날 보고 있던 거야? 나와!
 @printer Narration time:0
 분명 열리지 않는 문과 씨름하고 있는 내 모습을 계속 지켜보고 있을 터였다.
 누구냐는 내 물음에도 문 틈 사이의 눈동자는, 한 번의 깜빡거림도 없이 나를 바라보고만 있었다.
-; 눈동자 out
+@back StoreEye visible:false wait:false
+@back StoreDay position:10,0
 이렇게 가만히 있을 수만은 없어, 뭐라도 해야해!
 힘이 풀린 몸을 애써 일으켜 문 가까이 다가가려하니,
 순식간에 문이 닫히며 날 지켜보던 시선이 사라졌다.
@@ -247,6 +249,7 @@ J: 어?
 갑자기 쏟아지는 밝은 빛에 눈을 찡그렸다.
 @despawn SunShafts
 @printer Dialogue time:0
+@char Aram scale:0.5 position:0,-2.2
 Aram: 언니, 문 고리를 부수려고 한거야?
 J: 너… 어떻게 여기에…
 Aram: 문이 녹슬어서 안 열릴 때 문고리를 부수면 더 위험해
@@ -269,6 +272,7 @@ Aram: 오빠는 그냥 오빠야.
 대체 어느 오빠를 말하는 거지? 이 섬 사람 중 이 애보다 어린 남자는 없을텐데.
 @printer Dialogue time:0
 J: 아, 설마.
+@hide Aram
 @choice 유겸 goto:.E
 @choice 결 goto:.F
 @choice 다함 goto:.G
@@ -278,24 +282,28 @@ J: 아, 설마.
 
 #E
 @printer Dialogue time:0
+@char Aram scale:0.5 position:0,-2.2
 ; 홍유겸 +10
 J: 유겸이 말하는 거야?
 Aram: 몰라! 오빠는 그냥 오빠라니까!
 @goto .Con3
 #F
 @printer Dialogue time:0
+@char Aram scale:0.5 position:0,-2.2
 ; 고결 +10
 J: 결 씨 말하는 거야?
 Aram: 몰라! 오빠는 그냥 오빠라니까!
 @goto .Con3
 #G
 @printer Dialogue time:0
+@char Aram scale:0.5 position:0,-2.2
 ; 주다함 +10
 J: 다함 씨 말하는 거야?
 Aram: 몰라! 오빠는 그냥 오빠라니까!
 @goto .Con3
 #H
 @printer Dialogue time:0
+@char Aram scale:0.5 position:0,-2.2
 ; 차우준 +10
 J: 혹시 까만 머리에 창백하게 생긴 남자?
 Aram: 몰라! 오빠는 그냥 오빠라니까!

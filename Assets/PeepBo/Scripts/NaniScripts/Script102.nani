@@ -24,9 +24,10 @@ N: 진짜 귀찮게 한다, 너.
 @char N.Face>기본,Body>기본 position:0,-16
 @wait i
 @printer Dialogue time:0
-@char N.Face>짜증,Body>팔짱
+@char N.Face>짜증,Body>팔짱 scale:1.2 position:0,-20
 N: 벌써 해가 중천인데 아직도 자고 있으면 어떡해? 여기 요양왔어?
 @printer Narration time:0
+@char N.Face>짜증,Body>팔짱 scale:1 position:0,-16
 놀라서 시계를 바라보자 오후 12시가 넘어가고 있었다.
 @spawn ShakeBackground wait:false
 @printer Dialogue time:0
@@ -58,13 +59,13 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 그런데 아침부터 찾아온 손님이 대체 누굴까? 해록도에는 나를 찾는 사람이 없을텐데…
 일단, 씻고 얼른 나가보자.
 @back JianRoomDay visible:false wait:false
-@back Black
+@back Remine
 ; 쓸쓸 bgm
 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야.
 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든.
 그야말로 신이 내린 선물이지.
 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심하니.
-@back Black visible:false time:0
+@back Remine visible:false time:0
 @back StreetDay position:8.8,0
 ; 메인 bgm
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.
@@ -106,9 +107,10 @@ Y: 아~ 김지안 이라고요?
 @printer Dialogue time:0
 @char Y.Face>아련,Body>기본
 Y: 김지안이라…
-@char Y.Face>놀란,Body>입에손
+@char Y.Face>놀란,Body>입에손 scale:1.2 position:-0.25,-21
 Y: 이름이 누나랑 너무 잘 어울리는 거 아니에요?
-Y: 그냥 그 이름은 누나만을 위해 존재해야할 것 같아요!		
+Y: 그냥 그 이름은 누나만을 위해 존재해야할 것 같아요!
+@char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-17
 J: …
 @char Y.Face>웃는,Body>기본
 Y: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네요.
@@ -123,9 +125,9 @@ Y: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네요.
 # Continue
 J: 저기 그런데,
 J: 그쪽은 대체 누구신데요?
-@char Y.Face>윙크,Body>기본
-; 클로즈업
+@char Y.Face>윙크,Body>기본 scale:1.2 position:-0.25,-21
 Y: 전 홍! 유! 겸! 이에요. 스물 한 살이니까 말 편하게 해요. 누나!
+@char Y.Face>윙크,Body>기본 scale:1 position:-0.25,-17
 @printer Narration time:0
 자기가 스물 한 살인 건 그렇다 쳐도 내 나이도 모르면서 왜 누나라고 부르는 거야?
 나는 눈동자만 도르륵 굴려 홍유겸이라는 남자를 쭉 훑어봤다.
