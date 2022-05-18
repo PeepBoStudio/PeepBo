@@ -158,6 +158,8 @@ J: 누, 누가 좀 도와주….!
 @printer Dialogue time:0
 J: 하아… 하아….
 J: 여, 여기 있으면 안돼… 벗어나야 돼...!
+; 계속 뛰는 듯한 화면 흔들림 효과
+@spawn ShakeCamera wait:true
 @printer Narration time:0
 이 곳을 벗어나야 한다는 생각에 방향도 모른채 내달렸다.
 달리는 내내 머릿속에선 피 묻은 손과 숲의 풍경이 번갈아가며 재생됐고
@@ -165,6 +167,7 @@ J: 여, 여기 있으면 안돼… 벗어나야 돼...!
 분명 앞을 향해 달리고 있는데도 미로에 갇힌 듯 숲에서 벗어날 수 없었다.
 @printer Dialogue time:0
 J: 왜 계속, 허억… 제자리…
+@despawn ShakeCamera
 First: 멈춰!!!
 @printer Narration time:0
 뒤에서 빠르게 다가오는 발소리가 들렸다.

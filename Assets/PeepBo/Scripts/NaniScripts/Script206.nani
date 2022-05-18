@@ -98,7 +98,7 @@ J: 여기말고는 더이상 찾아볼 곳도 없는데…
 @back ForestDay visible:false time:0 wait:false
 @back StoreDay
 @hidePrinter
-@toast "장소를 발견했습니다! <창고>" time:1.5
+@toast "장소를 발견했습니다! <창고>" time:2 wait:false
 @wait i
 @printer Dialogue time:0
 J: 역시 창고가 맞긴 했구나?
@@ -229,6 +229,7 @@ J: 일단 빨리 여기서 나간 다음 생각해봐야겠어.
 문고리를 부술만한 무언가가 없을까?
 ; <도움이 될만 한 것을 찾아보자>
 ; 탐색
+@back StoreDay position:0,0
 @printer Dialogue time:0
 J: 그래, 이거면 됐어.
 @printer Narration time:0
@@ -240,8 +241,7 @@ J: 조, 좋아... 안 열리면 부수지 뭐!
 문고리를 부수려 촛대를 높이 치켜든 순간,
 ; 문 열리는 효과음
 @spawn SunShafts wait:false
-@back StoreDay visible:false time:0
-@back ForestDay position:0,0
+@back ForestDay.Saturate
 ; 메인 bgm
 @printer Dialogue time:0
 J: 어?

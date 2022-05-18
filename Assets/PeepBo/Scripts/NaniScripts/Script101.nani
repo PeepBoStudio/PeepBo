@@ -16,7 +16,7 @@ J: 아이참, 그래도 이건 너무 심한 거 아니야?
 @printer Dialogue time:0
 J: 으악, 심지어 핸드폰도 안 터지잖아
 @hide Phone
-J: 주변에 뭔가…….
+J: 주변을 좀 둘러봐야겠다.
 @hidePrinter 
 @showUI StartRoomModeUI time:1.5
 @hideUI StartRoomModeUI
@@ -139,15 +139,14 @@ J: 으악!
 저항할 새도 없이 땅과 충돌하려는 순간,
 누군가 내 팔목을 붙들었다.
 @hidePrinter 
-@back StreetDay visible:false time:0 wait:false
-@back GIllust wait:false
+@back GIllust.CircleReveal
 @spawn SunShafts
 ; 효과음
 @wait i
 곧게 뻗은 눈썹, 색소가 옅은 눈동자가 담긴 날카로운 눈매.
 티끌 만한 오차도 없이 완벽하게 자리잡은 남자의 이목구비에선,
 왠지 모를 오만함이 느껴졌다.
-이 작은 섬이 이토록 잘생긴 남자라니…
+이 작은 섬에 이토록 잘생긴 남자라니…
 @despawn SunShafts wait:false
 @back GIllust visible:false time:0 wait:false
 @back StreetDay
@@ -405,7 +404,7 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 해록도 주민들은 외지인을 경계한다고 하지 않았나?
 
 @back HallDay visible:false time:0 wait:false
-@back StreetDay position:8.8,0
+@back StreetDay position:-8.8,0
 아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와
 본인이 해록도의 이장이라는 것을 알려줬다.
 회관을 나와 15분 쯤 걸었을까,
@@ -413,7 +412,7 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 지나오면서 본 해록도의 집 중에 제일 큰 것 같은데, 
 어딘지 모르게 쓸쓸함이 느껴지는 집이었다.
 @hidePrinter
-@toast "장소를 발견했습니다! <나연의 집>" time:1.5
+@toast "장소를 발견했습니다! <나연의 집>" time:2 wait:false
 @wait i
 ; 문 두드리는 소리
 @printer Dialogue time:0

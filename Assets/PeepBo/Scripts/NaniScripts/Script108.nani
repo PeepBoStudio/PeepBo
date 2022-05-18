@@ -78,7 +78,7 @@ J: 삼…촌…
 내가 하염없이 따라왔던 빛의 정체는 이것이었다
 순간, 오래 찾아다닌 목적지에 도착했다는 안도감이 들었다
 @hidePrinter
-@toast "장소를 발견했습니다! <선락원>" time:1.5
+@toast "장소를 발견했습니다! <선락원>" time:2 wait:false
 @wait i
 나는 조심스럽게 문을 열고 안으로 들어갔다
 ; 끼익 문열리는 소리
@@ -156,7 +156,7 @@ J: 네? 아... 신께서…
 @printer Dialogue time:0
 J: 혹시 교회, 아니... 이름이 뭐였더라...
 @camera set:*.true wait:false
-@back ForestDay time:0 wait:false
+@back ForestDay.RadialBlur wait:false
 @hide D wait:false
 @char Y.Face>기본,Body>기본 position:-0.25,-17
 J: 근데, 이 위로 쭉 올라가면 뭐가 있는데?
@@ -166,8 +166,7 @@ J: 무슨 교회가 이렇게 산 중턱에 있어?
 Y: 산 중턱이자, 해록도의 중심이거든요
 @hide Y wait:false
 @camera set:*.false wait:false
-@back StreetDay visible:false time:0
-@back ParadiseInsideNight
+@back ParadiseInsideNight.RadialBlur
 @char D.Face>아련,Body>가슴에손 position:0,-18
 @printer Narration time:0
 맞아, 선락원이라고 했지.
@@ -227,6 +226,7 @@ J: 갑자기 찾아와서 많이 놀라셨죠, 전 이만 돌아가볼게요. �
 ; 끼익 문 여는 소리
 그 생각에 소름이 돋아 서둘러 문을 열었는데.
 ; 탁 문 닫는 소리
+@spawn ShakeBackground
 응…? 다시 닫혔다?
 의아해서 고개를 돌리니,
 어느새 기척도 없이 다가온 다함의 곧게 뻗은 팔이 보였다

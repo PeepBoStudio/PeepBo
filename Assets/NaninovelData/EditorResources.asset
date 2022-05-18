@@ -221,7 +221,10 @@ MonoBehaviour:
     Resources:
     - name: Black
       pathPrefix: Backgrounds/MainBackground
-      guid: f9e756495a1eb7540b78e72ed381176a
+      guid: 014cfd3a9ceda6b4eb26e78e937e8af1
+    - name: Remine
+      pathPrefix: Backgrounds/MainBackground
+      guid: 9359608e160cac5419760cd575f9aa4b
     - name: JianRoomDay
       pathPrefix: Backgrounds/MainBackground
       guid: 5a284a6c0d602744f91ef8b1e25440d0
@@ -252,6 +255,9 @@ MonoBehaviour:
     - name: StoreDay
       pathPrefix: Backgrounds/MainBackground
       guid: 3be969e174206cc4ab16f133b59ea4a2
+    - name: StoreEye
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4b96165fc4af6e14eac4d3adbbf3d032
     - name: CamelliaDay
       pathPrefix: Backgrounds/MainBackground
       guid: e19adec3bd0c1124e9fb3e2a7ed15f95
@@ -330,27 +336,30 @@ MonoBehaviour:
     Resources:
     - name: Square
       pathPrefix: Characters/Boy1
-      guid: 4726cf0d034b1734a962f4a4f437f05f
+      guid: 18e8058a3d46ad148aaf5bfd9596f732
   - Id: Characters/7965c0c0-d14e-4bde-bb0a-930482673e68
     Resources:
     - name: Square
       pathPrefix: Characters/Boy2
-      guid: 4726cf0d034b1734a962f4a4f437f05f
+      guid: 18e8058a3d46ad148aaf5bfd9596f732
   - Id: Characters/8036479c-651c-4f9c-94dd-f8fb935adb24
     Resources:
     - name: Square
       pathPrefix: Characters/Girl
-      guid: 4726cf0d034b1734a962f4a4f437f05f
+      guid: d702249a7e7c4f14d989a83323a7687c
   - Id: Characters/f51a3560-5e6c-4cb6-b004-448baf885272
     Resources:
     - name: Square
       pathPrefix: Characters/Aram
-      guid: 4726cf0d034b1734a962f4a4f437f05f
+      guid: 758a3510f95d2f248bfbaa69bd15f308
   - Id: Characters/d52f8e69-2ae4-4cbd-8a00-49da76d5ce32
     Resources:
     - name: cut_phone
       pathPrefix: Characters/Phone
       guid: 26db4d66d57989342b335e64b4b37252
+    - name: impossible
+      pathPrefix: Characters/Phone
+      guid: 23efd9f81cfd416469904416986e4769
   - Id: Backgrounds/0b7a40ea-4f8a-476f-863a-229a86bc3c6b
     Resources:
     - name: RoomBackground
@@ -378,3 +387,8 @@ MonoBehaviour:
     - name: "\uB2E4\uD568 \uC2E4\uB8E8\uC5E3"
       pathPrefix: Characters/DSilhouette
       guid: f64bf3a1984b78644b5e7bcc42f9ed95
+  - Id: Characters/896b4cd6-5e3e-4688-9c8f-8de0404325b3
+    Resources:
+    - name: "\uD53C\uBB4D\uC740\uC190"
+      pathPrefix: Characters/BloodHand
+      guid: 59d86ed9399fcfa4aa76f7d37c237173

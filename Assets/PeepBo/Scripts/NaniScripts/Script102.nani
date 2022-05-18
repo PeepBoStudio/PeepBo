@@ -58,15 +58,18 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 @printer Narration time:0
 그런데 아침부터 찾아온 손님이 대체 누굴까? 해록도에는 나를 찾는 사람이 없을텐데…
 일단, 씻고 얼른 나가보자.
-@back JianRoomDay visible:false wait:false
-@back Remine
+@hidePrinter
+@back Remine.Dissolve params:100
+@wait i
 ; 쓸쓸 bgm
 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야.
 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든.
 그야말로 신이 내린 선물이지.
 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심하니.
+@hidePrinter
+@wait i
 @back Remine visible:false time:0
-@back StreetDay position:8.8,0
+@back StreetDay position:-8.8,0
 ; 메인 bgm
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.
 @printer Dialogue time:0
@@ -84,7 +87,7 @@ Y: 기다렸어요, 누나. 잘 잤어요?
 @despawn SunShafts wait:false
 @back YIllust visible:false time:0 wait:true
 ; 효과음
-@back StreetDay position:8.8,0
+@back StreetDay position:-8.8,0
 @char Y.Face>기본,Body>기본 position:-0.25,-17
 J: 설마 그쪽이...제 손님이세요...?
 @char Y.Face>웃는,Body>브이
@@ -188,7 +191,7 @@ Y: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
 @printer Narration time:0
 저 동글동글한 눈빛을 보고도 차갑게 거절할 수 있는 사람이 어딨겠어?
 # Walk
-@back StreetDay position:0,0
+@back StreetDay position:8.8,0
 @printer Dialogue time:0
 @char Y.Face>기본,Body>기본
 Y: 누나가 묵고 있는 곳에서 조금만 더 나오면 바로 큰 길가에요.
@@ -218,7 +221,7 @@ J: 선착장 먼저 가보자!
 ; 파도소리
 ; 다이어리에 'N'
 @hidePrinter
-@toast "장소를 발견했습니다! <선착장>" time:1.5
+@toast "장소를 발견했습니다! <선착장>" time:2 wait:false
 @wait i
 @char Y.Face>기본,Body>기본 position:-0.25,-17
 Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요
@@ -263,7 +266,7 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 ; 파도소리
 ; 다이어리에 'N'
 @hidePrinter
-@toast "장소를 발견했습니다! <등대>" time:1.5
+@toast "장소를 발견했습니다! <등대>" time:2 wait:false
 @wait i
 @printer Narration time:0
 등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯 하다.
@@ -302,7 +305,7 @@ Y: 자 다음은 어디로 가볼까요?
 @back ForestDay
 ; 다이어리에 'N'
 @hidePrinter
-@toast "장소를 발견했습니다! <숲속>" time:1.5
+@toast "장소를 발견했습니다! <숲속>" time:2 wait:false
 @wait i
 @printer Dialogue time:0
 J: 으흠. 공기 좋다.
