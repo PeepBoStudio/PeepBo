@@ -18,8 +18,9 @@ J: 으악, 심지어 핸드폰도 안 터지잖아
 @hide Phone
 J: 주변을 좀 둘러봐야겠다.
 @hidePrinter 
-@showUI StartRoomModeUI time:1.5
-@hideUI StartRoomModeUI
+@showUI StartRoomModeUI time:1
+@wait i
+@hideUI StartRoomModeUI time:1
 
 ; ------------ 탐색 -------------
 @back RoomBackground id:RoomBackground
@@ -61,7 +62,9 @@ J: 깜짝이야, 고양이잖아?
 J: 어? 이건 뭐지?
 @printer Narration time:0
 담벼락에 무언가 붙어있었다.
+@hidePrinter
 @showUI 1-1RoomPopup
+@wait i
 @printer Dialogue time:0
 J: 새벽기도 시간 안내…
 J: 밑에 이 이름들이랑 숫자는 뭐지?

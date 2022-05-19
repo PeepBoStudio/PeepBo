@@ -663,7 +663,7 @@ MonoBehaviour:
       m_Calls: []
   hideOnLoad: 1
   saveVisibilityState: 0
-  blockInputWhenVisible: 1
+  blockInputWhenVisible: 0
   allowedSamplers: []
   modalUI: 0
   fontChangeConfiguration: []
