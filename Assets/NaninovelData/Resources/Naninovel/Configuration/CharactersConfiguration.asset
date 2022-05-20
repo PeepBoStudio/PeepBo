@@ -155,9 +155,9 @@ MonoBehaviour:
         height: 1
       BakedLookDirection: 1
       DisplayName: "\uC9C0\uC548"
-      UseCharacterColor: 0
-      NameColor: {r: 1, g: 1, b: 1, a: 1}
-      MessageColor: {r: 1, g: 1, b: 1, a: 1}
+      UseCharacterColor: 1
+      NameColor: {r: 0.8627451, g: 0.5372549, b: 0.5372549, a: 1}
+      MessageColor: {r: 0, g: 0, b: 0, a: 1}
       HighlightWhenSpeaking: 0
       HighlightCharacterCount: 0
       SpeakingPose: 
