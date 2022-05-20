@@ -236,16 +236,16 @@ MonoBehaviour:
     - name: Headman
       pathPrefix: CharacterAvatars
       guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
-    - name: People1
+    - name: People
       pathPrefix: CharacterAvatars
       guid: 851ee04113b1e5b498780ebeeaab8a57
-    - name: "\uB0A8\uC790\uC544\uC774"
+    - name: Boy
       pathPrefix: CharacterAvatars
       guid: 18e8058a3d46ad148aaf5bfd9596f732
-    - name: "\uC5EC\uC790\uC544\uC7741_\uC544\uB78C"
+    - name: Aram
       pathPrefix: CharacterAvatars
       guid: 758a3510f95d2f248bfbaa69bd15f308
-    - name: "\uC5EC\uC790\uC544\uC7742"
+    - name: Girl
       pathPrefix: CharacterAvatars
       guid: d702249a7e7c4f14d989a83323a7687c
   - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
@@ -361,7 +361,7 @@ MonoBehaviour:
     Resources:
     - name: Headman
       pathPrefix: Characters/Man
-      guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
+      guid: 4726cf0d034b1734a962f4a4f437f05f
   - Id: Characters/69eeeeb1-1679-4f45-a45b-6beb71d6ac50
     Resources:
     - name: Headman

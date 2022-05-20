@@ -8,7 +8,7 @@ J: 아, 정말 정신이 쏙 빠지겠네…
 아이들의 왁자지껄한 웃음 소리를 베개 삼아 잔디 위에 풀썩 쓰러지듯 누웠다.
 천사의 집에 도착해 호기롭게 아이들에게 같이 놀자고 외친게 불과 한 시간 전이건만.
 @printer Dialogue time:0
-@char Boy1 scale:0.3 position:2.5,-2.2
+@char Boy1 visible:false avatar:Boy
 @stopSfx 206_아이들_소리
 Boy1: 누나!!! 우리랑 놀아주러 왔다면서요!!! 빨리 일어나요!!!
 J: 얘들아 벌써 한 시간 째 술래잡기 중이야… 너넨 지치지도 않아?
@@ -16,20 +16,20 @@ J: 얘들아 벌써 한 시간 째 술래잡기 중이야… 너넨 지치지도
 쉬지 않고 뛰어다녔더니 혈중 산소 농도가 낮아지는 느낌이라고.
 @printer Dialogue time:0
 @hide Boy1 wait:false
-@char Girl scale:0.3 position:2.5,-2.2
+@char Girl visible:false avatar:Girl
 Girl: 언니 힘들어요? 그럼 우리 다른 놀이해요!
 J: 너무 힘들어... 안 뛰어다니는 놀이는 없어?
 Girl: 숨바꼭질 해요. 나 진짜 짱 잘 숨어요!
 J: 언니 조금만 쉬면 안돼? 진짜 조금만..
 @hide Girl wait:false
-@char Boy2 scale:0.3 position:2.5,-2.2
+@char Boy2 visible:false avatar:Boy
 Boy2: 안돼! 빨리 빨리! 놀이 시간 끝나간단 말이야!!
 @printer Narration time:0
 @hide Boy2
 정신없이 내 주변을 뛰어다니며 재촉하는 아이들 때문에 더는 쉴수가 없었다.
 @printer Dialogue time:0
 J: 으, 알겠어. 그럼 술래는 누구,
-@char Boy2 scale:0.3 position:2.5,-2.2
+@char Boy2 visible:false avatar:Boy
 Boy2: 당연히 누나가 술래지! 10초씩 다섯 번 세고 우리 찾으면 돼!
 @printer Narration time:0
 @hide Boy2
@@ -211,6 +211,7 @@ J: 뭐, 뭐야, 어딜간 거야?
 맨몸으로 갈 순 없으니 무기가 될만 한 것을 찾아보자.
 ;<도움이 될만 한 것을 찾아보자>
 ; 탐색
+@back StoreDay position:0,0
 @printer Dialogue time:0
 J: 그래, 이거면 됐어.
 @printer Narration time:0
@@ -261,7 +262,7 @@ J: 어?
 @printer Narration time:0
 갑자기 쏟아지는 밝은 빛에 눈을 찡그렸다.
 @printer Dialogue time:0
-@char Aram scale:0.3 position:2.5,-2.2
+@char Aram visible:false avatar:Aram
 Aram: 언니, 문 고리를 부수려고 한거야?
 J: 너… 어떻게 여기에…
 Aram: 문이 녹슬어서 안 열릴 때 문고리를 부수면 더 위험해
@@ -294,28 +295,28 @@ J: 아, 설마.
 
 #E
 @printer Dialogue time:0
-@char Aram scale:0.3 position:2.5,-2.2
+@char Aram visible:false avatar:Aram
 ; 홍유겸 +10
 J: 유겸이 말하는 거야?
 Aram: 몰라! 오빠는 그냥 오빠라니까!
 @goto .Con3
 #F
 @printer Dialogue time:0
-@char Aram scale:0.3 position:2.5,-2.2
+@char Aram visible:false avatar:Aram
 ; 고결 +10
 J: 결 씨 말하는 거야?
 Aram: 몰라! 오빠는 그냥 오빠라니까!
 @goto .Con3
 #G
 @printer Dialogue time:0
-@char Aram scale:0.3 position:2.5,-2.2
+@char Aram visible:false avatar:Aram
 ; 주다함 +10
 J: 다함 씨 말하는 거야?
 Aram: 몰라! 오빠는 그냥 오빠라니까!
 @goto .Con3
 #H
 @printer Dialogue time:0
-@char Aram scale:0.3 position:2.5,-2.2
+@char Aram visible:false avatar:Aram
 ; 차우준 +10
 J: 혹시 까만 머리에 창백하게 생긴 남자?
 Aram: 몰라! 오빠는 그냥 오빠라니까!

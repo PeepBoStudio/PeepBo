@@ -379,7 +379,7 @@ G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것�
 곧 다시 문이 열리고, 
 방금 나간 아주머니와 또 다른 아저씨 한 명이 함께 들어왔다.
 @stopSfx 101_문여는_소리
-@char Man position:2.5,-2.2 scale:0.3
+@char Man visible:false avatar:Headman
 아저씨는 나를 보며 어색한 미소로 말을 건냈다
 @printer Dialogue time:0
 Man: 혹시 해록도에 관광오기로 한 아가씨인가?
@@ -388,7 +388,7 @@ J: 아, 네 안녕하세요. 저 출입허가서도 받았어요! 이상한 애 
 주민들 눈에 경계심이 어려있어 다급히 입꼬리를 최대한 끌어올려 빠르게 말했다
 @printer Dialogue time:0
 @hide Man wait:false
-@char Woman position:2.5,-2.2 scale:0.3
+@char Woman visible:false avatar:People
 Woman: 아~ 그 아가씨구나, 관광 온다는 얘기 들었어요.
 Woman: 나는 또 처음보는 사람이라 놀랐지 뭐야
 Woman: 해록도가 원채 오가는 사람도 없고 주민들도 적어~
@@ -397,7 +397,7 @@ Woman: 그래서 누가 들어온다고 하면 우리끼리 다 알거든
 경계가 풀렸는지 아주머니는 인자하게 웃으며 다가왔다
 @printer Dialogue time:0
 @hide Woman wait:false
-@char Man position:2.5,-2.2 scale:0.3
+@char Man visible:false avatar:Headman
 Man: 여기가 다 흙길이라서 가방 끌고 오기 힘들었을 텐데
 Man: 선착장에서 조금만 기다리고 있지 그랬어
 Man: 아가씨 오늘 온다는 얘기 듣고 지금 다른 주민이 선착장에 마중나갔는데
@@ -409,13 +409,13 @@ J: 마중까지 나와주시고 정말 감사합니다.
 왜 저렇게 쳐다보지?
 @printer Dialogue time:0
 @hide Man wait:false
-@char Woman position:2.5,-2.2 scale:0.3
+@char Woman visible:false avatar:People
 Woman: 여기 얼마나 있을 거에요? 해록도가 그 뭐냐, 
 Woman: 무슨 보호? 생태보호? 그걸로 지정 돼 있는 건 알죠?
 Woman: 나무들이 건강해서 공기도 좋고 해안가 경치도 정말 좋아요.
 Woman: 오래오래 있으면 좋겠다, 오랜만에 외지인 보니까 정말 반갑네~
 @hide Woman wait:false
-@char Man position:2.5,-2.2 scale:0.3
+@char Man visible:false avatar:Headman
 Man: 그러게 말이야, 오랜만에 온 귀한 손님이네
 Man: 머물 곳은 우리가 다 마련해 놨으니까 따라와요
 @hide Man
