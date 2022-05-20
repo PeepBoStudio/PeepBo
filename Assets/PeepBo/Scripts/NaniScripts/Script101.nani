@@ -310,8 +310,9 @@ J: 졸업여행 삼아 온 거예요
 @back StreetDay visible:false time:0 wait:false
 @back HallDay
 ; 다이어리에 장소발견
-@toast "장소를 발견했습니다! <마을회관>" time:2 wait:false
+@showUI HallFindUI
 @wait i
+@hideUI HallFindUI
 @printer Dialogue time:0
 @char G.Body>기본,Face>기본 position:-0.5,-15.5
 G: 다 왔어.
@@ -439,8 +440,9 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 지나오면서 본 해록도의 집 중에 제일 큰 것 같은데, 
 어딘지 모르게 쓸쓸함이 느껴지는 집이었다.
 @hidePrinter
-@toast "장소를 발견했습니다! <나연의 집>" time:2 wait:false
+@showUI NHouseUI
 @wait i
+@hideUI NHouseUI
 ; 문 두드리는 소리
 @sfx 101_노크
 @printer Dialogue time:0

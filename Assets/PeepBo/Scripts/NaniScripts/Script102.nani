@@ -230,9 +230,10 @@ J: 선착장 먼저 가보자!
 ; 파도소리
 ; 다이어리에 'N'
 @hidePrinter
-@toast "장소를 발견했습니다! <선착장>" time:2 wait:false
-@stopSfx 102_선착장_파도소리
+@showUI DockFindUI
 @wait i
+@hideUI DockFindUI
+@stopSfx 102_선착장_파도소리
 @char Y.Face>기본,Body>기본 position:-0.25,-15
 Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요
 Y: 이주에 한 번 물자선이 오는 정도?	
@@ -275,8 +276,9 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @back LighthouseDay position:0,0
 ; 다이어리에 'N'
 @hidePrinter
-@toast "장소를 발견했습니다! <등대>" time:2 wait:false
+@showUI LHFindUI
 @wait i
+@hideUI LHFindUI
 @printer Narration time:0
 등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯 하다.
 @printer Dialogue time:0
@@ -314,8 +316,9 @@ Y: 자 다음은 어디로 가볼까요?
 @back ForestDay position:0,0
 ; 다이어리에 'N'
 @hidePrinter
-@toast "장소를 발견했습니다! <숲속>" time:2 wait:false
+@showUI ForFindUI
 @wait i
+@hideUI ForFindUI
 @printer Dialogue time:0
 J: 으흠. 공기 좋다.
 J: 섬에 이런 숲 길이 있었구나. 낮에는 산책하기에도 딱 좋겠어!

@@ -79,8 +79,9 @@ J: 삼…촌…
 순간, 오래 찾아다닌 목적지에 도착했다는 안도감이 들었다
 @stopBgm 110_선락원_BG
 @hidePrinter
-@toast "장소를 발견했습니다! <선락원>" time:2 wait:false
+@showUI ParaFindUI
 @wait i
+@hideUI ParaFindUI
 @sfx 101_문여는_소리
 나는 조심스럽게 문을 열고 안으로 들어갔다
 ; 끼익 문열리는 소리

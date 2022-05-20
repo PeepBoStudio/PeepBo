@@ -185,6 +185,27 @@ MonoBehaviour:
     - name: ExitRoomModeUI
       pathPrefix: UI
       guid: cf958e958def4a947b470929c9223694
+    - name: DockFindUI
+      pathPrefix: UI
+      guid: 5d2c697cc93453f46a30f8685376f76a
+    - name: ForFindUI
+      pathPrefix: UI
+      guid: b658b70fc904bff4986e42ef9045f8e8
+    - name: HallFindUI
+      pathPrefix: UI
+      guid: 597a874da7226834cae52506bdf20e10
+    - name: LHFindUI
+      pathPrefix: UI
+      guid: 5abc82a40ae462144bac3ecbc4d4d300
+    - name: NHouseUI
+      pathPrefix: UI
+      guid: 2a37272c8b91ea74aafe6e7f323dba1a
+    - name: ParaFindUI
+      pathPrefix: UI
+      guid: bceb521471ab06f4f8df78b556a15c81
+    - name: StoreFindUI
+      pathPrefix: UI
+      guid: 82ea6f798da02754c8d1db419e18cdad
   - Id: Scripts
     Resources:
     - name: NewScript
