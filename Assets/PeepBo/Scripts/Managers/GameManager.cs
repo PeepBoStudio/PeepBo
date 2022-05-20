@@ -15,13 +15,17 @@ namespace PeepBo.Managers
         UIManager uiManager = new UIManager();
         RoomManager roomManager = new RoomManager();
         SwitchManager switchManager = new SwitchManager();
+        AudioManager audioManager = new AudioManager();
         InputManager inputManager = null;
+
 
         public static ResourceManager Resource { get => Instance.resourceManager; }
         public static UIManager UI { get => Instance.uiManager; }
         public static RoomManager Room { get => Instance.roomManager; }
         public static SwitchManager Switch { get => Instance.switchManager; }
+        public static AudioManager Audio { get => Instance.audioManager; }
         public static InputManager Input { get => Instance.inputManager; }
+
 
 
         public static string DummyEpisode;
@@ -39,6 +43,7 @@ namespace PeepBo.Managers
                 instance = go.GetComponent<GameManager>();
 
                 InitInputManager();
+                Instance.audioManager.InitAudioManager();
 
                 DontDestroyOnLoad(instance.gameObject);
             }

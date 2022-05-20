@@ -1,3 +1,4 @@
+using PeepBo.Managers;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -66,6 +67,7 @@ namespace PeepBo.UI
             if (eventData.button != PointerEventData.InputButton.Left)
                 return;
             isClicked = true;
+            GameManager.Audio.PlayClickSound();
             // TODO : 버튼 사운드 처리
         }
 
