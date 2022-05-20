@@ -376,7 +376,61 @@ MonoBehaviour:
       pathPrefix: Characters
       guid: 30d5403ddf41d6a499389b21e8ad5466
   - Id: Audio
-    Resources: []
+    Resources:
+    - name: "101_\uB178\uD06C"
+      pathPrefix: Audio
+      guid: dd5be31183ce2d64b851ccf5ed44ba75
+    - name: "101_\uACE0\uACB0_\uD14C\uB9C8"
+      pathPrefix: Audio
+      guid: 47b8ce29405c48e44af442fabbe7048f
+    - name: "101_\uBB38\uC5EC\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 43e3ce28465d9da4396453cdf96bb87b
+    - name: "101_\uD3F0_\uC5D0\uB7EC\uC74C"
+      pathPrefix: Audio
+      guid: 745b8b6060695064d9e1ef837b4718a0
+    - name: "101_\uBC1C\uC790\uAD6D_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 496c98f701189f345b2c7c3943ecd5a0
+    - name: "102_\uBB38_\uB2EB\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 278603f46f029e6449118e103b9f0a9d
+    - name: "102_\uC774\uBD88_\uAC77\uD788\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: b8e0c68c8a546c74ab8643f8f50e4dbe
+    - name: "102_\uC9C0\uC548_\uB3C5\uBC31"
+      pathPrefix: Audio
+      guid: cb3830e7062f7ed40b965f5160de6275
+    - name: "102_\uC720\uACB8_\uB4F1\uC7A5_\uD14C\uB9C8"
+      pathPrefix: Audio
+      guid: 9e17192a88cbbbc4f8c6d5d0b03be3fa
+    - name: "102_\uC120\uCC29\uC7A5_\uD30C\uB3C4\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 921b2b781e3cccf4485b6eaf089c89eb
+    - name: "108_\uC2E0\uBE44"
+      pathPrefix: Audio
+      guid: 898131a9349638340bba2e63cbbce3bf
+    - name: "110_\uC120\uB77D\uC6D0_BG"
+      pathPrefix: Audio
+      guid: 249867eb83fb21f448b87a3548552dfd
+    - name: "110_\uC232\uC744_\uD5E4\uCCD0\uAC00\uB294"
+      pathPrefix: Audio
+      guid: 19271d0e7344a3a48bdacb64608f41c2
+    - name: "110_\uD53C_\uBC1C\uACAC"
+      pathPrefix: Audio
+      guid: 7f2157d42aab0b544be2f3c0ea313104
+    - name: "110_\uC6B0\uC900_\uB4F1\uC7A5"
+      pathPrefix: Audio
+      guid: 822dfb3eb3d3bea4b8cc53caf3eea1e3
+    - name: "110_\uC601\uC0AC\uAE30"
+      pathPrefix: Audio
+      guid: e816d4c0a1d637c40b482ea8502b1368
+    - name: "110_\uD30C\uB3C4\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 3d2d784a3b1bc664cb8b6f488f540d8f
+    - name: "110_\uB2F9\uD669"
+      pathPrefix: Audio
+      guid: 9272cabbc8250974cb581941333a1ea1
   - Id: Characters/611adc6c-abb9-4fcd-a674-8c61b8a1e81d
     Resources:
     - name: "\uC6B0\uC900 \uC2E4\uB8E8\uC5E3"

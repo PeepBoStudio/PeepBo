@@ -73,16 +73,20 @@ J: 삼…촌…
 ; 눈 떠지는 효과
 ; 당황 효과음
 ; 선락원 bgm
+@bgm 110_선락원_BG
 달을 관통하듯 우뚝 솟은 십자가.
 그 아래, 기다란 스테인글라스 창마다 달빛이 반사되고 있었다
 내가 하염없이 따라왔던 빛의 정체는 이것이었다
 순간, 오래 찾아다닌 목적지에 도착했다는 안도감이 들었다
+@stopBgm 110_선락원_BG
 @hidePrinter
 @toast "장소를 발견했습니다! <선락원>" time:2 wait:false
 @wait i
+@sfx 101_문여는_소리
 나는 조심스럽게 문을 열고 안으로 들어갔다
 ; 끼익 문열리는 소리
 @printer Dialogue time:0
+@stopSfx 101_문여는_소리
 J: 여긴…
 @back ParadiseOutsideNight visible:false time:0
 @back ParadiseInsideNight
@@ -224,10 +228,14 @@ J: 갑자기 찾아와서 많이 놀라셨죠, 전 이만 돌아가볼게요. �
 나는 허겁지겁 돌아서 문고리를 잡았다
 주민들이라도 마주치면, 미친 여자라는 소문이 날 거야!
 ; 끼익 문 여는 소리
+@sfx 101_문여는_소리
 그 생각에 소름이 돋아 서둘러 문을 열었는데.
+@stopSfx 101_문여는_소리
+@sfx 102_문_닫는_소리
 ; 탁 문 닫는 소리
 @spawn ShakeBackground
 응…? 다시 닫혔다?
+@stopSfx 102_문_닫는_소리
 의아해서 고개를 돌리니,
 어느새 기척도 없이 다가온 다함의 곧게 뻗은 팔이 보였다
 @printer Dialogue time:0

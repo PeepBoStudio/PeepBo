@@ -2,11 +2,13 @@
 @back ForestDay
 ; 메인 bgm
 J: 아, 정말 정신이 쏙 빠지겠네…
+@sfx 206_아이들_소리
 @printer Narration time:0
 아이들의 왁자지껄한 웃음 소리를 베개 삼아 잔디 위에 풀썩 쓰러지듯 누웠다.
 천사의 집에 도착해 호기롭게 아이들에게 같이 놀자고 외친게 불과 한 시간 전이건만.
 @printer Dialogue time:0
 @char Boy1 scale:0.5 position:0,-2.2
+@stopSfx 206_아이들_소리
 Boy1: 누나!!! 우리랑 놀아주러 왔다면서요!!! 빨리 일어나요!!!
 J: 얘들아 벌써 한 시간 째 술래잡기 중이야… 너넨 지치지도 않아?
 @printer Narration time:0
@@ -92,8 +94,10 @@ J: 와! 이 호기심 때문에 수명이 깎인다 깎여!
 @printer Dialogue time:0
 J: 여기말고는 더이상 찾아볼 곳도 없는데…
 ; 삐걱 문열리는 소리
+@sfx 101_문여는_소리
 @printer Narration time:0
 살그머니 문을 당기자 낡은 문에선 생각보다 큰 소음이 들렸다.
+@stopSfx 101_문여는_소리
 #Con1
 @back ForestDay visible:false time:0 wait:false
 @back StoreDay
@@ -118,9 +122,11 @@ J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기
 @spawn ShakeBackground
 ; 메인 bgm out
 ; 세게 문 닫히는 소리
+@sfx 206_문_세게_닫는_소리
 @back StoreDay position:10,0 time:0
 @printer Dialogue time:0
 J: !!!
+@stopSfx 206_문_세게_닫는_소리
 @printer Narration time:0
 순간 문이 큰 소리를 내며 닫혔다.
 한번 불 땐 매서운 섬 바람에 문이 밀린듯했다.
@@ -146,10 +152,14 @@ J: 심호흡 심호흡, 이럴 때일 수록 제발 차분하게…
 @printer Narration time:0
 큰 소리를 내면 누군가 듣고 와주지 않을까…?
 ; 문 두드리는 소리
+@sfx 206_문_세게_노크
 @printer Dialogue time:0
 J: 저기요! 아무도 없어요!!
+@stopSfx 206_문_세게_노크
+@sfx 206_문_세게_노크
 J: 문이 안 열리는데요!! 도와주세요!!
 ; 문 두드리는 소리 out
+@stopSfx 206_문_세게_노크
 @printer Narration time:0
 문을 세차게 두드리며 큰 소리로 외쳤지만 주변은 고요하기만 했다.
 @printer Dialogue time:0
@@ -239,9 +249,11 @@ J: 조, 좋아... 안 열리면 부수지 뭐!
 #Con2
 @printer Narration time:0
 문고리를 부수려 촛대를 높이 치켜든 순간,
+@sfx 101_문여는_소리
 ; 문 열리는 효과음
 @spawn SunShafts wait:false
 @back ForestDay.Saturate
+@stopSfx 101_문여는_소리
 ; 메인 bgm
 @printer Dialogue time:0
 J: 어?

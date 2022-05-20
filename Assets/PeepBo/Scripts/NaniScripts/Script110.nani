@@ -57,9 +57,10 @@ Kitaek: 우리야 말로 잘 부탁합니다, 언제 한 번 선락원에도 들
 @printer Narration time:0
 그가 악수를 하자는 듯 손을 내밀었다. 그 손을 마주잡으려던 순간,
 @spawn ShakeBackground
-; 당황 효과음
+@sfx 110_당황
 @printer Dialogue time:0
 J: 헉!
+@stopSfx 110_당황
 @printer Narration time:0
 나는 황급히 손을 거둬들였다.
 @char Kitaek.Face>기본,Body>기본피 scale:1.2 position:0,-23.5
@@ -102,6 +103,7 @@ J: 정말 참 종교인이시네?
 @wait i
 ; 심각한 bgm
 ; 영사기 효과음
+@sfx 110_영사기
 @back Black visible:false time:0
 @back JianRoomNight
 ; 노이즈 효과
@@ -109,6 +111,7 @@ J: 정말 참 종교인이시네?
 @printer Narration time:0
 으…. 추워….
 …. 으으….
+@stopSfx 110_영사기
 ; 눈 감는
 @back JianRoomNight visible:false time:0
 @back Black
@@ -175,9 +178,11 @@ First: 멈춰!!!
 J: 안돼… 도, 도망가야...!
 First: 멈추라고!!!
 @spawn ShakeBackground
+@sfx 110_당황
 ; 당황 효과음
 @printer Narration time:0
 발소리의 주인은 곧장 내 허리를 낚아채 날 돌려세웠다.
+@stopSfx 110_당황
 @printer Dialogue time:0
 First: 정신차려...!
 @hidePrinter
