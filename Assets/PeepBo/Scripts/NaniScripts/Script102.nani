@@ -1,6 +1,7 @@
 @camera set:*.false
 @back Black
 ; 메인 bgm
+@bgm 메인00
 First: ....어나...
 @printer Narration time:0
 ...

@@ -1,6 +1,7 @@
 @camera set:*.false
 @back Black id:MainBackground
 ; 심각한 bgm
+@bgm 102_지안_독백
 First: 지안 님, 오랜만에 오시네요.
 First: 요즘도 잠에서 깨면 모르는 상처가 생겨있거나 
 First: 아침마다 낯선 장소에서 깨어나고 그러세요?
@@ -59,12 +60,10 @@ J: 삼…촌…
 @printer Narration time:0
 빛이 새어나오는 곳을 향해, 다리가 저절로 움직이기 시작했다
 ; 나뭇가지 사이로 보이는 교회 십자가 OUT
-; 바스락 효과음 in
 누군가 내 몸을 조종하는 것처럼 발걸음을 멈출 수가 없다.
 나 지금 어디로 가고 있는 거지?
 저기에 뭐가 있길래?
 ; 눈 감기는 효과
-; 바스락 효과음 out
 @back Black
 @hidePrinter
 @wait i

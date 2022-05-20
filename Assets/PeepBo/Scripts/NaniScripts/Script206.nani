@@ -1,6 +1,7 @@
 @camera set:*.false
 @back ForestDay
 ; 메인 bgm
+@bgm 메인01
 J: 아, 정말 정신이 쏙 빠지겠네…
 @sfx 206_아이들_소리
 @printer Narration time:0

@@ -1,6 +1,7 @@
 @camera set:*.false
 @back HallDay
 ; 메인 bgm
+@bgm 메인01
 Headman: 이 정도면 된 것 같네, 나중에 페인트로 벽을 한 번 덮어야겠어요.
 Headman: 모두 경황이 없었을 테니 회관에서 차나 한 잔 합시다.
 @printer Narration time:0
@@ -190,11 +191,15 @@ First: 정신차려...!
 @back WIllust wait:false
 @wait i
 ; 차우준 메인 bgm
+@stopBgm 메인01
+@bgm 110_우준_등장
 @printer Narration time:0
 시간이 멈춘 것 같았다.
 귓가를 새차게 때리던 바람 소리가 멀어지고 오감마저 정지된 느낌
 날 멈춰세운 남자는 내가 조금이라도 움직이는 걸 허락하지 않겠다는 듯 
 내 온 몸을 꽉 붙들었다.
+@stopBgm 110_우준_등장
+@bgm 메인01
 @printer Dialogue time:0
 First: 숨 쉬어.
 @printer Narration time:0
