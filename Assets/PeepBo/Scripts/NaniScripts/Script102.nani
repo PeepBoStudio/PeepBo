@@ -15,6 +15,7 @@ First: 야...
 으, 시끄러워…
 일어나고 싶은데 몸이 무거워 움직일 수가 없어…
 @printer Dialogue time:0
+@spawn ShakePrinter wait:false
 First: 야! 일어나라니까!
 @sfx 102_이불_걷히는_소리
 @back Black visible:false time:0
@@ -23,13 +24,13 @@ N: 진짜 귀찮게 한다, 너.
 @stopSfx 102_이불_걷히는_소리
 @printer Narration time:0
 익숙한 목소리에 고개를 돌리니.
-@char N.Face>기본,Body>기본 position:0,-16
+@char N.Face>기본,Body>기본 position:0,-13.5
 @wait i
 @printer Dialogue time:0
-@char N.Face>짜증,Body>팔짱 scale:1.2 position:0,-20
+@char N.Face>짜증,Body>팔짱 scale:1.3 position:0,-20
 N: 벌써 해가 중천인데 아직도 자고 있으면 어떡해? 여기 요양왔어?
 @printer Narration time:0
-@char N.Face>짜증,Body>팔짱 scale:1 position:0,-16
+@char N.Face>짜증,Body>팔짱 scale:1 position:0,-13.5
 놀라서 시계를 바라보자 오후 12시가 넘어가고 있었다.
 @spawn ShakeBackground wait:false
 @printer Dialogue time:0
@@ -63,7 +64,7 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 그런데 아침부터 찾아온 손님이 대체 누굴까? 해록도에는 나를 찾는 사람이 없을텐데…
 일단, 씻고 얼른 나가보자.
 @hidePrinter
-@back Remine.Dissolve params:100
+@back Remine.Dissolve params:100 time:0.8
 @wait i
 ; 쓸쓸 bgm
 @bgm 102_지안_독백
@@ -75,7 +76,7 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 @hidePrinter
 @wait i
 @back Remine visible:false time:0
-@back StreetDay position:-8.8,0
+@back StreetDay position:-8.3,0
 ; 메인 bgm
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.
 @printer Dialogue time:0
@@ -94,8 +95,8 @@ Y: 기다렸어요, 누나. 잘 잤어요?
 @stopSfx 102_유겸_등장_테마
 @despawn SunShafts wait:false
 @back YIllust visible:false time:0 wait:true
-@back StreetDay position:-8.8,0
-@char Y.Face>기본,Body>기본 position:-0.25,-17
+@back StreetDay position:-8.3,0
+@char Y.Face>기본,Body>기본 position:-0.25,-15
 J: 설마 그쪽이...제 손님이세요...?
 @char Y.Face>웃는,Body>브이
 Y: 하핫, 반가워요! 육지에서 손님이 왔다 길래 얼른 보러 왔지요!
@@ -117,10 +118,10 @@ Y: 아~ 김지안 이라고요?
 @printer Dialogue time:0
 @char Y.Face>아련,Body>기본
 Y: 김지안이라…
-@char Y.Face>놀란,Body>입에손 scale:1.2 position:-0.25,-21
+@char Y.Face>놀란,Body>입에손 scale:1.3 position:-0.25,-21.5
 Y: 이름이 누나랑 너무 잘 어울리는 거 아니에요?
 Y: 그냥 그 이름은 누나만을 위해 존재해야할 것 같아요!
-@char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-17
+@char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-15
 J: …
 @char Y.Face>웃는,Body>기본
 Y: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네요.
@@ -135,9 +136,9 @@ Y: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네요.
 # Continue
 J: 저기 그런데,
 J: 그쪽은 대체 누구신데요?
-@char Y.Face>윙크,Body>기본 scale:1.2 position:-0.25,-21
+@char Y.Face>윙크,Body>기본 scale:1.3 position:-0.25,-21.5
 Y: 전 홍! 유! 겸! 이에요. 스물 한 살이니까 말 편하게 해요. 누나!
-@char Y.Face>윙크,Body>기본 scale:1 position:-0.25,-17
+@char Y.Face>윙크,Body>기본 scale:1 position:-0.25,-15
 @printer Narration time:0
 자기가 스물 한 살인 건 그렇다 쳐도 내 나이도 모르면서 왜 누나라고 부르는 거야?
 나는 눈동자만 도르륵 굴려 홍유겸이라는 남자를 쭉 훑어봤다.
@@ -224,7 +225,7 @@ Y: 흠, 이제 어디 먼저 가볼래요?
 # Dock
 J: 선착장 먼저 가보자!
 @hide Y
-@back DockDay
+@back DockDay position:0,0
 @sfx 102_선착장_파도소리
 ; 파도소리
 ; 다이어리에 'N'
@@ -232,7 +233,7 @@ J: 선착장 먼저 가보자!
 @toast "장소를 발견했습니다! <선착장>" time:2 wait:false
 @stopSfx 102_선착장_파도소리
 @wait i
-@char Y.Face>기본,Body>기본 position:-0.25,-17
+@char Y.Face>기본,Body>기본 position:-0.25,-15
 Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요
 Y: 이주에 한 번 물자선이 오는 정도?	
 J: 그럼 해록도 사람들은 육지로 잘 안 나가?
@@ -271,7 +272,7 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 
 # Lighthouse
 @hide Y
-@back LighthouseDay
+@back LighthouseDay position:0,0
 ; 다이어리에 'N'
 @hidePrinter
 @toast "장소를 발견했습니다! <등대>" time:2 wait:false
@@ -279,7 +280,7 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @printer Narration time:0
 등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯 하다.
 @printer Dialogue time:0
-@char Y.Face>기본,Body>기본 position:-0.25,-17
+@char Y.Face>기본,Body>기본 position:-0.25,-15
 Y: 여긴 진짜 별게 없어요!
 Y: 등대 안에 들어가봤자 계단 뿐이죠.
 Y: 예전에는 여기로 불법 어선들이 자주 나타났대요.
@@ -310,7 +311,7 @@ Y: 자 다음은 어디로 가볼까요?
 
 # Forest
 @hide Y
-@back ForestDay
+@back ForestDay position:0,0
 ; 다이어리에 'N'
 @hidePrinter
 @toast "장소를 발견했습니다! <숲속>" time:2 wait:false
@@ -318,7 +319,7 @@ Y: 자 다음은 어디로 가볼까요?
 @printer Dialogue time:0
 J: 으흠. 공기 좋다.
 J: 섬에 이런 숲 길이 있었구나. 낮에는 산책하기에도 딱 좋겠어!
-@char Y.Face>놀란,Body>입에손 position:-0.25,-17
+@char Y.Face>놀란,Body>입에손 position:-0.25,-15
 Y: 누나… 보기보다 액티비티를 좋아하나봐요. 이런 산에서 산책이라니… 
 @char Y.Face>아련,Body>기본
 Y: 전 여기 오르내릴때마다 힘들어 죽겠던데.

@@ -211,7 +211,22 @@ MonoBehaviour:
       pathPrefix: Characters
       guid: 4586b504f73cff143bcb8ed85b211b30
   - Id: CharacterAvatars
-    Resources: []
+    Resources:
+    - name: Headman
+      pathPrefix: CharacterAvatars
+      guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
+    - name: People1
+      pathPrefix: CharacterAvatars
+      guid: 851ee04113b1e5b498780ebeeaab8a57
+    - name: "\uB0A8\uC790\uC544\uC774"
+      pathPrefix: CharacterAvatars
+      guid: 18e8058a3d46ad148aaf5bfd9596f732
+    - name: "\uC5EC\uC790\uC544\uC7741_\uC544\uB78C"
+      pathPrefix: CharacterAvatars
+      guid: 758a3510f95d2f248bfbaa69bd15f308
+    - name: "\uC5EC\uC790\uC544\uC7742"
+      pathPrefix: CharacterAvatars
+      guid: d702249a7e7c4f14d989a83323a7687c
   - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
     Resources:
     - name: Y
@@ -252,6 +267,9 @@ MonoBehaviour:
     - name: ForestNight
       pathPrefix: Backgrounds/MainBackground
       guid: 78584917595c236468ad79dde0bfb0f2
+    - name: ForestNightBlood
+      pathPrefix: Backgrounds/MainBackground
+      guid: 859f1163d25042844a953d1e21ae5503
     - name: StoreDay
       pathPrefix: Backgrounds/MainBackground
       guid: 3be969e174206cc4ab16f133b59ea4a2
@@ -273,6 +291,9 @@ MonoBehaviour:
     - name: ParadiseInsideNight
       pathPrefix: Backgrounds/MainBackground
       guid: 7568a3c84e928354782ff45d1e00b51f
+    - name: ChurchInTheForest
+      pathPrefix: Backgrounds/MainBackground
+      guid: 75c7ad8f3262cab45abd0aa188082db0
     - name: YIllust
       pathPrefix: Backgrounds/MainBackground
       guid: 2e0a200c3d62c404ba4d0c62f2be1d28
