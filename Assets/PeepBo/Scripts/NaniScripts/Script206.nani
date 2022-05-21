@@ -178,9 +178,9 @@ J: 안되겠어, 문을 부수기라도 해야지
 J: 아니야 괜찮아, 괜찮아.
 @printer Narration time:0
 스스로를 달래며 고개를 드는 순간,
-@spawn ShakeCamera
 @back StoreDay visible:false wait:false
 @back StoreEye position:0,0 time:0
+@spawn ShakeCamera
 @printer Dialogue time:0
 J: !!!
 @printer Narration time:0

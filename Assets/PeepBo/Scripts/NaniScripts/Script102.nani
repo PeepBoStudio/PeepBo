@@ -280,6 +280,7 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 ;@stopSfx 102_유겸_등장_테마
 ;@bgm 메인00
 @hide Y
+@back StreetDay visible:false wait:false
 @back LighthouseDay position:0,0
 ; 다이어리에 'N'
 @hidePrinter
@@ -349,7 +350,9 @@ Y: 그곳이 해록도의 중심이거든요
 @char Y.Face>기본,Body>기본
 그때, 맞은 편에서 이장님과 주민 한 분이 내려오는 게 보였다.
 @printer Dialogue time:0
+@char Headman visible:false avatar:Headman
 Headman: 어어, 유겸이~
+@char Woman visible:false avatar:People
 Woman: 이쪽은 그 해록도 관광왔다는 아가씨야? 세상에 얼굴 하얀 것 봐. 너무 곱다.
 J: 아, 안녕하세요.
 Woman: 반가워요. 근데 어디가는 길이야?

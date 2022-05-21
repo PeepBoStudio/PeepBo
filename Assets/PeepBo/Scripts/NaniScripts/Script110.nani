@@ -2,8 +2,10 @@
 @back HallDay
 ; 메인 bgm
 @bgm 메인01
+@char Headman visible:false avatar:Headman
 Headman: 이 정도면 된 것 같네, 나중에 페인트로 벽을 한 번 덮어야겠어요.
 Headman: 모두 경황이 없었을 테니 회관에서 차나 한 잔 합시다.
+@hide Headman
 @printer Narration time:0
 주민들이 하나 둘 회관으로 들어가고 
 나는 잠시 담벼락 앞에 서서 글씨가 있던 자리를 바라봤다.
