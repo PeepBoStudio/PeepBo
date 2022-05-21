@@ -81,7 +81,6 @@ J: 저기들 숨어있구나? 들어가보자.
 @sfx 101_문여는_소리
 @printer Narration time:0
 기척을 죽이고 다가가 살그머니 문을 당기자 낡은 문에선 생각보다 큰 소음이 들렸다.
-@stopSfx 101_문여는_소리
 @goto .Con1
 #B
 @printer Dialogue time:0
@@ -100,7 +99,6 @@ J: 여기말고는 더이상 찾아볼 곳도 없는데…
 @sfx 101_문여는_소리
 @printer Narration time:0
 살그머니 문을 당기자 낡은 문에선 생각보다 큰 소음이 들렸다.
-@stopSfx 101_문여는_소리
 #Con1
 @back ForestDay visible:false time:0 wait:false
 @back StoreDay

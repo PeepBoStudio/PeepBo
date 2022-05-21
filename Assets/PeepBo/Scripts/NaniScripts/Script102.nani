@@ -1,4 +1,6 @@
 @camera set:*.false
+@set IsVisitDO=0
+@set IsVisitLH=0
 @back Black
 ; 메인 bgm
 @bgm 메인00
@@ -230,6 +232,7 @@ Y: 흠, 이제 어디 먼저 가볼래요?
 ;@bgm 메인00
 J: 선착장 먼저 가보자!
 @hide Y
+@back StreetDay visible:false wait:false
 @back DockDay position:0,0
 @sfx 102_선착장_파도소리
 ; 파도소리
@@ -323,6 +326,7 @@ Y: 자 다음은 어디로 가볼까요?
 ;@stopSfx 102_유겸_등장_테마
 ;@bgm 메인00
 @hide Y
+@back StreetDay visible:false wait:false
 @back ForestDay position:0,0
 ; 다이어리에 'N'
 @hidePrinter
