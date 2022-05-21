@@ -473,6 +473,21 @@ MonoBehaviour:
     - name: "110_\uB2F9\uD669"
       pathPrefix: Audio
       guid: 9272cabbc8250974cb581941333a1ea1
+    - name: "206_\uBB38_\uC138\uAC8C_\uB2EB\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: f4ce79d29a7b33147b7a7d0c9b462e21
+    - name: "206_\uC544\uC774\uB4E4_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 171b68d7d84d90d44aadeac0aaa17139
+    - name: "206_\uBB38_\uC138\uAC8C_\uB178\uD06C"
+      pathPrefix: Audio
+      guid: 6607dfd1d4024b24eaa89659524692b1
+    - name: "\uBA54\uC77800"
+      pathPrefix: Audio
+      guid: 846475fe51d98a242b027d6fe29b93d2
+    - name: "\uBA54\uC77801"
+      pathPrefix: Audio
+      guid: 6d88cfbda0e464441a9740490e26be85
   - Id: Characters/611adc6c-abb9-4fcd-a674-8c61b8a1e81d
     Resources:
     - name: "\uC6B0\uC900 \uC2E4\uB8E8\uC5E3"
