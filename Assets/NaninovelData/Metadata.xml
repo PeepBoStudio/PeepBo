@@ -669,19 +669,19 @@
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;People1&lt;/Path&gt;
+        &lt;Path&gt;People&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;남자아이&lt;/Path&gt;
+        &lt;Path&gt;Boy&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;여자아이1_아람&lt;/Path&gt;
+        &lt;Path&gt;Aram&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;여자아이2&lt;/Path&gt;
+        &lt;Path&gt;Girl&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
@@ -805,12 +805,12 @@
         &lt;Type&gt;Characters&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;People1&lt;/Path&gt;
+        &lt;Path&gt;People&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;Headman&lt;/Path&gt;
-        &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
+        &lt;Path&gt;Square&lt;/Path&gt;
+        &lt;Type&gt;Characters/J&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;Headman&lt;/Path&gt;
@@ -821,19 +821,19 @@
         &lt;Type&gt;TextPrinters&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;남자아이&lt;/Path&gt;
+        &lt;Path&gt;Boy&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;남자아이&lt;/Path&gt;
+        &lt;Path&gt;Boy&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;여자아이2&lt;/Path&gt;
+        &lt;Path&gt;Girl&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;여자아이1_아람&lt;/Path&gt;
+        &lt;Path&gt;Aram&lt;/Path&gt;
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
@@ -929,8 +929,6 @@
         &lt;Type&gt;Audio&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-<<<<<<< Updated upstream
-=======
         &lt;Path&gt;206_문_세게_닫는_소리&lt;/Path&gt;
         &lt;Type&gt;Audio&lt;/Type&gt;
       &lt;/Resource&gt;
@@ -951,7 +949,6 @@
         &lt;Type&gt;Audio&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
->>>>>>> Stashed changes
         &lt;Path&gt;우준 실루엣&lt;/Path&gt;
         &lt;Type&gt;Characters/WSilhouette&lt;/Type&gt;
       &lt;/Resource&gt;
