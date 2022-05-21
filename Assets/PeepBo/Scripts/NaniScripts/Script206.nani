@@ -78,8 +78,10 @@ J: 창고 같은 건가?
 @printer Dialogue time:0
 J: 저기들 숨어있구나? 들어가보자.
 ; 삐걱 문열리는 소리
+@sfx 101_문여는_소리
 @printer Narration time:0
 기척을 죽이고 다가가 살그머니 문을 당기자 낡은 문에선 생각보다 큰 소음이 들렸다.
+@stopSfx 101_문여는_소리
 @goto .Con1
 #B
 @printer Dialogue time:0
@@ -124,11 +126,11 @@ J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기
 @spawn ShakeBackground
 ; 메인 bgm out
 @stopBgm 메인01
-@bgm 110_피_발견
-; 세게 문 닫히는 소리
 @sfx 206_문_세게_닫는_소리
+; 세게 문 닫히는 소리
 @back StoreDay position:10,0 time:0
 @printer Dialogue time:0
+@bgm 110_피_발견
 J: !!!
 @stopSfx 206_문_세게_닫는_소리
 @printer Narration time:0
@@ -214,8 +216,6 @@ J: 뭐, 뭐야, 어딜간 거야?
 ;<도움이 될만 한 것을 찾아보자>
 ; 탐색
 @back StoreDay position:0,0
-@printer Dialogue time:0
-J: 그래, 이거면 됐어.
 @printer Narration time:0
 나는 촛대를 부셔질듯이 세게 움켜쥐고 천천히 반대편 문으로 다가갔다.
 그런데,
@@ -238,15 +238,14 @@ J: 조, 좋아... 안 열리면 부수지 뭐!
 J: 일단 빨리 여기서 나간 다음 생각해봐야겠어.
 @printer Narration time:0
 들어왔던 문 쪽으로 재빨리 돌아가려는데,
-일단 먼저 이 곳에서 나가야겠어!
-창고를 빠져나간 다음 다른 사람이랑 같이 와보자.
+굳게 닫힌 문과 단단해보이는 문고리가 눈에 들어왔다.
 근데 아무래도 힘만으로 저 문을 열 순 없을 거 같은데,
 문고리를 부술만한 무언가가 없을까?
 ; <도움이 될만 한 것을 찾아보자>
 ; 탐색
 @back StoreDay position:0,0
 @printer Dialogue time:0
-J: 그래, 이거면 됐어.
+J: 나는 서랍에서 발견한 촛대를 부셔질듯이 세게 움켜쥐고 천천히 문으로 다가갔다.
 @printer Narration time:0
 그런데... 아무래도 문이 쉽게 열릴 것 같진 않은데...
 @printer Dialogue time:0

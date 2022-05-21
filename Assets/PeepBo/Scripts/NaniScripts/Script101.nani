@@ -161,8 +161,8 @@ J: 으악!
 저항할 새도 없이 땅과 충돌하려는 순간,
 누군가 내 팔목을 붙들었다.
 @hidePrinter
-@stopBgm 메인01
-@sfx 101_고결_테마
+;@stopBgm 메인01
+;@sfx 101_고결_테마
 @back StreetDay visible:false
 @movie GMovie time:0.5
 @back GIllust time:0.3
@@ -225,8 +225,8 @@ J: 감사합니다.
 잘 모르겠지말 일단 가다보면 나오겠지
 인사를 하고 몸을 돌려 남자가 알려준 방향으로 걷기 시작했다.
 @hide G
-@stopSfx 101_고결_테마
-@bgm 메인01
+;@stopSfx 101_고결_테마
+;@bgm 메인01
 …
 근데…
 ; 발소리
