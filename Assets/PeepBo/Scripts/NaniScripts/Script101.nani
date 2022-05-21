@@ -162,7 +162,9 @@ J: 으악!
 누군가 내 팔목을 붙들었다.
 @hidePrinter
 @sfx 101_고결_테마
-@back GIllust
+@back StreetDay visible:false
+@movie GMovie time:0.5
+@back GIllust time:0.3
 ; 효과음
 @wait i
 곧게 뻗은 눈썹, 색소가 옅은 눈동자가 담긴 날카로운 눈매.

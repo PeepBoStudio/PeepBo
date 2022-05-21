@@ -503,3 +503,11 @@ MonoBehaviour:
     - name: "\uD53C\uBB4D\uC740\uC190"
       pathPrefix: Characters/BloodHand
       guid: 59d86ed9399fcfa4aa76f7d37c237173
+  - Id: Movies
+    Resources:
+    - name: GMovie
+      pathPrefix: Movies
+      guid: da5448a105b36024b9370f82d6739a56
+    - name: YMovie
+      pathPrefix: Movies
+      guid: 04eb28ac0203a3d4ca4b12de1be85337

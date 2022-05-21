@@ -86,9 +86,10 @@ J: 으아, 눈부셔...
 천천히 감았던 눈을 뜨자 눈꺼풀 사이로 보이는 건….
 @hidePrinter
 @sfx 102_유겸_등장_테마
-@back StreetDay visible:false time:0 wait:true
+@back StreetDay visible:false
+@movie YMovie time:0.5
 @spawn SunShafts wait:false
-@back YIllust position:0,0
+@back YIllust position:0,0 time:0.3
 @wait i
 @printer Dialogue time:0
 Y: 기다렸어요, 누나. 잘 잤어요?
