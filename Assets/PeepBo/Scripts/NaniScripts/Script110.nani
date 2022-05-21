@@ -201,8 +201,9 @@ First: 정신차려...!
 @stopBgm 110_피_발견
 @bgm 110_우준_등장
 @hidePrinter
-@back ForestNight visible:false time:0 wait:true
-@back WIllust wait:false
+@back ForestNight visible:false
+@movie WMovie time:0.5
+@back WIllust time:0.3
 @wait i
 ; 차우준 메인 bgm
 @printer Narration time:0

@@ -511,3 +511,9 @@ MonoBehaviour:
     - name: YMovie
       pathPrefix: Movies
       guid: 04eb28ac0203a3d4ca4b12de1be85337
+    - name: DMovie
+      pathPrefix: Movies
+      guid: a03c97da4bfd167498744cc0a6529ceb
+    - name: WMovie
+      pathPrefix: Movies
+      guid: b83e8f7f5ef000e47a1dd278b9d0d0d9

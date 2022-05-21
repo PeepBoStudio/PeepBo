@@ -303,8 +303,9 @@ J: 제가 할게요, 저 주세요.
 #Con3
 @hide D
 @hidePrinter
-@back ParadiseInsideNight visible:false time:0
-@back DIllust
+@back ParadiseInsideNight visible:false
+@movie DMovie time:0.5
+@back DIllust time:0.3
 @wait i
 @spawn ShakeCamera
 @printer Dialogue time:0
