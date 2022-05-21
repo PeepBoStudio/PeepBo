@@ -65,18 +65,20 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 일단, 씻고 얼른 나가보자.
 @hidePrinter
 @back Remine.Dissolve params:100 time:0.8
+@stopBgm 메인00
+@bgm 102_지안_독백
 @wait i
 ; 쓸쓸 bgm
-@bgm 102_지안_독백
 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야.
 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든.
 그야말로 신이 내린 선물이지.
 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심하니.
-@stopBgm 102_지안_독백
 @hidePrinter
 @wait i
 @back Remine visible:false time:0
 @back StreetDay position:-8.3,0
+@stopBgm 102_지안_독백
+@bgm 메인00
 ; 메인 bgm
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.
 @printer Dialogue time:0
@@ -85,6 +87,7 @@ J: 으아, 눈부셔...
 @printer Narration time:0
 천천히 감았던 눈을 뜨자 눈꺼풀 사이로 보이는 건….
 @hidePrinter
+@stopBgm 메인00
 @sfx 102_유겸_등장_테마
 @back StreetDay visible:false
 @movie YMovie time:0.5
@@ -93,7 +96,6 @@ J: 으아, 눈부셔...
 @wait i
 @printer Dialogue time:0
 Y: 기다렸어요, 누나. 잘 잤어요?
-@stopSfx 102_유겸_등장_테마
 @despawn SunShafts wait:false
 @back YIllust visible:false time:0 wait:true
 @back StreetDay position:-8.3,0
@@ -224,6 +226,8 @@ Y: 흠, 이제 어디 먼저 가볼래요?
 @stop
 
 # Dock
+@stopSfx 102_유겸_등장_테마
+@bgm 메인00
 J: 선착장 먼저 가보자!
 @hide Y
 @back DockDay position:0,0
@@ -273,6 +277,8 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @stop
 
 # Lighthouse
+@stopSfx 102_유겸_등장_테마
+@bgm 메인00
 @hide Y
 @back LighthouseDay position:0,0
 ; 다이어리에 'N'
@@ -313,6 +319,8 @@ Y: 자 다음은 어디로 가볼까요?
 @stop
 
 # Forest
+@stopSfx 102_유겸_등장_테마
+@bgm 메인00
 @hide Y
 @back ForestDay position:0,0
 ; 다이어리에 'N'

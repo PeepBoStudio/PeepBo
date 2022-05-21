@@ -104,6 +104,8 @@ J: 정말 참 종교인이시네?
 @wait i
 ; 심각한 bgm
 ; 영사기 효과음
+@stopBgm 메인01 fade:10
+@bgm 110_피_발견
 @sfx 110_영사기
 @back Black visible:false time:0
 @back JianRoomNight
@@ -196,20 +198,18 @@ First: 멈추라고!!!
 @stopSfx 110_당황
 @printer Dialogue time:0
 First: 정신차려...!
+@stopBgm 110_피_발견
+@bgm 110_우준_등장
 @hidePrinter
 @back ForestNight visible:false time:0 wait:true
 @back WIllust wait:false
 @wait i
 ; 차우준 메인 bgm
-@stopBgm 메인01
-@bgm 110_우준_등장
 @printer Narration time:0
 시간이 멈춘 것 같았다.
 귓가를 새차게 때리던 바람 소리가 멀어지고 오감마저 정지된 느낌
 날 멈춰세운 남자는 내가 조금이라도 움직이는 걸 허락하지 않겠다는 듯 
 내 온 몸을 꽉 붙들었다.
-@stopBgm 110_우준_등장
-@bgm 메인01
 @printer Dialogue time:0
 First: 숨 쉬어.
 @printer Narration time:0
@@ -217,12 +217,14 @@ First: 숨 쉬어.
 그제서야 멀어졌던 바람 소리가 들려오기 시작했다.
 아니, 이건 바람 소리가 아니라….
 @printer Dialogue time:0
+@bgm 110_파도소리
 J: 파도 소리…?
 @printer Narration time:0
 덜렁이던 머리끈이 기어코 끊어지며 추락했지만,
 바닥과 부딪히는 소리는 들리지 않았다.
 왜냐하면 나는 지금…
 절벽 끝에서, 바다를 등지고 서있었으니까
+@stopBgm 110_파도소리 fade:10
 @printer Dialogue time:0
 J: 피, 피가…!
 First: 그런 거 없어, 정신차리고 봐.

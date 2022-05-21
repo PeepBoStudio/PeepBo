@@ -960,6 +960,14 @@
         &lt;Path&gt;피뭍은손&lt;/Path&gt;
         &lt;Type&gt;Characters/BloodHand&lt;/Type&gt;
       &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;GMovie&lt;/Path&gt;
+        &lt;Type&gt;Movies&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;YMovie&lt;/Path&gt;
+        &lt;Type&gt;Movies&lt;/Type&gt;
+      &lt;/Resource&gt;
     &lt;/Resources&gt;
     &lt;Constants /&gt;
     &lt;Variables&gt;

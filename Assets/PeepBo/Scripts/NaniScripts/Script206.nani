@@ -123,6 +123,8 @@ J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기
 뒤돌아 이 곳을 나가려는 순간.
 @spawn ShakeBackground
 ; 메인 bgm out
+@stopBgm 메인01
+@bgm 110_피_발견
 ; 세게 문 닫히는 소리
 @sfx 206_문_세게_닫는_소리
 @back StoreDay position:10,0 time:0
@@ -254,6 +256,8 @@ J: 조, 좋아... 안 열리면 부수지 뭐!
 문고리를 부수려 촛대를 높이 치켜든 순간,
 @sfx 101_문여는_소리
 ; 문 열리는 효과음
+@stopBgm 110_피_발견
+@bgm 메인01
 @back ForestDay.Saturate time:1
 @stopSfx 101_문여는_소리
 ; 메인 bgm
