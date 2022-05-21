@@ -78,8 +78,10 @@ J: 창고 같은 건가?
 @printer Dialogue time:0
 J: 저기들 숨어있구나? 들어가보자.
 ; 삐걱 문열리는 소리
+@sfx 101_문여는_소리
 @printer Narration time:0
 기척을 죽이고 다가가 살그머니 문을 당기자 낡은 문에선 생각보다 큰 소음이 들렸다.
+@stopSfx 101_문여는_소리
 @goto .Con1
 #B
 @printer Dialogue time:0
@@ -124,9 +126,9 @@ J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기
 @spawn ShakeBackground
 ; 메인 bgm out
 @stopBgm 메인01
+@sfx 206_문_세게_닫는_소리
 @bgm 110_피_발견
 ; 세게 문 닫히는 소리
-@sfx 206_문_세게_닫는_소리
 @back StoreDay position:10,0 time:0
 @printer Dialogue time:0
 J: !!!
