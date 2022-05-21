@@ -968,6 +968,14 @@
         &lt;Path&gt;YMovie&lt;/Path&gt;
         &lt;Type&gt;Movies&lt;/Type&gt;
       &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;DMovie&lt;/Path&gt;
+        &lt;Type&gt;Movies&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;WMovie&lt;/Path&gt;
+        &lt;Type&gt;Movies&lt;/Type&gt;
+      &lt;/Resource&gt;
     &lt;/Resources&gt;
     &lt;Constants /&gt;
     &lt;Variables&gt;
