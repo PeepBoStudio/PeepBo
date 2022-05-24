@@ -32,7 +32,7 @@ namespace PeepBo.Nani.Custom
         protected override void OnButtonClick()
         {
             uiManager.GetUI<IPauseUI>()?.Hide();
-
+            uiManager.GetUI<ITitleUI>()?.Hide();
             ExitToTitleAsync();
         }
 
@@ -40,7 +40,6 @@ namespace PeepBo.Nani.Custom
         {
             if (!await confirmationUI.ConfirmAsync(ConfirmationMessage)) return;
             await gameState.ResetStateAsync();
-            uiManager.GetUI<ITitleUI>()?.Show();
 
             SceneManager.LoadScene("MainScene");
         }
