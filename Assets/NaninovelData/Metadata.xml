@@ -98,15 +98,7 @@
         &lt;Description&gt;주민&lt;/Description&gt;
       &lt;/Actor&gt;
       &lt;Actor&gt;
-        &lt;Id&gt;Boy1&lt;/Id&gt;
-        &lt;Type&gt;Characters&lt;/Type&gt;
-        &lt;Appearances&gt;
-          &lt;string&gt;Square&lt;/string&gt;
-        &lt;/Appearances&gt;
-        &lt;Description&gt;남자아이&lt;/Description&gt;
-      &lt;/Actor&gt;
-      &lt;Actor&gt;
-        &lt;Id&gt;Boy2&lt;/Id&gt;
+        &lt;Id&gt;Boy&lt;/Id&gt;
         &lt;Type&gt;Characters&lt;/Type&gt;
         &lt;Appearances&gt;
           &lt;string&gt;Square&lt;/string&gt;
@@ -819,10 +811,6 @@
       &lt;Resource&gt;
         &lt;Path&gt;Narration&lt;/Path&gt;
         &lt;Type&gt;TextPrinters&lt;/Type&gt;
-      &lt;/Resource&gt;
-      &lt;Resource&gt;
-        &lt;Path&gt;Boy&lt;/Path&gt;
-        &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;Boy&lt;/Path&gt;

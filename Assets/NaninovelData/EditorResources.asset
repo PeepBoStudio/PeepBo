@@ -235,19 +235,19 @@ MonoBehaviour:
     Resources:
     - name: Headman
       pathPrefix: CharacterAvatars
-      guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
+      guid: 6e3051850c79b9c48874c71936bc2548
     - name: People
       pathPrefix: CharacterAvatars
-      guid: 851ee04113b1e5b498780ebeeaab8a57
+      guid: ba71de868d4fb944095a1ea9b517cad9
     - name: Boy
       pathPrefix: CharacterAvatars
-      guid: 18e8058a3d46ad148aaf5bfd9596f732
+      guid: 8f0b642130675b7428edd84853827e0c
     - name: Aram
       pathPrefix: CharacterAvatars
-      guid: 758a3510f95d2f248bfbaa69bd15f308
+      guid: d09c8c9d73969ae41912c03ec4e9967c
     - name: Girl
       pathPrefix: CharacterAvatars
-      guid: d702249a7e7c4f14d989a83323a7687c
+      guid: 261757962eac91c4c82baf285a8e0987
   - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
     Resources:
     - name: Y
@@ -377,12 +377,7 @@ MonoBehaviour:
   - Id: Characters/02dcbd0b-6da9-487e-ab23-b4f1f44c5fcc
     Resources:
     - name: Square
-      pathPrefix: Characters/Boy1
-      guid: 18e8058a3d46ad148aaf5bfd9596f732
-  - Id: Characters/7965c0c0-d14e-4bde-bb0a-930482673e68
-    Resources:
-    - name: Square
-      pathPrefix: Characters/Boy2
+      pathPrefix: Characters/Boy
       guid: 18e8058a3d46ad148aaf5bfd9596f732
   - Id: Characters/8036479c-651c-4f9c-94dd-f8fb935adb24
     Resources:
