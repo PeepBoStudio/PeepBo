@@ -38,7 +38,10 @@ MonoBehaviour:
   - Name: Continue
     AlwaysProcess: 0
     Keys: 0d0000000f0100004a010000
-    Axes: []
+    Axes:
+    - AxisName: Mouse ScrollWheel
+      TriggerMode: 2
+      TriggerTolerance: 0.001
     Swipes:
     - Direction: 2
       FingerCount: 1
@@ -85,7 +88,10 @@ MonoBehaviour:
   - Name: Rollback
     AlwaysProcess: 0
     Keys: 4e010000
-    Axes: []
+    Axes:
+    - AxisName: Mouse ScrollWheel
+      TriggerMode: 1
+      TriggerTolerance: 0.001
     Swipes:
     - Direction: 3
       FingerCount: 1

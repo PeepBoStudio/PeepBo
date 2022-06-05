@@ -1,6 +1,7 @@
 @camera set:*.false
 @back StreetDay
 @bgm 메인01
+@wait 2
 J: 아니~ 무슨 무인도도 아니고 어떻게 개미 한 마리도 안 보이냐고오~!
 @printer Narration time:0
 20분 째 무거운 캐리어를 끌고 섬을 돌아다녔지만,
@@ -189,6 +190,7 @@ J: 제가 먼저 물어봤잖아요
 G: 잘생긴거 아니까 너무 그렇게 뚫어져라 보지말지?
 @printer Narration time:0
 재수도 없고…
+
 @printer Dialogue time:0
 J: 하하, 혹시 여기 주민이세요? 제가 방금 해록도에 들어왔는데 여쭤볼게 있어서요
 @char G.Body>기본,Face>무표정
@@ -220,6 +222,7 @@ J: 감사합니다.
 잘 모르겠지말 일단 가다보면 나오겠지
 인사를 하고 몸을 돌려 남자가 알려준 방향으로 걷기 시작했다
 @hide G
+
 ;@stopSfx 101_고결_테마
 ;@bgm 메인01
 …
@@ -260,8 +263,11 @@ J: 엇 괜찮은데! 감사합니다!
 남자는 대답없이 묵묵히 캐리어를 끌었다
 뭐지, 이 친절한 듯 불친절한 행동은?
 난 거의 뛰다시피 걸으며 그와 속도를 맞췄다
+;@hide 고결 실루엣
+@char G.Body>기본,Face>기본 position:-0.5,-15.5
 @printer Dialogue time:0
 J: 그, 성함이 어떻게 되세요?
+@char G.Body>팔짱,Face>거만
 G: 고결
 J: 엇!
 @printer Narration time:0
@@ -281,6 +287,7 @@ G: 얼굴이랑 꽤나 어울리는 이름이긴 하지
 ; 호감도 +5
 @printer Dialogue time:0
 J: 네에… 정말 어울리네요…
+@char G.Body>손머리,Face>비웃음 position:-0.5,-15.5
 G: 표정은 아닌데, 재수 없다고 생각했지?
 J: 아, 아닌데요?
 @printer Narration time:0
@@ -290,6 +297,7 @@ J: 아, 아닌데요?
 # B
 @printer Dialogue time:0
 J: 자기애가 되게… 강하신가봐요…?
+@char G.Body>팔짱,Face>비웃음 position:-0.5,-15.5
 G: 꽤 들어 그런 말
 @printer Narration time:0
 뭐지 이 은근하게 느껴지는 재수없음은?
@@ -302,26 +310,25 @@ J: 오, 들켰다.
 난 장난스레 대답했지만,
 사실 그의 말마따나 얼굴과 꽤나 잘 어울리는 이름이었다
 @printer Dialogue time:0
-;@char G.Body>기본,Face>무표정
+@char G.Body>기본,Face>무표정 position:-0.5,-15.5
 G: 근데 정말 여긴 왜 왔어?
 G: 보통 혼자 이런 아무 것도 없는 섬엔 안 오지않나?
-J: 관광왔다니까요? 저 대학 막 졸업했거든요.
+J: 관광왔다니까요? 저 대학 막 졸업했거든요
 J: 졸업여행 삼아 온 거예요
 @printer Narration time:0
-;@char G.Body>팔짱,Face>무표정
+@char G.Body>팔짱,Face>무표정
 고결은 별로 내 말을 믿는 눈치가 아니었다
-;@hide 고결 실루엣
 시시콜콜한 대화를 하며 10분 정도 걸었을까-
 @hidePrinter 
 @back StreetDay visible:false time:0 wait:false
 @back HallDay
+@wait 1
 ; 다이어리에 장소발견
 ; 발견 효과음
 @showUI HallFindUI
 @wait i
 @hideUI HallFindUI
 @printer Dialogue time:0
-@char G.Body>기본,Face>기본 position:-0.5,-15.5
 J: 감사합니다
 @char G.Body>팔짱,Face>거만
 G: 곧 주민들이 올테니까 아무나 붙잡고 도와달라고 해
@@ -385,7 +392,7 @@ G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것�
 @sfx 101_문여는_소리
 @printer Narration time:0
 곧 다시 문이 열리고, 
-방금 나간 아주머니와 또 다른 아저씨 한 명이 함께 들어왔다.
+방금 나간 아주머니와 또 다른 아저씨 한 명이 함께 들어왔다
 @stopSfx 101_문여는_소리
 @char Man visible:false avatar:Headman
 아저씨는 나를 보며 어색한 미소로 말을 건냈다
@@ -441,6 +448,7 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 
 @back HallDay visible:false time:0 wait:false
 @back StreetDay position:-8.3,0
+@wait 2
 아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와
 본인이 해록도의 이장이라는 것을 알려줬다.
 회관을 나와 15분 쯤 걸었을까,
@@ -493,4 +501,5 @@ J: 아, 이대로 잠들어버릴지도 모르겠어…
 @back JianRoodDay visible:false
 @back Black time:1
 @hidePrinter
+@wait 1
 @loadScene MainScene
