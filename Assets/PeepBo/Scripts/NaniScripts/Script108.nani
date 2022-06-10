@@ -401,5 +401,6 @@ D: 아마도... 신께서?
 @wait 2
 결국 해가 뜨고 나서야, 집에 돌아온 나는
 말 그대로 기절하듯 쓰러져 잠에 들고 말았다
+@hidePrinter
 @wait 1
 @loadScene MainScene

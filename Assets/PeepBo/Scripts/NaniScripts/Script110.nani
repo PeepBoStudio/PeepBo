@@ -249,11 +249,12 @@ First: ...꽃일 뿐이야
 @printer Narration time:0
 서서히 손 끝에서부터 감각이 돌아오며 주변이 자각되기 시작했다
 남자의 어깨에 묻고 있던 고개를 들어 천천히 주위를 살폈다
+@hidePrinter
 
 @back ForestNightBlood visible:false time:0 wait:false
 @back CamelliaNight
-@char WSilhouette position:0,-18.3 scale:1.3 time:2
 @wait 2
+@char WSilhouette position:0,-18.3 scale:1.3
 @printer Dialogue time:0
 J: 동백…꽃?
 @printer Narration time:0
