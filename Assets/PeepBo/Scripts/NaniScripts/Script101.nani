@@ -50,9 +50,10 @@ J: 생각보다 집들이 많네, 그런데 사람은 한 명도 보이지가 �
 J: 어? 이건 동백꽃인가?
 @printer Narration time:0
 꽃을 향해 손을 뻗으려는 순간,
-; 고양이 소리 ON
-; 진동 & 화면 흔들림
+@sfx 101_고양이
+; 진동
 @spawn ShakeRoomBackground_101
+; 집중선 효과
 @printer Dialogue time:0
 J: 으악!
 J: 깜짝이야, 고양이잖아?

@@ -429,6 +429,9 @@ MonoBehaviour:
     - name: "101_\uBC1C\uC790\uAD6D_\uC18C\uB9AC"
       pathPrefix: Audio
       guid: 496c98f701189f345b2c7c3943ecd5a0
+    - name: "101_\uACE0\uC591\uC774"
+      pathPrefix: Audio
+      guid: a94d99960d9dbed47967cdc1271b0eb4
     - name: "102_\uBB38_\uB2EB\uB294_\uC18C\uB9AC"
       pathPrefix: Audio
       guid: 278603f46f029e6449118e103b9f0a9d
@@ -482,7 +485,7 @@ MonoBehaviour:
       guid: 846475fe51d98a242b027d6fe29b93d2
     - name: "\uBA54\uC77801"
       pathPrefix: Audio
-      guid: 6d88cfbda0e464441a9740490e26be85
+      guid: 05b91c849e0959944aca3cf9c74051c4
   - Id: Characters/611adc6c-abb9-4fcd-a674-8c61b8a1e81d
     Resources:
     - name: "\uC6B0\uC900 \uC2E4\uB8E8\uC5E3"
