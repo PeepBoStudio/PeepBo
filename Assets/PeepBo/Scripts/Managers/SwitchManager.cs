@@ -12,8 +12,31 @@ namespace PeepBo.Managers
     {
         public StringParameter ScriptName { get; set; } = null;
         public StringParameter RoomBackLabel { get; set; } = null;
+        public StringParameter ClickerBackLabel { get; set; } = null;
     }
 
+
+    [CommandAlias("clicker")]
+    public class SwitchToClickerMode : Command
+    {
+        [ParameterAlias("scriptname")] public StringParameter ScriptName; // 클리커를 실행 할 나니스크립트
+        [ParameterAlias("label")] public StringParameter Label; // 나니스크립트 내의 라벨
+
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            var showUI = new ShowUI { UINames = new List<string> { "Clicker" } };
+            showUI.ExecuteAsync(asyncToken).Forget();
+
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            scriptPlayer.Stop();
+
+            var hidePrinter = new HidePrinter();
+            hidePrinter.ExecuteAsync(asyncToken).Forget();
+
+            GameManager.Switch.ScriptName = ScriptName;
+            GameManager.Switch.ClickerBackLabel = Label;
+        }
+    }
 
     [CommandAlias("room")]
     public class SwitchToRoomMode : Command

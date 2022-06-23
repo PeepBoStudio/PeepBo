@@ -160,7 +160,10 @@ J: 무슨 문이 이래?!
 J: 좋아, 꼭 열고 만다!
 
 ; 시스템창 클리커
+;@showUI Clicker
+@clicker scriptname:"Script206" label:"Clicker"
 
+# Clicker
 @printer Dialogue time:0
 J: 하아...
 @printer Narration time:0

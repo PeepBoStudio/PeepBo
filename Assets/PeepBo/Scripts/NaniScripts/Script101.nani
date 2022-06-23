@@ -50,11 +50,13 @@ J: 생각보다 집들이 많네, 그런데 사람은 한 명도 보이지가 �
 J: 어? 이건 동백꽃인가?
 @printer Narration time:0
 꽃을 향해 손을 뻗으려는 순간,
+@showUI Test
 @sfx 101_고양이
 ; 진동
 @spawn ShakeRoomBackground_101
 ; 집중선 효과
 @printer Dialogue time:0
+@hideUI Test
 J: 으악!
 J: 깜짝이야, 고양이잖아?
 @printer Narration time:0
@@ -87,6 +89,7 @@ J: 해록도리 12번지?
 @printer Narration time:0
 집 안에 누군가 있을 지도 몰라, 두드려보자.
 ; 문 두드리는 효과음
+@camera offset:-2.5,1.5,-5 zoom:0.5
 @sfx 101_노크 
 @printer Dialogue time:0
 J: 계세요? 말씀 좀 여쭤보려고요!
@@ -99,6 +102,7 @@ J: 계세요오!
 @stopSfx 101_노크
 @printer Narration time:0
 안쪽에선 아무 소리도 들리지 않는다.
+@camera offset:0,0 zoom:0
 @find name:"Roof"
 @gosub .RoomWait
 
