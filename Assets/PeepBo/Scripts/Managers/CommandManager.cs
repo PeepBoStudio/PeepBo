@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace PeepBo.Managers
 {
-    public class SwitchManager
+    public class CommandManager
     {
         public StringParameter ScriptName { get; set; } = null;
         public StringParameter RoomBackLabel { get; set; } = null;
@@ -33,8 +33,19 @@ namespace PeepBo.Managers
             var hidePrinter = new HidePrinter();
             hidePrinter.ExecuteAsync(asyncToken).Forget();
 
-            GameManager.Switch.ScriptName = ScriptName;
-            GameManager.Switch.ClickerBackLabel = Label;
+            GameManager.Command.ScriptName = ScriptName;
+            GameManager.Command.ClickerBackLabel = Label;
+        }
+    }
+
+    [CommandAlias("vibrate")]
+    public class Vibrate : Command
+    {
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+#if UNITY_ANDROID || UNITY_IOS
+    Handheld.Vibrate();
+#endif
         }
     }
 
@@ -57,8 +68,8 @@ namespace PeepBo.Managers
             var hidePrinter = new HidePrinter();
             hidePrinter.ExecuteAsync(asyncToken).Forget();
 
-            GameManager.Switch.ScriptName = ScriptName;
-            GameManager.Switch.RoomBackLabel = Label;
+            GameManager.Command.ScriptName = ScriptName;
+            GameManager.Command.RoomBackLabel = Label;
 
             GameManager.Room.StartRoomMode(ScriptName, Label, asyncToken);
 
@@ -96,19 +107,43 @@ namespace PeepBo.Managers
             //advCamera.enabled = false;
             //var naniCamera = Engine.GetService<ICameraManager>().Camera;
             //naniCamera.enabled = true;
-
-            Debug.Log(Label);
-            
             // 3. Load and play specified script (if assigned).
             if (Assigned(ScriptName))
             {
                 var scriptPlayer = Engine.GetService<IScriptPlayer>();
                 await scriptPlayer.PreloadAndPlayAsync(ScriptName, label: Label);
             }
-
             // 4. Enable Naninovel input.
             var inputManager = Engine.GetService<IInputManager>();
             inputManager.ProcessInput = true;
+        }
+    }
+
+    [CommandAlias("stopscript")]
+    public class StopScript : Command
+    {
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            // 1. Disable Naninovel input.
+            var inputManager = Engine.GetService<IInputManager>();
+            inputManager.ProcessInput = false;
+
+            // 2. Stop script player.
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            scriptPlayer.Stop();
+
+            var hidePrinter = new HidePrinter();
+            hidePrinter.ExecuteAsync(asyncToken).Forget();
+        }
+    }
+
+    [CommandAlias("find")]
+    public class FindSomething : Command
+    {
+        [ParameterAlias("name")] public StringParameter Name;
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            GameManager.Room.OnFind(Name);
         }
     }
 }

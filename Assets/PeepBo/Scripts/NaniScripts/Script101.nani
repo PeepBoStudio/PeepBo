@@ -20,32 +20,31 @@ J: 으악, 심지어 핸드폰도 안 터지잖아
 @stopSfx 101_폰_에러음
 @hide Phone
 J: 주변에 뭔가 도움될만 한 게 없을끼?
+; ------------ 탐색 -------------
 @hidePrinter 
 @showUI StartRoomModeUI time:1
 @wait i
 @hideUI StartRoomModeUI time:1
-
-; ------------ 탐색 -------------
-@back RoomBackground id:RoomBackground
+@back id:RoomBackground1-1
 # RoomStart
 @room scriptname:"Script101" label:"RoomBack"
 # RoomWait
 @stopscript
 @stop
 
-# Flower
+# 야생화
 @printer Dialogue time:0
 J: 여긴 눈 돌리는 곳마다 꽃이 있네
 @printer Narration time:0
 평범한 야생화지만 누군가 조경이라도 한 것처럼 곳곳에 아름답게 피어있다.
 @gosub .RoomWait
 
-# House
+# 집
 @printer Dialogue time:0
 J: 생각보다 집들이 많네, 그런데 사람은 한 명도 보이지가 않아…
 @gosub .RoomWait
 
-# DongBaek
+# 동백꽃
 @printer Dialogue time:0
 J: 어? 이건 동백꽃인가?
 @printer Narration time:0
@@ -63,7 +62,7 @@ J: 깜짝이야, 고양이잖아?
 그래도 해록도에 온지 1시간 만에 살아있는 뭔가를 보기는 했네…
 @gosub .RoomWait
 
-# Wall
+# 담벼락
 @printer Dialogue time:0
 J: 어? 이건 뭐지?
 @printer Narration time:0
@@ -77,10 +76,10 @@ J: 밑에 이 이름들이랑 숫자는 뭐지?
 J: 주이… 목록? 주민을 잘 못 쓴걸까?
 @hideUI 1-1RoomPopup
 J: 으, 무슨 말인지 하나도 모르겠다. 
-@find name:"Wall"
+@find name:"담벼락"
 @gosub .RoomWait
 
-# Roof
+# 지붕
 @printer Narration time:0
 색이 바랜 초록 지붕, 
 명패에 쓰여진 이름은 아주 흐릿해져 읽기 어려웠지만 주소는 남아있었다.
@@ -103,7 +102,7 @@ J: 계세요오!
 @printer Narration time:0
 안쪽에선 아무 소리도 들리지 않는다.
 @camera offset:0,0 zoom:0
-@find name:"Roof"
+@find name:"지붕"
 @gosub .RoomWait
 
 ; ------------ 탐색 -------------
@@ -111,7 +110,7 @@ J: 계세요오!
 
 ; 탐색 종료
 # RoomBack
-@hide RoomBackground
+@hide RoomBackground1-1
 @showUI ExitRoomModeUI time:1.0
 @hideUI ExitRoomModeUI
 @printer Narration time:0

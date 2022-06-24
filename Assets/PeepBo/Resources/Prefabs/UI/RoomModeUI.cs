@@ -19,13 +19,19 @@ public class RoomModeUI : MonoBehaviour
     private List<string> findList = new List<string>();
     private Dictionary<string, GameObject> findObjectDict = new Dictionary<string, GameObject>();
 
-    private void Awake()
+    bool isShow = false;
+
+    public void OnShow() // 에디터 내에서 Serialize됨
     {
+        if (isShow) return;
+
+        isShow = true;
+
         GameManager.Room.InitRoomModeUI(this);
 
         exitButton.onClick.AddListener(OnClickExitButton);
         findList = GameManager.Room.GetFindList();
-        for(int i=0; i<findList.Count; i++)
+        for (int i = 0; i < findList.Count; i++)
         {
             var findObject = Instantiate(roomModeIcon, findListObject.transform);
             findObject.name = findList[i];
@@ -33,9 +39,15 @@ public class RoomModeUI : MonoBehaviour
         }
     }
 
+    public void OnHide() // 에디터 내에서 Serialize됨
+    {
+        isShow = false;
+    }
+
     public void OnFinishInteraction(string interactionName)
     {
-        findObjectDict[interactionName].GetComponent<Image>().sprite = findSprite;
+        findObjectDict.TryGetValue(interactionName, out GameObject obj);
+        obj.GetComponent<Image>().sprite = findSprite;
         findCount++;
         if(findCount == findList.Count)
         {

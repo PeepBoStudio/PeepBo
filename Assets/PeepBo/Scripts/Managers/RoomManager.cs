@@ -3,30 +3,48 @@ using Naninovel.Commands;
 using PeepBo.UI.Popup;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace PeepBo.Managers
 {
     public class RoomManager
     {
-        // TODO : Serialization, json 구조화
-        public Dictionary<string, Dictionary<string, (string, bool)>> roomInteractionDict = new Dictionary<string, Dictionary<string, (string, bool)>>();
+        public Dictionary<string, Dictionary<string, bool>> roomInteractionDict = new Dictionary<string, Dictionary<string, bool>>();
+
+        public StringParameter CurrentScriptName { get; set; } = null;
 
         public RoomManager()
         {
+            // TODO : Serialization, json 구조화
             roomInteractionDict.Add(
-                "1-1", new Dictionary<string, (string, bool)> 
+                "Script101", new Dictionary<string, bool> 
                 { 
-                    {"동백꽃", ("Dongbaek", false) },
-                    {"담벼락", ("Wall", true) },
-                    {"야생화", ("Flower", false) },
-                    {"집", ("House", false) },
-                    {"지붕", ("Roof", true) }
+                    {"동백꽃", false },
+                    {"담벼락", true },
+                    {"야생화", false},
+                    {"집",false },
+                    {"지붕",true }
+                }
+            );
+            roomInteractionDict.Add(
+                "Script206", new Dictionary<string, bool>
+                {
+                    {"문",false },
+                    {"잡동사니",false },
+                    {"나무판자", false },
+                    {"여행가방", false },
+                    {"전등",false },
+                    {"박스",true },
+                    {"가방",true },
+                    {"잡동사니2",false },
+                    {"선반",true },
+                    {"노",false },
+                    {"빨",false },
+                    {"초",true },
                 }
             );
         }
-
-        public bool IsScriptPlaying { get; set; } = true;
 
         private RoomModeUI roomModeUI;
 
@@ -40,56 +58,31 @@ namespace PeepBo.Managers
 
         public void StartRoomMode(StringParameter scriptName, StringParameter label, AsyncToken asyncToken = default)
         {
-            // TODO : scriptName과 label로 어떤 탐색내용인지 매칭
+            CurrentScriptName = scriptName;
 
-            // 매칭했다고 가정
             HideUI(new List<string> { "RightTopUI" }, asyncToken);
             ShowUI(new List<string> { "RoomModeUI" }, asyncToken);
-
-            IsScriptPlaying = false;
         }
 
         public void ExitRoomMode()
         {
-            // TODO : StateLess하게 유지
-            IsScriptPlaying = true;
-
             ShowUI(new List<string> { "RightTopUI" });
             HideUI(new List<string> { "RoomModeUI" });
 
-            new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = GameManager.Switch.RoomBackLabel }.ExecuteAsync().Forget();
+            new SwitchToNovelMode { ScriptName = GameManager.Command.ScriptName, Label = GameManager.Command.RoomBackLabel }.ExecuteAsync().Forget();
         }
 
         public void RoomInteractionOccured(string roomName, string interactionName)
         {
-            if (IsScriptPlaying)
-                return;
-            IsScriptPlaying = true;
-
-            switch (interactionName)
-            {
-                case "야생화":
-                    new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = "Flower" }.ExecuteAsync().Forget();
-                    break;
-                case "지붕":
-                    new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = "Roof" }.ExecuteAsync().Forget();
-                    break;
-                case "집":
-                    new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = "House" }.ExecuteAsync().Forget();
-                    break;
-                case "동백꽃":
-                    new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = "DongBaek" }.ExecuteAsync().Forget();
-                    break;
-                case "담벼락":
-                    new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = "Wall" }.ExecuteAsync().Forget();
-                    break;
-            }
+            new SwitchToNovelMode { ScriptName = GameManager.Command.ScriptName, Label = interactionName }.ExecuteAsync().Forget();
         }
 
         public List<string> GetFindList()
         {
-            // TODO : 리스트 정규화
-            return new List<string> { "Roof", "Wall" };
+            List<string> ret = new List<string>();
+            roomInteractionDict.TryGetValue(CurrentScriptName, out var list);
+            list.ToList().ForEach((data) => { if (data.Value) ret.Add(data.Key); }); // 인터랙션 필수요소 추출
+            return ret;
         }
 
         private void HideUI(List<string> uiList, AsyncToken asyncToken = default)
@@ -106,36 +99,6 @@ namespace PeepBo.Managers
 
             var showUI = new ShowUI { UINames = uiList };
             showUI.ExecuteAsync(asyncToken).Forget();
-        }
-    }
-
-    [CommandAlias("stopscript")]
-    public class StopScript : Command
-    {
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
-        {
-            // 1. Disable Naninovel input.
-            var inputManager = Engine.GetService<IInputManager>();
-            inputManager.ProcessInput = false;
-
-            // 2. Stop script player.
-            var scriptPlayer = Engine.GetService<IScriptPlayer>();
-            scriptPlayer.Stop();
-
-            var hidePrinter = new HidePrinter();
-            hidePrinter.ExecuteAsync(asyncToken).Forget();
-
-            GameManager.Room.IsScriptPlaying = false;
-        }
-    }
-
-    [CommandAlias("find")]
-    public class FindSomething : Command
-    {
-        [ParameterAlias("name")] public StringParameter Name;
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
-        {
-            GameManager.Room.OnFind(Name);
         }
     }
 }

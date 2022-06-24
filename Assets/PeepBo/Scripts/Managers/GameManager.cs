@@ -14,7 +14,7 @@ namespace PeepBo.Managers
         ResourceManager resourceManager = new ResourceManager();
         UIManager uiManager = new UIManager();
         RoomManager roomManager = new RoomManager();
-        SwitchManager switchManager = new SwitchManager();
+        CommandManager commandManager = new CommandManager();
         AudioManager audioManager = new AudioManager();
         InputManager inputManager = null;
 
@@ -22,7 +22,7 @@ namespace PeepBo.Managers
         public static ResourceManager Resource { get => Instance.resourceManager; }
         public static UIManager UI { get => Instance.uiManager; }
         public static RoomManager Room { get => Instance.roomManager; }
-        public static SwitchManager Switch { get => Instance.switchManager; }
+        public static CommandManager Command { get => Instance.commandManager; }
         public static AudioManager Audio { get => Instance.audioManager; }
         public static InputManager Input { get => Instance.inputManager; }
 

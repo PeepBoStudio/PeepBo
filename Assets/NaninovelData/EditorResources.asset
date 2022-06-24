@@ -110,10 +110,10 @@ MonoBehaviour:
       guid: e466d9326b30a4b49a3dad428b4d9968
     - name: ShakeRoomBackground_101
       pathPrefix: Spawn
-      guid: d6635595b2b688c46836701041eb380d
-    - name: Test
+      guid: 2faf63c3573a3744f88e9750d7a3e726
+    - name: ShakeRoomBackground_206
       pathPrefix: Spawn
-      guid: 4f9cdfdfcad46e14ea26b6fe429ae72b
+      guid: d6635595b2b688c46836701041eb380d
   - Id: UI
     Resources:
     - name: ClickThroughPanel
@@ -408,7 +408,7 @@ MonoBehaviour:
       guid: 23efd9f81cfd416469904416986e4769
   - Id: Backgrounds/0b7a40ea-4f8a-476f-863a-229a86bc3c6b
     Resources:
-    - name: RoomBackground
+    - name: RoomBackground1-1
       pathPrefix: Backgrounds
       guid: e560388d0f6c7ae47950e373d8244861
   - Id: Characters/966cb5da-f631-4fa1-a128-d7238411beb6
@@ -524,3 +524,8 @@ MonoBehaviour:
     - name: WMovie
       pathPrefix: Movies
       guid: b83e8f7f5ef000e47a1dd278b9d0d0d9
+  - Id: Backgrounds/8d365e56-e777-460e-b314-e80fad2497b7
+    Resources:
+    - name: RoomBackground2-6
+      pathPrefix: Backgrounds
+      guid: 5f0dc435a9f7c5140a81e93746bc6535

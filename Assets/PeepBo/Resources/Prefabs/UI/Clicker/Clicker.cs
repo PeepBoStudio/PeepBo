@@ -22,10 +22,10 @@ public class Clicker : MonoBehaviour
             fillImage.fillAmount = (float)currentCount / targetCount;
             if(currentCount == targetCount)
             {
-                var showUI = new HideUI { UINames = new List<string> { "Clicker" } };
-                showUI.ExecuteAsync().Forget();
+                var hideUI = new HideUI { UINames = new List<string> { "Clicker" } };
+                hideUI.ExecuteAsync().Forget();
 
-                new SwitchToNovelMode { ScriptName = GameManager.Switch.ScriptName, Label = "Clicker" }.ExecuteAsync().Forget();
+                new SwitchToNovelMode { ScriptName = GameManager.Command.ScriptName, Label = GameManager.Command.ClickerBackLabel }.ExecuteAsync().Forget();
             }
         });
     }

@@ -9,32 +9,34 @@ public class RoomInteraction : MonoBehaviour
     BoxCollider2D boxCollider;
     Room room;
 
-    bool isClicked = false;
-
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         room = GetComponentInParent<Room>();
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         var scriptPlayer = Engine.GetService<IScriptPlayer>();
-        if (scriptPlayer.Playing)
+        var inputManager = Engine.GetService<IInputManager>();
+        Debug.Log(scriptPlayer.Playing);
+        Debug.Log(inputManager.ProcessInput);
+        if (scriptPlayer.Playing) // printer 나오고 있으면
             return;
 
-        var inputManager = Engine.GetService<IInputManager>();
-
-        if (inputManager.ProcessInput)
+        if (inputManager.ProcessInput) // 나니 input을 받고 있으면
             return;
 
         scriptPlayer.Stop();
+        
+        Debug.Log("ASDF");
         room.OnMouseDown();
-        isClicked = true;
+        Debug.Log("ASDdd");
     }
 
-    private void OnMouseDrag()
+    public void OnMouseDrag()
     {
+        /*
         var scriptPlayer = Engine.GetService<IScriptPlayer>();
         if (scriptPlayer.Playing)
             return;
@@ -43,19 +45,21 @@ public class RoomInteraction : MonoBehaviour
 
         if (inputManager.ProcessInput)
             return;
+        */
         room.OnMouseDrag();
     }
 
-    private void OnMouseUp()
+    public void OnMouseUpAsButton()
     {
-        if (isClicked) // 이벤트 발생
-        {
-            GameManager.Room.RoomInteractionOccured(room.gameObject.name, gameObject.name);
-        }
+        Debug.Log("UP");
+        Debug.Log(room.gameObject.name);
+        Debug.Log(gameObject.name);
+        GameManager.Room.RoomInteractionOccured(room.gameObject.name, gameObject.name);
     }
 
     private void OnMouseExit()
     {
-        isClicked = false;
+        Debug.Log("Exit");
+        //isClicked = false;
     }
 }
