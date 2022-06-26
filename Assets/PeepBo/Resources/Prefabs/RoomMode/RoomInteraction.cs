@@ -19,8 +19,6 @@ public class RoomInteraction : MonoBehaviour
     {
         var scriptPlayer = Engine.GetService<IScriptPlayer>();
         var inputManager = Engine.GetService<IInputManager>();
-        Debug.Log(scriptPlayer.Playing);
-        Debug.Log(inputManager.ProcessInput);
         if (scriptPlayer.Playing) // printer 나오고 있으면
             return;
 
@@ -29,9 +27,7 @@ public class RoomInteraction : MonoBehaviour
 
         scriptPlayer.Stop();
         
-        Debug.Log("ASDF");
         room.OnMouseDown();
-        Debug.Log("ASDdd");
     }
 
     public void OnMouseDrag()
@@ -51,15 +47,11 @@ public class RoomInteraction : MonoBehaviour
 
     public void OnMouseUpAsButton()
     {
-        Debug.Log("UP");
-        Debug.Log(room.gameObject.name);
-        Debug.Log(gameObject.name);
         GameManager.Room.RoomInteractionOccured(room.gameObject.name, gameObject.name);
     }
 
     private void OnMouseExit()
     {
-        Debug.Log("Exit");
         //isClicked = false;
     }
 }
