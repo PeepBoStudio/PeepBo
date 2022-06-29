@@ -12,7 +12,7 @@ namespace PeepBo.Managers
     {
         public StringParameter ScriptName { get; set; } = null;
         public StringParameter RoomBackLabel { get; set; } = null;
-        public StringParameter ClickerBackLabel { get; set; } = null;
+        public StringParameter ClickerName { get; set; } = null;
     }
 
 
@@ -20,11 +20,11 @@ namespace PeepBo.Managers
     public class SwitchToClickerMode : Command
     {
         [ParameterAlias("scriptname")] public StringParameter ScriptName; // 클리커를 실행 할 나니스크립트
-        [ParameterAlias("label")] public StringParameter Label; // 나니스크립트 내의 라벨
+        [ParameterAlias("clickerName")] public StringParameter ClickerName; // 실행 시킬 클리커UI 이름
 
         public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
         {
-            var showUI = new ShowUI { UINames = new List<string> { "Clicker" } };
+            var showUI = new ShowUI { UINames = new List<string> { ClickerName } };
             showUI.ExecuteAsync(asyncToken).Forget();
 
             var scriptPlayer = Engine.GetService<IScriptPlayer>();
@@ -34,7 +34,7 @@ namespace PeepBo.Managers
             hidePrinter.ExecuteAsync(asyncToken).Forget();
 
             GameManager.Command.ScriptName = ScriptName;
-            GameManager.Command.ClickerBackLabel = Label;
+            GameManager.Command.ClickerName = ClickerName;
         }
     }
 

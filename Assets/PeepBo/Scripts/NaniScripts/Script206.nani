@@ -161,9 +161,9 @@ J: 좋아, 꼭 열고 만다!
 
 ; 시스템창 클리커
 ;@showUI Clicker
-@clicker scriptname:"Script206" label:"Clicker1"
+@clicker scriptname:"Script206" clickerName:"2-6Clicker"
 
-# Clicker1
+# 2-6Clicker
 @printer Dialogue time:0
 J: 하아...
 @printer Narration time:0
@@ -282,6 +282,7 @@ J: 어? 뭔가 쓸만 한게 있을 것 같아, 열어보자.
 @printer Narration time:0
 ...
 가방을 열었지만 안엔 용도를 알 수 없는 투명한 빈 봉투들이 가득했다
+@camera offset:0,0,0 zoom:0.0
 @printer Dialogue time:0
 J: 콜록, 콜록… 이게 대체 뭐야?
 @printer Narration time:0
@@ -408,11 +409,12 @@ J: 오, 좋아! 꽤 단단해 보이는데? 이거면 되겠어
 J: 물건을 다 꺼내느니 촛대만 당겨서 빼오는게 낫겠어
 ; 클리커
 
-@clicker scriptname:"Script206" label:"Clicker2"
+@clicker scriptname:"Script206" clickerName:"2-6Clicker2"
 
-# Clicker2
+# 2-6Clicker2
 ; 진동효과
 @vibrate
+@camera offset:0,0,0 zoom:0.0
 @printer Dialogue time:0
 J: 으악!
 @printer Narration time:0
