@@ -124,6 +124,10 @@ namespace PeepBo.Managers
     {
         public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
         {
+            var hidePrinter = new HidePrinter();
+            //hidePrinter.ExecuteAsync(asyncToken).Forget();
+            await hidePrinter.ExecuteAsync(asyncToken);
+
             // 1. Disable Naninovel input.
             var inputManager = Engine.GetService<IInputManager>();
             inputManager.ProcessInput = false;
@@ -131,9 +135,6 @@ namespace PeepBo.Managers
             // 2. Stop script player.
             var scriptPlayer = Engine.GetService<IScriptPlayer>();
             scriptPlayer.Stop();
-
-            var hidePrinter = new HidePrinter();
-            hidePrinter.ExecuteAsync(asyncToken).Forget();
         }
     }
 

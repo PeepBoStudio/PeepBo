@@ -3,13 +3,13 @@ using PeepBo.Managers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RoomInteraction : MonoBehaviour
 {
     BoxCollider2D boxCollider;
     Room room;
-
-    bool isMoved = false; // 드래그 후 클릭이 아닌 실제 클릭에만 적용하기 위해
+    Vector2 lastTouchPos;
 
     private void Start()
     {
@@ -30,11 +30,18 @@ public class RoomInteraction : MonoBehaviour
         return true;
     }
 
+    bool IsMoved(Vector2 currentTouchPos) // 드래그 후 클릭이 아닌 실제 클릭에만 적용하기 위해
+    {
+        if ((lastTouchPos - currentTouchPos).magnitude == 0) return false;
+        return true;
+    }
+
     public void OnMouseDown()
     {
         if (!CanProcessInput()) return;
 
-        isMoved = false;
+        lastTouchPos = Input.mousePosition;
+
         room.OnMouseDown();
     }
 
@@ -42,24 +49,18 @@ public class RoomInteraction : MonoBehaviour
     {
         if (!CanProcessInput()) return;
 
-        isMoved = true;
         room.OnMouseDrag();
     }
 
     public void OnMouseUpAsButton()
     {
-        if(!isMoved)
+        if (!IsMoved(Input.mousePosition))
             GameManager.Room.RoomInteractionOccured(room.gameObject.name, gameObject.name);
     }
 
-    private void OnMouseExit()
-    {
-        //isClicked = false;
-    }
-
+    /*
     private void OnMouseOver()
     {
-        /*
         var scriptPlayer = Engine.GetService<IScriptPlayer>();
         var inputManager = Engine.GetService<IInputManager>();
         if (scriptPlayer.Playing)
@@ -68,6 +69,6 @@ public class RoomInteraction : MonoBehaviour
         if (inputManager.ProcessInput)
             return;
         Debug.Log(transform.name);
-        */
     }
+    */
 }

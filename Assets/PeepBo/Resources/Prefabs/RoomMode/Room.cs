@@ -66,9 +66,4 @@ public class Room : MonoBehaviour
             transform.localPosition = new Vector3(Mathf.Clamp(transform.position.x + delta.x, -limitX, limitX), Mathf.Clamp(transform.position.y + delta.y, -limitY, limitY), 0);
         }
     }
-
-    private void OnMouseOver()
-    {
-        //Debug.Log(transform.name);
-    }
 }
