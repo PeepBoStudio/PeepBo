@@ -212,9 +212,12 @@ MonoBehaviour:
     - name: Test
       pathPrefix: UI
       guid: f209617548b49684d87affe2cbfb74dd
-    - name: Clicker
+    - name: 2-6Clicker
       pathPrefix: UI
       guid: e0001dda69680764abdba1c812b084cf
+    - name: 2-6Clicker2
+      pathPrefix: UI
+      guid: c62843ac8383e9942bb348e23b06ae5a
   - Id: Scripts
     Resources:
     - name: NewScript
