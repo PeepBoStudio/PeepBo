@@ -55,7 +55,9 @@ public class RoomInteraction : MonoBehaviour
     public void OnMouseUpAsButton()
     {
         //if (!IsMoved(Input.mousePosition))
-            GameManager.Room.RoomInteractionOccured(room.gameObject.name, gameObject.name);
+        if (!CanProcessInput()) return;
+
+        GameManager.Room.RoomInteractionOccured(room.gameObject.name, gameObject.name);
     }
 
     /*
