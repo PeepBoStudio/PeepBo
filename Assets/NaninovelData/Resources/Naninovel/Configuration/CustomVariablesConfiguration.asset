@@ -19,3 +19,5 @@ MonoBehaviour:
     value: 0
   - name: IsVisitLH
     value: 0
+  - name: choiceText
+    value: 0

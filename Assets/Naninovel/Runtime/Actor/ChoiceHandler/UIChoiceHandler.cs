@@ -5,6 +5,9 @@ using Naninovel.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Naninovel.Commands;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace Naninovel
 {
@@ -90,8 +93,30 @@ namespace Naninovel
 
         protected override void SetBehaviourTintColor (Color tintColor) { }
 
-        protected virtual async void HandleChoice (ChoiceState state)
+        protected virtual async void HandleChoice (ChoiceState state, ChoiceHandlerButton buttonObject)
         {
+            var custom = Engine.GetService<ICustomVariableManager>();
+            custom.SetVariableValue("choiceText", state.Summary);
+
+            var isHogam = custom.GetVariableValue("isHogam");
+            if(isHogam == "true")
+            {
+                var rectTransform = buttonObject.GetComponent<RectTransform>();
+                var cameraManager = Engine.GetService<ICameraManager>();
+                Vector2 screenPos = cameraManager.UICamera.WorldToScreenPoint(rectTransform.position);
+                //Vector2 screenPos = rectTransform.anchoredPosition;
+                custom.SetVariableValue("choiceButtonInfo", $"{screenPos.x} {screenPos.y} { rectTransform.sizeDelta.x} { rectTransform.sizeDelta.y}");
+
+                var trigger = buttonObject.GetComponent<EventTrigger>(); // 호감 팝업창 뜨는동안 버튼 눌렀을때 이미지 변하는거 막기 위해
+                trigger.enabled = false;
+
+                var wait = new Wait { WaitMode = "2.0", Wait = true };
+                await wait.ExecuteAsync();
+
+                var inputManager = Engine.GetService<IInputManager>();
+                inputManager.ProcessInput = true;
+            }
+
             if (!Choices.Exists(c => c.Id.EqualsFast(state.Id))) return;
 
             stateManager.PeekRollbackStack()?.AllowPlayerRollback();
@@ -100,6 +125,7 @@ namespace Naninovel
 
             if (HandlerPanel)
             {
+                //HandlerPanel.FadeTime = 0;
                 HandlerPanel.RemoveAllChoiceButtonsDelayed(); // Delayed to allow custom onClick logic.
                 HandlerPanel.Hide();
             }

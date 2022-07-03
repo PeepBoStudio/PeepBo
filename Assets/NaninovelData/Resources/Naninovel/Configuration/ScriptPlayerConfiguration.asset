@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1240d35bec799e24e938d235ef4eb56d, type: 3}
   m_Name: ScriptPlayerConfiguration
   m_EditorClassIdentifier: 
-  DefaultSkipMode: 0
+  DefaultSkipMode: 1
   SkipTimeScale: 10
   MinAutoPlayDelay: 3
   CompleteOnContinue: 1

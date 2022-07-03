@@ -459,6 +459,9 @@ J: 아이 아파라…
 @printer Dialogue time:0
 J: 뭐지?
 ; 펜던트 CUT
+@showUI 2-6RoomPopup1
+@wait i
+@hideUI 2-6RoomPopup1
 @printer Dialogue time:0
 J: 이건…
 @printer Narration time:0
@@ -467,6 +470,9 @@ J: 이건…
 J: 내가 이걸 어디서 봤더라…?
 J: 아, 설마!
 ; 지안 어린시절 CUT
+@showUI 2-6RoomPopup2
+@wait i
+@hideUI 2-6RoomPopup2
 @printer Narration time:0
 어린시절 사진 속 내가 하고 있던 그 펜던트였다
 이리저리 펜던트를 살펴보다 뒷면을 본 순간 확신했다

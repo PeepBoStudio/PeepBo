@@ -25,7 +25,7 @@ namespace Naninovel.UI
         /// <summary>
         /// Invoked when one of active choices are chosen.
         /// </summary>
-        public event Action<ChoiceState> OnChoice;
+        public event Action<ChoiceState, ChoiceHandlerButton> OnChoice;
 
         protected virtual RectTransform ButtonsContainer => buttonsContainer;
         protected virtual ChoiceHandlerButton DefaultButtonPrefab => defaultButtonPrefab;
@@ -65,7 +65,7 @@ namespace Naninovel.UI
             var choiceButton = Instantiate(choicePrefab, buttonsContainer, false);
             choiceButton.Initialize(choice);
             choiceButton.Show();
-            choiceButton.OnButtonClicked += () => OnChoice?.Invoke(choice);
+            choiceButton.OnButtonClicked += () => OnChoice?.Invoke(choice, choiceButton);
 
             if (backlogUI != null)
             {

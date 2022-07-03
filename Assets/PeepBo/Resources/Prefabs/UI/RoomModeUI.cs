@@ -18,6 +18,7 @@ public class RoomModeUI : MonoBehaviour
     private int findCount = 0;
     private List<string> findList = new List<string>();
     private Dictionary<string, GameObject> findObjectDict = new Dictionary<string, GameObject>();
+    private Dictionary<string, bool> alreadyFindDict = new Dictionary<string, bool>();
 
     bool isShow = false;
 
@@ -36,6 +37,7 @@ public class RoomModeUI : MonoBehaviour
             var findObject = Instantiate(roomModeIcon, findListObject.transform);
             findObject.name = findList[i];
             findObjectDict.Add(findObject.name, findObject);
+            alreadyFindDict.Add(findObject.name, false);
         }
     }
 
@@ -47,8 +49,13 @@ public class RoomModeUI : MonoBehaviour
     public void OnFinishInteraction(string interactionName)
     {
         findObjectDict.TryGetValue(interactionName, out GameObject obj);
+        alreadyFindDict.TryGetValue(interactionName, out bool alreadyFind);
+        if (alreadyFind) return;
+
         obj.GetComponent<Image>().sprite = findSprite;
+        alreadyFindDict[interactionName] = true;
         findCount++;
+
         if(findCount == findList.Count)
         {
             panelText.text = "이만하면 된 것 같아";

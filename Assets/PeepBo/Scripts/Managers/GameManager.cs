@@ -16,7 +16,7 @@ namespace PeepBo.Managers
         RoomManager roomManager = new RoomManager();
         CommandManager commandManager = new CommandManager();
         AudioManager audioManager = new AudioManager();
-        InputManager inputManager = null;
+        HogamManager hogamManager = new HogamManager();
 
 
         public static ResourceManager Resource { get => Instance.resourceManager; }
@@ -24,7 +24,7 @@ namespace PeepBo.Managers
         public static RoomManager Room { get => Instance.roomManager; }
         public static CommandManager Command { get => Instance.commandManager; }
         public static AudioManager Audio { get => Instance.audioManager; }
-        public static InputManager Input { get => Instance.inputManager; }
+        public static HogamManager Hogam { get => Instance.hogamManager; }
 
 
 
