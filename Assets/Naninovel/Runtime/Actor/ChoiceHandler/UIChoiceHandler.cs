@@ -101,6 +101,13 @@ namespace Naninovel
             var isHogam = custom.GetVariableValue("isHogam");
             if(isHogam == "true")
             {
+                var button = buttonObject.GetComponent<Button>();
+                var pressSprite = button.spriteState.pressedSprite;
+                button.spriteState = new SpriteState { };
+
+                var image = buttonObject.GetComponent<Image>();
+                image.sprite = pressSprite;
+
                 var rectTransform = buttonObject.GetComponent<RectTransform>();
                 var cameraManager = Engine.GetService<ICameraManager>();
                 Vector2 screenPos = cameraManager.UICamera.WorldToScreenPoint(rectTransform.position);

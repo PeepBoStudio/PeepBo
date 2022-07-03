@@ -90,6 +90,9 @@ namespace PeepBo.Managers
             showUI.Duration = 0.5f;
             await showUI.ExecuteAsync();
 
+            var wait = new Wait { WaitMode = "1.0", Wait = true };
+            await wait.ExecuteAsync();
+
             var hideUI = new HideUI { UINames = new List<string> { "HogamUI" } };
             hideUI.Duration = 0.5f;
             await hideUI.ExecuteAsync();
