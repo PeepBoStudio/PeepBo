@@ -15,7 +15,6 @@ J: 아이참, 그래도 이건 너무 심한 거 아니야?
 지도라도 찾아보기 위해 휴대폰을 켰다
 @char Phone.impossible position:0,-2.5 scale:0.5
 @sfx 101_폰_에러음
-@vibrate
 @printer Dialogue time:0
 J: 으악, 심지어 핸드폰도 안 터지잖아
 @stopSfx 101_폰_에러음

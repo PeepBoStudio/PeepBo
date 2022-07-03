@@ -346,8 +346,8 @@ J: 가방…?
 J: 에잇 지금 그런거 따질 때야?
 @printer Narration time:0
 양심의 소리를 애써 무시하며 가방을 열었다
-; 진동 효과
-@vibrate
+; 0.5초 진동 효과
+@vibrate time:5
 @printer Dialogue time:0
 J: 어?
 @printer Narration time:0
@@ -364,8 +364,8 @@ J: 이런 게 왜 여기있는지는 모르겠지만 제자리에 두는 게…
 @printer Narration time:0
 그때 가방 아래 흩어져 있던 종이들이 눈에 들어왔다
 그 중 하나를 집어드는 순간,
-; 진동 효과
-@vibrate
+; 0.5초 진동 효과
+@vibrate time:5
 @printer Dialogue time:0
 J: 으악!
 @printer Narration time:0
@@ -443,8 +443,8 @@ J: 물건을 다 꺼내느니 촛대만 당겨서 빼오는게 낫겠어
 @clicker scriptname:"Script206" clickerName:"2-6Clicker2"
 
 # 2-6Clicker2
-; 진동효과
-@vibrate
+; 0.5초 진동 효과
+@vibrate time:5
 @camera offset:0,0,0 zoom:0.0
 @printer Dialogue time:0
 J: 으악!

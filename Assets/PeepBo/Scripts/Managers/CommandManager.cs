@@ -41,9 +41,10 @@ namespace PeepBo.Managers
     [CommandAlias("vibrate")]
     public class Vibrate : Command
     {
+        [ParameterAlias("time")] public IntegerParameter Time; // float가 없어서 int로 대체, 0.1초면 1에 해당
         public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
         {
-            VibrateManager.Vibrate(2000);
+            VibrateManager.Vibrate(Time*100);
         }
     }
 
