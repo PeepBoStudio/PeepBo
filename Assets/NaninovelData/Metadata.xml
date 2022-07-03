@@ -152,6 +152,7 @@
         &lt;Appearances&gt;
           &lt;string&gt;Black&lt;/string&gt;
           &lt;string&gt;Remine&lt;/string&gt;
+          &lt;string&gt;Hospital&lt;/string&gt;
           &lt;string&gt;JianRoomDay&lt;/string&gt;
           &lt;string&gt;JianRoomNight&lt;/string&gt;
           &lt;string&gt;HallDay&lt;/string&gt;
@@ -748,6 +749,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;Remine&lt;/Path&gt;
+        &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;Hospital&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
