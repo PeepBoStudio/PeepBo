@@ -43,9 +43,7 @@ namespace PeepBo.Managers
     {
         public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
         {
-#if UNITY_ANDROID || UNITY_IOS
-    Handheld.Vibrate();
-#endif
+            VibrateManager.Vibrate(2000);
         }
     }
 
