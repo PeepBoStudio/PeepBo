@@ -39,8 +39,13 @@ namespace PeepBo.Nani.Custom
         private async void ExitToTitleAsync()
         {
             if (!await confirmationUI.ConfirmAsync(ConfirmationMessage)) return;
-            await gameState.ResetStateAsync();
+            gameState.OnResetFinished += GameState_OnResetFinished;
 
+            await gameState.ResetStateAsync();
+        }
+
+        private void GameState_OnResetFinished()
+        {
             SceneManager.LoadScene("MainScene");
         }
     }

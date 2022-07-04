@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class RoomModeUI : MonoBehaviour
 {
+    [SerializeField] private Button tutorialButton;
     [SerializeField] private Button exitButton;
     [SerializeField] private Sprite findSprite;
     [SerializeField] private Sprite exitSprite;
@@ -29,6 +30,12 @@ public class RoomModeUI : MonoBehaviour
 
         GameManager.Room.InitRoomModeUI(this);
 
+        TryTutorialSetUp();
+        Init();
+    }
+
+    private void Init()
+    {
         exitButton.onClick.AddListener(OnClickExitButton);
         findList = GameManager.Room.GetFindList();
         for (int i = 0; i < findList.Count; i++)
@@ -42,9 +49,20 @@ public class RoomModeUI : MonoBehaviour
         }
     }
 
+    private void TryTutorialSetUp()
+    {
+        var scriptPlayer = Engine.GetService<IScriptPlayer>();
+        if(scriptPlayer.PlayedScript.name == "Script101")
+            tutorialButton.gameObject.SetActive(true);
+    }
+
     public void OnHide() // 에디터 내에서 Serialize됨
     {
         isShow = false;
+
+        var scriptPlayer = Engine.GetService<IScriptPlayer>();
+        if (scriptPlayer?.PlayedScript?.name == "Script101")
+            tutorialButton.gameObject.SetActive(false);
     }
 
     public void OnFinishInteraction(string interactionName)
