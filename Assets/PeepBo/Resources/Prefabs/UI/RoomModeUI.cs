@@ -9,10 +9,9 @@ using UnityEngine.UI;
 public class RoomModeUI : MonoBehaviour
 {
     [SerializeField] private Button exitButton;
-    [SerializeField] private GameObject findListObject;
-    [SerializeField] private GameObject roomModeIcon;
     [SerializeField] private Sprite findSprite;
-    [SerializeField] private Text panelText;
+    [SerializeField] private Sprite exitSprite;
+    [SerializeField] private List<GameObject> findObjectList;
 
     private bool isEnd = false;
     private int findCount = 0;
@@ -34,10 +33,12 @@ public class RoomModeUI : MonoBehaviour
         findList = GameManager.Room.GetFindList();
         for (int i = 0; i < findList.Count; i++)
         {
-            var findObject = Instantiate(roomModeIcon, findListObject.transform);
-            findObject.name = findList[i];
-            findObjectDict.Add(findObject.name, findObject);
-            alreadyFindDict.Add(findObject.name, false);
+            var obj = findObjectList[i];
+            obj.SetActive(true); // 활성화
+            obj.transform.name = findList[i];
+
+            findObjectDict.Add(findList[i], obj);
+            alreadyFindDict.Add(findList[i], false);
         }
     }
 
@@ -52,13 +53,17 @@ public class RoomModeUI : MonoBehaviour
         alreadyFindDict.TryGetValue(interactionName, out bool alreadyFind);
         if (alreadyFind) return;
 
-        obj.GetComponent<Image>().sprite = findSprite;
+        obj.GetComponentInChildren<Image>().sprite = findSprite;
+        obj.GetComponentInChildren<Text>().text = obj.name;
+
         alreadyFindDict[interactionName] = true;
         findCount++;
 
         if(findCount == findList.Count)
         {
-            panelText.text = "이만하면 된 것 같아";
+            var image = exitButton.GetComponent<Image>();
+            image.sprite = exitSprite;
+            //panelText.text = "이만하면 된 것 같아";
             isEnd = true;
         }
     }
