@@ -1,6 +1,5 @@
 @camera set:*.false
-@back Black
-; 심각한 bgm
+@back Hospital
 @bgm 102_지안_독백
 First: 지안 님, 오랜만에 오시네요
 First: 요즘도 아침마다 낯선 장소에서 깨어나거나
@@ -11,7 +10,8 @@ First: 차트를 보니 발작이나 수면 중 각성이 많이 좋아지고 �
 First: 내원 주기를 조절해도 되겠네요
 First: 이대로 꾸준히 치료와 상담을 병행한다면
 First: 환경이 크게 바뀌지 않는 한, 곧 완치될 수 있겠습니다
-@back Black visible:false time:0
+
+@back Hospital visible:false time:0
 @back Remine
 @printer Narration time:0
 주말마다 다니던 병원을 나오면서 삼촌은 내 손을 꼭 잡아주었다.
