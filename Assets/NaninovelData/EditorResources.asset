@@ -253,19 +253,19 @@ MonoBehaviour:
     Resources:
     - name: Headman
       pathPrefix: CharacterAvatars
-      guid: 6e3051850c79b9c48874c71936bc2548
+      guid: 294749e3d5c5a6740945f28441c303d8
     - name: People
       pathPrefix: CharacterAvatars
-      guid: ba71de868d4fb944095a1ea9b517cad9
+      guid: a873523757eefcf499542584e1a7d917
     - name: Boy
       pathPrefix: CharacterAvatars
-      guid: 8f0b642130675b7428edd84853827e0c
+      guid: 49e1703e0cfb972459857e1f09344a68
     - name: Aram
       pathPrefix: CharacterAvatars
-      guid: d09c8c9d73969ae41912c03ec4e9967c
+      guid: 1f00d5395af1ce8469aa5cee3252e968
     - name: Girl
       pathPrefix: CharacterAvatars
-      guid: 261757962eac91c4c82baf285a8e0987
+      guid: 2053e88fab47a6141874ea99b58610d0
   - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
     Resources:
     - name: Y
@@ -541,3 +541,13 @@ MonoBehaviour:
     - name: RoomBackground2-6
       pathPrefix: Backgrounds
       guid: 5f0dc435a9f7c5140a81e93746bc6535
+  - Id: TextPrinters/f978568d-5f16-405e-aa80-d2f3b566985f
+    Resources:
+    - name: Dialogue_O
+      pathPrefix: TextPrinters
+      guid: fa7ff354f13c9e940991c32c2e3f9130
+  - Id: TextPrinters/ccb65af7-d765-42a6-9753-b052f5730364
+    Resources:
+    - name: Dialogue_A
+      pathPrefix: TextPrinters
+      guid: 42951ba35832994439f4a4508df49fea
