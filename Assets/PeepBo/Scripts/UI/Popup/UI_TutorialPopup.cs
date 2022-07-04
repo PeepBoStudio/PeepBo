@@ -79,6 +79,7 @@ namespace PeepBo.UI.Popup
 
         private void OnClickExitButton(PointerEventData evt)
         {
+            Debug.Log("exit");
             ClosePopupUI();
         }
     }
