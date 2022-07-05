@@ -160,7 +160,10 @@ J: 무슨 문이 이래?!
 J: 좋아, 꼭 열고 만다!
 
 ; 시스템창 클리커
-;@showUI Clicker
+@hidePrinter
+@showUI Clicker
+@wait i
+@hideUI Clicker
 @clicker scriptname:"Script206" clickerName:"2-6Clicker"
 
 # 2-6Clicker
@@ -438,8 +441,11 @@ J: 오, 좋아! 꽤 단단해 보이는데? 이거면 되겠어
 나는 떨리는 손으로 촛대를 집어들려는데, 촛대 위로 쌓인 물건 탓에 촛대를 꺼낼 수 없었다
 @printer Dialogue time:0
 J: 물건을 다 꺼내느니 촛대만 당겨서 빼오는게 낫겠어
-; 클리커
 
+; 클리커
+@showUI Clicker
+@wait i
+@hideUI Clicker
 @clicker scriptname:"Script206" clickerName:"2-6Clicker2"
 
 # 2-6Clicker2
