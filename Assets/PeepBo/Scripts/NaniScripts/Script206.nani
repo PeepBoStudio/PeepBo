@@ -443,6 +443,7 @@ J: 오, 좋아! 꽤 단단해 보이는데? 이거면 되겠어
 J: 물건을 다 꺼내느니 촛대만 당겨서 빼오는게 낫겠어
 
 ; 클리커
+@hidePrinter
 @showUI Clicker
 @wait i
 @hideUI Clicker
