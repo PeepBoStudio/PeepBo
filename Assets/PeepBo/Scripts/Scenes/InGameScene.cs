@@ -23,6 +23,7 @@ namespace PeepBo.Scene
 
         private async void Start1_1()
         {
+            Engine.OnInitializationFinished -= Start1_1;
             var player = Engine.GetService<IScriptPlayer>();
             await player.PreloadAndPlayAsync($"Script{GameManager.DummyEpisode}");
         }
