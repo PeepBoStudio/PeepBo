@@ -14,6 +14,8 @@ namespace PeepBo.UI.Popup
         {
             TutorialWrapper,
             ExitButton,
+
+            CloseButton,
         }
 
         private void Start()
@@ -44,20 +46,21 @@ namespace PeepBo.UI.Popup
                 ClosePopupUI();
                 return;
             }
-            phaseList[curIdx.Value].SetActive(false);
+            phaseList[index].SetActive(false);
             phaseList[index+1].SetActive(true);
-            curIdx = index;
         }
 
-        int? curIdx = null;
         List<GameObject> phaseList = new List<GameObject>();
 
         private void BindObjects()
         {
             Bind<GameObject>(typeof(GameObjects));
 
+            GameObject closeButton = GetObject((int)GameObjects.CloseButton);
+            AddUIEvent(closeButton, OnClickCloseButton, Define.UIEvent.Click);
+
             GameObject exitButton = GetObject((int)GameObjects.ExitButton);
-            AddUIEvent(exitButton, OnClickExitButton, Define.UIEvent.Click);
+            AddUIEvent(exitButton, OnClickCloseButton, Define.UIEvent.Click);
 
             GameObject tutorialWrapper = GetObject((int)GameObjects.TutorialWrapper);
 
@@ -69,17 +72,13 @@ namespace PeepBo.UI.Popup
                 AddUIEvent(phase, (e) => OnClick(index), Define.UIEvent.Click);
             }
 
-            curIdx = 0;
-
-
             //GameObject exitButton = GetObject((int)GameObjects.ExitButton);
             //AddUIEvent(exitButton, OnClickExitButton, Define.UIEvent.Click);
             //AddButtonAnim(exitButton);
         }
 
-        private void OnClickExitButton(PointerEventData evt)
+        private void OnClickCloseButton(PointerEventData evt)
         {
-            Debug.Log("exit");
             ClosePopupUI();
         }
     }
