@@ -13,6 +13,11 @@ namespace PeepBo.Managers
         public StringParameter ScriptName { get; set; } = null;
         public StringParameter RoomBackLabel { get; set; } = null;
         public StringParameter ClickerName { get; set; } = null;
+
+        public void SwitchToNovel(StringParameter scriptName, StringParameter label)
+        {
+            new SwitchToNovelMode { ScriptName = scriptName, Label = label }.ExecuteAsync().Forget();
+        }
     }
 
 
@@ -56,36 +61,13 @@ namespace PeepBo.Managers
 
         public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
         {
-            // 1. Disable Naninovel input.
             var inputManager = Engine.GetService<IInputManager>();
             inputManager.ProcessInput = false;
 
-            // 2. Stop script player.
             var scriptPlayer = Engine.GetService<IScriptPlayer>();
             scriptPlayer.Stop();
 
-            var hidePrinter = new HidePrinter();
-            hidePrinter.ExecuteAsync(asyncToken).Forget();
-
-            GameManager.Command.ScriptName = ScriptName;
-            GameManager.Command.RoomBackLabel = Label;
-
-            GameManager.Room.StartRoomMode(ScriptName, Label, asyncToken);
-
-
-            // 3. Reset state.
-            //var stateManager = Engine.GetService<IStateManager>();
-            //await stateManager.ResetStateAsync();
-
-            // 4. Switch cameras.
-            //var advCamera = GameObject.Find("AdventureModeCamera").GetComponent<Camera>();
-            //advCamera.enabled = true;
-            //var naniCamera = Engine.GetService<ICameraManager>().Camera;
-            //naniCamera.enabled = true;
-
-            // 5. Enable character control.
-            //var controller = Object.FindObjectOfType<CharacterController3D>();
-            //controller.IsInputBlocked = false;
+            GameManager.Room.EnterRoomMode(ScriptName, Label, asyncToken);
         }
     }
 

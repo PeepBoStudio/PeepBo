@@ -1,5 +1,6 @@
 using Naninovel;
 using Naninovel.Commands;
+using Naninovel.UI;
 using PeepBo.Managers;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,7 +23,21 @@ public class RoomModeUI : MonoBehaviour
 
     bool isShow = false;
 
-    public void OnShow() // 에디터 내에서 Serialize됨
+    private void Start()
+    {
+        var customUI = GetComponent<CustomUI>();
+        customUI.OnVisibilityChanged += CustomUI_OnVisibilityChanged;
+    }
+
+    private void CustomUI_OnVisibilityChanged(bool _isShow)
+    {
+        if (_isShow)
+            OnShow();
+        else
+            OnHide();
+    }
+
+    private void OnShow()
     {
         if (isShow) return;
 
@@ -32,6 +47,15 @@ public class RoomModeUI : MonoBehaviour
 
         TryTutorialSetUp();
         Init();
+    }
+
+    private void OnHide()
+    {
+        isShow = false;
+
+        var scriptPlayer = Engine.GetService<IScriptPlayer>();
+        if (scriptPlayer?.PlayedScript?.name == "Script101")
+            tutorialButton.gameObject.SetActive(false);
     }
 
     private void Init()
@@ -54,15 +78,6 @@ public class RoomModeUI : MonoBehaviour
         var scriptPlayer = Engine.GetService<IScriptPlayer>();
         if(scriptPlayer.PlayedScript.name == "Script101")
             tutorialButton.gameObject.SetActive(true);
-    }
-
-    public void OnHide() // 에디터 내에서 Serialize됨
-    {
-        isShow = false;
-
-        var scriptPlayer = Engine.GetService<IScriptPlayer>();
-        if (scriptPlayer?.PlayedScript?.name == "Script101")
-            tutorialButton.gameObject.SetActive(false);
     }
 
     public void OnFinishInteraction(string interactionName)
@@ -88,20 +103,9 @@ public class RoomModeUI : MonoBehaviour
 
     public void OnClickExitButton()
     {
-        if(isEnd)
+        if (isEnd)
             GameManager.Room.ExitRoomMode();
         else
-            NoExit();
-    }
-
-    private async void NoExit()
-    {
-        var name = new List<string> { "NoExitRoomModeUI" };
-        var showUI = new ShowUI { UINames = name, Duration = (DecimalParameter)0.5 };
-        //showUI.ExecuteAsync().Forget();
-        await showUI.ExecuteAsync();
-
-        var hideUI = new HideUI { UINames = name, Duration = (DecimalParameter)0.5 };
-        hideUI.ExecuteAsync().Forget();
+            GameManager.Room.NoExitRoomMode();
     }
 }
