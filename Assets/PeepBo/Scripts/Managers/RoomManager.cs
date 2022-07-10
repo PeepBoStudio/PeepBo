@@ -67,7 +67,7 @@ namespace PeepBo.Managers
 
         public void RoomInteractionOccured(string roomName, string interactionName)
         {
-            GameManager.Command.SwitchToNovel(ScriptName, interactionName);
+            GameManager.Command.SwitchToNovelByRoom(ScriptName, interactionName);
         }
 
         public void EnterRoomMode(StringParameter scriptName, StringParameter roomBackLabel, AsyncToken asyncToken = default)
@@ -85,7 +85,7 @@ namespace PeepBo.Managers
             ShowUI(new List<string> { "RightTopUI" });
             HideUI(new List<string> { "RoomModeUI" });
 
-            GameManager.Command.SwitchToNovel(ScriptName, RoomBackLabel);
+            GameManager.Command.SwitchToNovelByRoom(ScriptName, RoomBackLabel);
         }
 
         public async void NoExitRoomMode() // 필수 요소를 아직 다 찾지 못한 상태

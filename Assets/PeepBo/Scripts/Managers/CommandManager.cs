@@ -11,12 +11,16 @@ namespace PeepBo.Managers
     public class CommandManager
     {
         public StringParameter ScriptName { get; set; } = null;
-        public StringParameter RoomBackLabel { get; set; } = null;
         public StringParameter ClickerName { get; set; } = null;
 
-        public void SwitchToNovel(StringParameter scriptName, StringParameter label)
+        public void SwitchToNovelByRoom(StringParameter scriptName, StringParameter label)
         {
             new SwitchToNovelMode { ScriptName = scriptName, Label = label }.ExecuteAsync().Forget();
+        }
+
+        public void SwitchToNovelByClicker()
+        {
+            new SwitchToNovelMode { ScriptName = ScriptName, Label = ClickerName }.ExecuteAsync().Forget();
         }
     }
 

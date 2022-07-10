@@ -33,8 +33,7 @@ namespace PeepBo.UI.Scene
         
         private void OnClickStartButton(PointerEventData evt)
         {
-            var switchCommand = new SwitchToNovelMode { ScriptName = "Script001", Label = "myLabel" };
-            switchCommand.ExecuteAsync().Forget();
+
         }
     }
 }
