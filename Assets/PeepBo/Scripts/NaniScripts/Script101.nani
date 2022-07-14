@@ -9,13 +9,11 @@ J: 아니~ 무슨 무인도도 아니고 어떻게 개미 한 마리도 안 보�
 아무리 작은 섬이라지만 어쩜 이렇게 휑할 수 있지?
 자급자족 하는 섬이라고 들었는데 다들 일하러 갔나?
 하긴 농사는 새벽부터 하니까
-@printer Dialogue time:0
 J: 아이참, 그래도 이건 너무 심한 거 아니야?
 @printer Narration time:0
 지도라도 찾아보기 위해 휴대폰을 켰다
 @char Phone.impossible position:0,-2.5 scale:0.5
 @sfx 101_폰_에러음
-@printer Dialogue time:0
 J: 으악, 심지어 핸드폰도 안 터지잖아
 @stopSfx 101_폰_에러음
 @hide Phone
@@ -33,19 +31,16 @@ J: 주변에 뭔가 도움될만 한 게 없을끼?
 @stop
 
 # 야생화
-@printer Dialogue time:0
 J: 여긴 눈 돌리는 곳마다 꽃이 있네
 @printer Narration time:0
 평범한 야생화지만 누군가 조경이라도 한 것처럼 곳곳에 아름답게 피어있다.
 @gosub .RoomWait
 
 # 집
-@printer Dialogue time:0
 J: 생각보다 집들이 많네, 그런데 사람은 한 명도 보이지가 않아…
 @gosub .RoomWait
 
 # 동백꽃
-@printer Dialogue time:0
 J: 어? 이건 동백꽃인가?
 @printer Narration time:0
 꽃을 향해 손을 뻗으려는 순간,
@@ -54,7 +49,6 @@ J: 어? 이건 동백꽃인가?
 ; 진동
 @spawn ShakeRoomBackground_101
 ; 집중선 효과
-@printer Dialogue time:0
 @hideUI Test
 J: 으악!
 J: 깜짝이야, 고양이잖아?
@@ -63,14 +57,12 @@ J: 깜짝이야, 고양이잖아?
 @gosub .RoomWait
 
 # 담벼락
-@printer Dialogue time:0
 J: 어? 이건 뭐지?
 @printer Narration time:0
 담벼락에 무언가 붙어있었다.
 @hidePrinter
 @showUI 1-1RoomPopup
 @wait i
-@printer Dialogue time:0
 J: 새벽기도 시간 안내…
 J: 밑에 이 이름들이랑 숫자는 뭐지?
 J: 주이… 목록? 주민을 잘 못 쓴걸까?
@@ -83,20 +75,17 @@ J: 으, 무슨 말인지 하나도 모르겠다.
 @printer Narration time:0
 색이 바랜 초록 지붕, 
 명패에 쓰여진 이름은 아주 흐릿해져 읽기 어려웠지만 주소는 남아있었다.
-@printer Dialogue time:0
 J: 해록도리 12번지?
 @printer Narration time:0
 집 안에 누군가 있을 지도 몰라, 두드려보자.
 ; 문 두드리는 효과음
 @camera offset:-2.5,1.5,-5 zoom:0.5
 @sfx 101_노크 
-@printer Dialogue time:0
 J: 계세요? 말씀 좀 여쭤보려고요!
 @stopSfx 101_노크
 @printer Narration time:0
 …
 @sfx 101_노크 
-@printer Dialogue time:0
 J: 계세요오!
 @stopSfx 101_노크
 @printer Narration time:0
@@ -140,12 +129,10 @@ J: 계세요오!
 @back Black time:1
 @back Black visible:false wait:false 
 @back StreetDay time:2
-@printer Dialogue time:0
 J: 좋아, 이제 남은 방법은 하나뿐이야
 J: 하압-!
 @printer Narration time:0
 나는 숨을 최대한 깊게 들이마셨다
-@printer Dialogue time:0
 @spawn ShakeCamera
 J: 저기요오오! 아무도오오 없어요오오!
 J: 도와-주세요오오오!
@@ -171,13 +158,11 @@ J: 으악!
 이 작은 섬에 이토록 잘생긴 남자라니…
 @back GIllust visible:false time:0 wait:false
 @back StreetDay
-@printer Dialogue time:0
 J: 누, 누구…
 @char G.Body>기본,Face>무표정 position:-0.5,-15.5
 @printer Narration time:0
 충돌 직전의 나를 붙잡은 이 그림 같은 남자는,
 어이없다는 표정으로 나를 훑어보며 말했다
-@printer Dialogue time:0
 First: 고맙다는 말이 먼저일텐데?
 J: 앗 네! 감사합니다. 그런데 누구세요?
 @char G.Body>팔짱,Face>무표정
@@ -189,13 +174,11 @@ J: 제가 먼저 물어봤잖아요
 @printer Narration time:0
 자리에서 일어나 그를 흘겨봤다
 와, 근데 진짜 잘 생겼잖아?
-@printer Dialogue time:0
 @char G.Body>팔짱,Face>비웃음
 G: 잘생긴거 아니까 너무 그렇게 뚫어져라 보지말지?
 @printer Narration time:0
 재수도 없고…
 
-@printer Dialogue time:0
 J: 하하, 혹시 여기 주민이세요? 제가 방금 해록도에 들어왔는데 여쭤볼게 있어서요
 @char G.Body>기본,Face>무표정
 G: 주민은 아니고 주민 조사하러 나온 공무원
@@ -204,7 +187,6 @@ G: 여기 외지인은 안 받는다는데 그쪽이야 말로 누구?
 J: 그냥 휴양하러 온 관광객인데요
 @printer Narration time:0
 남자는 아주 황당한 소리를 들었다는 듯이 되물었다
-@printer Dialogue time:0
 @char G.Body>팔짱,Face>기본
 G: 무슨 이런 오지에 관광을 와?
 J: 아, 아무튼 며칠 묵을 곳을 찾고 있어요. 여기 여관 같은 곳이 있을까요?
@@ -213,12 +195,10 @@ G: 이런 시골에 여관이 있을리가. 뭐, 다 쓰러져가는 마을회�
 @printer Narration time:0
 마을회관이라니, 부탁만 잘하면 머물게 해줄 수도 있겠다
 근데 거기까진 또 어떻게 가지?
-@printer Dialogue time:0
 J: 저 혹시… 마을회관이 어느 쪽에 있나요?
 @printer Narration time:0
 @char G.Body>기본,Face>무표정
 남자는 탐탁치 못하다는 표정으로 어딘가를 가리키며 말했다
-@printer Dialogue time:0
 @char G.Body>팔짱,Face>기본
 G: ...직진하다보면 길 끝에 건물 하나 있어
 J: 감사합니다.
@@ -234,11 +214,9 @@ J: 감사합니다.
 근데…
 뭐지, 자꾸 뒤에서 들려오는 발 소리는…?
 @stopSfx 101_발자국_소리
-@printer Dialogue time:0
 J: 왜… 왜 자꾸 따라오세요?
 @printer Narration time:0
 나는 걸음을 멈추고 남자를 향해 물었다
-@printer Dialogue time:0
 @char G.Body>기본,Face>무표정 position:-0.5,-15.5
 G: 그쪽 안 따라가는데?
 J: 그럼 어디가시는 데요?
@@ -252,7 +230,6 @@ G: 내가 널 왜 따라가, 나도 거기에 머물고 있거든?
 뭐야 진작 말하던가.
 다시 뒤돌아 회관으로 가려다 잠시 캐리어를 끌던 손을 주물렀다.
 비포장 된 길에서 한참 캐리어를 끌어서 그런지 손목이 시큰했다.
-@printer Dialogue time:0
 @char G.Body>팔짱,Face>무표정
 G: …
 @char G.Body>손머리,Face>무표정
@@ -261,7 +238,6 @@ G: 가지가지하네
 @hide G
 ; 고결 실루엣
 남자는 한숨을 쉬더니 내 캐리어를 낚아채더니 앞장 서 걸었다
-@printer Dialogue time:0
 J: 엇 괜찮은데! 감사합니다!
 @printer Narration time:0
 남자는 대답없이 묵묵히 캐리어를 끌었다
@@ -269,7 +245,6 @@ J: 엇 괜찮은데! 감사합니다!
 난 거의 뛰다시피 걸으며 그와 속도를 맞췄다
 ;@hide 고결 실루엣
 @char G.Body>기본,Face>기본 position:-0.5,-15.5
-@printer Dialogue time:0
 J: 그, 성함이 어떻게 되세요?
 @char G.Body>팔짱,Face>거만
 G: 고결
@@ -278,7 +253,6 @@ J: 엇!
 남자의 이름을 듣는 순간 깜짝 놀랄 수 밖에 없었다
 생전 처음 듣는 이름과 처음 보는 얼굴인데 남자와 더없이 어울렸던 탓이다
 고결은 내 놀란 기색을 느꼈는지 짧게 웃으며 말했다
-@printer Dialogue time:0
 G: 얼굴이랑 꽤나 어울리는 이름이긴 하지
 @printer Narration time:0
 난 순간 할 말을 찾지 못해 입을 꾹 닫고 말을 골랐다
@@ -289,7 +263,6 @@ G: 얼굴이랑 꽤나 어울리는 이름이긴 하지
 
 # A
 ; 호감도 +5
-@printer Dialogue time:0
 J: 네에… 정말 어울리네요…
 @char G.Body>손머리,Face>비웃음 position:-0.5,-15.5
 G: 표정은 아닌데, 재수 없다고 생각했지?
@@ -299,13 +272,11 @@ J: 아, 아닌데요?
 @goto .Con1
 
 # B
-@printer Dialogue time:0
 J: 자기애가 되게… 강하신가봐요…?
 @char G.Body>팔짱,Face>비웃음 position:-0.5,-15.5
 G: 꽤 들어 그런 말
 @printer Narration time:0
 뭐지 이 은근하게 느껴지는 재수없음은?
-@printer Dialogue time:0
 G: 재수 없다고 생각했지
 J: 오, 들켰다.
 
@@ -313,7 +284,6 @@ J: 오, 들켰다.
 @printer Narration time:0
 난 장난스레 대답했지만,
 사실 그의 말마따나 얼굴과 꽤나 잘 어울리는 이름이었다
-@printer Dialogue time:0
 @char G.Body>기본,Face>무표정 position:-0.5,-15.5
 G: 근데 정말 여긴 왜 왔어?
 G: 보통 혼자 이런 아무 것도 없는 섬엔 안 오지않나?
@@ -323,6 +293,7 @@ J: 졸업여행 삼아 온 거예요
 @char G.Body>팔짱,Face>무표정
 고결은 별로 내 말을 믿는 눈치가 아니었다
 시시콜콜한 대화를 하며 10분 정도 걸었을까-
+@hideChars
 @hidePrinter 
 @back StreetDay visible:false time:0 wait:false
 @back HallDay
@@ -332,9 +303,8 @@ J: 졸업여행 삼아 온 거예요
 @showUI HallFindUI
 @wait i
 @hideUI HallFindUI
-@printer Dialogue time:0
 J: 감사합니다
-@char G.Body>팔짱,Face>거만
+@char G.Body>팔짱,Face>거만 position:-0.5,-15.5
 G: 곧 주민들이 올테니까 아무나 붙잡고 도와달라고 해
 @char G.Body>팔짱,Face>기본
 G: 얼마나 머물 생각이야?
@@ -342,7 +312,6 @@ J: 한 달 정도 있을 것 같아요
 @printer Narration time:0
 @char G.Body>기본,Face>거만
 그는 거만하게 웃으며 말했다
-@printer Dialogue time:0
 G: 아는 지 모르겠지만 해록도 사람들은 외지인에게 친절한 편이 아니야. 
 @char G.Body>팔짱,Face>비웃음
 G: 아마 너한테 제일 친절한 사람은 나일걸?
@@ -355,19 +324,16 @@ J: 아하...
 @stop
 
 # C
-@printer Dialogue time:0
 J: ... 네에... 감사합니다
 @printer Narration time:0
 엎드려 절받는 걸 좋아하는 편인가 보네
 @goto .Con2
 
 # D
-@printer Dialogue time:0
 J: 근데 왜 자꾸 반말을 하세요?
 @printer Narration time:0
 @char G.Body>기본,Face>거만
 남자는 또 내 말에 대답하지 않은 채 으쓱 어깨만 끄덕일 뿐이었다
-@printer Dialogue time:0
 J: 윽, 진짜…! 참자 참아!
 @printer Narration time:0
 결의 말에 대꾸하는 대신 눈으로 그를 흘겨봤다
@@ -383,13 +349,11 @@ J: 윽, 진짜…! 참자 참아!
 @sfx 101_문여는_소리
 그때, 누군가 회관문을 열고 들어왔다
 @stopSfx 101_문여는_소리
-@printer Dialogue time:0
 @spawn ShakeBackground
 Woman: 아이고!
 @printer Narration time:0
 날 보자마자 소스라치게 놀라며 뒷걸음질 친 아주머니는,
 황급히 문을 닫고 회관을 나갔다.
-@printer Dialogue time:0
 @char G.Body>팔짱,Face>무표정 position:-0.5,-15.5
 G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것처럼 저런다니까
 @hide G
@@ -400,12 +364,10 @@ G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것�
 @stopSfx 101_문여는_소리
 @char Man visible:false avatar:Headman
 아저씨는 나를 보며 어색한 미소로 말을 건냈다
-@printer Dialogue time:0
 Man: 혹시 해록도에 관광오기로 한 아가씨인가?
 J: 아, 네 안녕하세요. 저 출입허가서도 받았어요! 이상한 애 아니에요!
 @printer Narration time:0
 주민들 눈에 경계심이 어려있어 다급히 입꼬리를 최대한 끌어올려 빠르게 말했다
-@printer Dialogue time:0
 @hide Man wait:false
 @char Woman visible:false avatar:People
 Woman: 아~ 그 아가씨구나, 관광 온다는 얘기 들었어요.
@@ -414,7 +376,6 @@ Woman: 해록도가 원채 오가는 사람도 없고 주민들도 적어~
 Woman: 그래서 누가 들어온다고 하면 우리끼리 다 알거든
 @printer Narration time:0
 경계가 풀렸는지 아주머니는 인자하게 웃으며 다가왔다
-@printer Dialogue time:0
 @hide Woman wait:false
 @char Man visible:false avatar:Headman
 Man: 여기가 다 흙길이라서 가방 끌고 오기 힘들었을 텐데
@@ -426,7 +387,6 @@ J: 마중까지 나와주시고 정말 감사합니다.
 뒤에서 은근한 시선이 느껴져 돌아보니,
 결이 묘한 눈으로 주민들을 빤히 쳐다보고 있었다.
 왜 저렇게 쳐다보지?
-@printer Dialogue time:0
 @hide Man wait:false
 @char Woman visible:false avatar:People
 Woman: 여기 얼마나 있을 거에요? 해록도가 그 뭐냐,
@@ -440,7 +400,6 @@ Man: 머물 곳은 우리가 다 마련해 놨으니까 따라와요
 @hide Man
 @printer Narration time:0
 아저씨를 따라 회관을 나서려다 뒤를 돌아 고결에게 말했다
-@printer Dialogue time:0
 @char G.Body>기본,Face>무표정 position:-0.5,-15.5
 J: 데려다 주셔서 감사합니다 또 뵈어요!
 @printer Narration time:0
@@ -466,7 +425,6 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 @hideUI NHouseUI
 
 @sfx 101_노크
-@printer Dialogue time:0
 Headman: 나연 자매 있어? 손님 왔어!
 @stopSfx 101_노크
 @sfx 101_문여는_소리
@@ -477,7 +435,6 @@ Headman: 나연 자매 있어? 손님 왔어!
 여자애는 인사도 없이 무표정한 얼굴로 가만히 나를 관찰하듯 쳐다볼 뿐이었다
 아니 여긴 왜 나를 자꾸 빤히 쳐다보는 사람 밖에 없지?
 외지인이 드물다더니, 내가 신기한가?
-@printer Dialogue time:0
 J: 안녕하세요, 김지안이라고 해요!
 Headman: 해록도에서 지내는 동안 이 집에 머물면 돼요. 
 Headman: 나연 자매 혼자 사는 집이라서 불편하진 않을 거야
@@ -488,7 +445,6 @@ Headman: 나연 자매 혼자 사는 집이라서 불편하진 않을 거야
 
 @back StreetDay visible:false time:0 wait:false
 @back JianRoomDay position:0,0
-@printer Dialogue time:0
 @char N.Face>기본,Body>기본 position:0,-13.5
 N: 여기 쓰면 돼.
 @hide N
@@ -500,10 +456,9 @@ N: 여기 쓰면 돼.
 나무를 깎아 만든 십자가가 벽에 걸려 있었다.
 그걸 보자 급격히 피곤이 몰려와 침대에 누웠다.
 생각했던 것보다 푹신해서 몸이 나른해졌다.
-@printer Dialogue time:0
 J: 아, 이대로 잠들어버릴지도 모르겠어…
 @back JianRoodDay visible:false
-@back Black time:1
 @hidePrinter
+@back Black time:1
 @wait 1
 @loadScene MainScene

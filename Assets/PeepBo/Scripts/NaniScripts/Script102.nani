@@ -8,17 +8,15 @@
 First: ....어나...
 @printer Narration time:0
 ...
-@printer Dialogue time:0
 First: 일어...
 @printer Narration time:0
 … 뭐지? 누가 날 부르나?
-@printer Dialogue time:0
 First: 야...
 @printer Narration time:0
 으, 시끄러워…
 일어나고 싶은데 몸이 무거워 움직일 수가 없어…
 
-@printer Dialogue time:0
+@printer Dialogue_O time:0
 @spawn ShakePrinter wait:false
 ; 진동
 First: 야! 일어나라니까!
@@ -32,7 +30,6 @@ N: 진짜 귀찮게 한다, 너
 익숙한 목소리에 고개를 돌리니
 @char N.Face>기본,Body>기본 position:0,-13.5
 @wait i
-@printer Dialogue time:0
 @char N.Face>짜증,Body>팔짱 scale:1.3 position:0,-20
 N: 벌써 해가 중천인데 아직도 자고 있으면 어떡해? 여기 요양왔어?
 @printer Narration time:0
@@ -40,7 +37,6 @@ N: 벌써 해가 중천인데 아직도 자고 있으면 어떡해? 여기 요�
 놀라서 시계를 바라보자 오후 12시가 넘어가고 있었다
 @spawn ShakeBackground wait:false
 ; 진동
-@printer Dialogue time:0
 J: 헉! 거의 12시간을 잤네
 J: 깨워줘서 고마워!
 @char N.Face>짜증,Body>기본
@@ -51,7 +47,6 @@ J: 응? 내 손님?
 @printer Narration time:0
 누구지? 어제 만난 그 남자인가, 아니면 이장님?
 나는 긴가민가하며 자리에서 일어났다
-@printer Dialogue time:0
 @char N.Face>기본,Body>팔짱 scale:1.3 position:0,-20
 N: 야
 J: 응?
@@ -68,7 +63,6 @@ N: 나한테나 다른 주민들한테나
 
 @printer Narration time:0
 나연은 차갑게 쏘아 붙인채 부셔져라 문을 닫고 나갔다
-@printer Dialogue time:0
 @stopSfx 102_문_닫는_소리
 J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 어이없어….
 @printer Narration time:0
@@ -80,7 +74,6 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 @stopBgm 메인00
 @bgm 102_지안_독백
 @wait 2
-@printer Dialogue time:0
 First: 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야
 First: 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든
 First: 그야말로 신이 내린 선물이지
@@ -95,7 +88,6 @@ First: 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심�
 @printer Narration time:0
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다
 ; 화면 깜박임
-@printer Dialogue time:0
 J: 으아, 눈부셔...
 @printer Narration time:0
 천천히 감았던 눈을 뜨자 눈꺼풀 사이로 보이는 건….
@@ -109,7 +101,6 @@ J: 으아, 눈부셔...
 @spawn SunShafts wait:false
 @back YIllust position:0,0 time:0.3
 @wait 3
-@printer Dialogue time:0
 Y: 기다렸어요, 누나. 잘 잤어요?
 J: 설마 그쪽이...제 손님이세요...?
 @despawn SunShafts wait:false
@@ -119,7 +110,6 @@ J: 설마 그쪽이...제 손님이세요...?
 Y: 하핫, 반가워요! 육지에서 손님이 왔다 길래 얼른 보러 왔지요!
 @printer Narration time:0
 아무리 작은 섬이라도 그렇지, 여기 온 지 하루 만에 나에 대한 소문이 퍼진 건가?
-@printer Dialogue time:0
 Y: 그런데 누나, 이름이 뭐예요?
 @choice 얼버무린다 goto:.First set:y_score=0
 @choice 알려준다 goto:.Second set:y_score=5
@@ -132,7 +122,6 @@ Y: 아~ 김지안 이라고요?
 @printer Narration time:0
 와, 소름
 일부러 발음을 잔뜩 뭉갰는데 무슨 귀가 이렇게 좋아?	
-@printer Dialogue time:0
 @char Y.Face>아련,Body>기본
 Y: 김지안이라…
 @char Y.Face>놀란,Body>입에손 scale:1.3 position:-0.25,-21.5
@@ -165,7 +154,6 @@ Y: 전 홍! 유! 겸! 이에요. 스물 한 살이니까 말 편하게 해요. �
 살짝 기분이 묘하지만, 그래도 나쁜 사람은 아닌 것 같아
 이건 절대 겉모습만 보고 판단한 게 아니다
 웃는 게 조금 귀엽다고 방심한 게 아니라는 말이다. 진짜로
-@printer Dialogue time:0
 J: 그…래, 그나저나 나는 왜 찾아온 거야?
 @char Y.Face>윙크,Body>브이
 Y: 해록도에 처음 왔으니, 섬 구경을 해야 하지 않겠어요?
@@ -174,7 +162,6 @@ Y: 해록도하면 유겸이, 유겸이는 귀여워, 귀여우면 홍유겸
 J: 응! 그래서?
 @printer Narration time:0
 멍하니 듣고 있다가는 해가 질 것 같다.
-@printer Dialogue time:0
 @char Y.Face>웃는,Body>브이
 Y: 그러니까 유겸이가 지안 누나만의 특별 가이드를 해주려 왔다는 거죠
 J: 가이드?
@@ -194,7 +181,6 @@ Y: 주민이 아니면 길을 잃기 쉬워요
 # Alone
 @printer Narration time:0
 역시 처음 보는 사람과 단둘이 다니는 건, 생각만 해도 어색해
-@printer Dialogue time:0
 J: 아니, 괜찮아. 나는 혼자 다니는 게 편하거든
 @char Y.Face>울먹,Body>입에손
 Y: 앗… 제가 불편해요…?
@@ -203,7 +189,6 @@ Y: 앗… 제가 불편해요…?
 그리고 푹 숙인 고개를 천천히 드는데...
 @char Y.Face>울먹,Body>입에손 scale:1.3 position:-0.25,-21.5
 아... 저 커다랗고 맑은 눈동자
-@printer Dialogue time:0
 J: ….
 @char Y.Face>울먹,Body>입에손 scale:1 position:-0.25,-15
 J: ....그래 알겠어, 같이 다니자. 길 헤매는 것보단 낫겠지
@@ -215,7 +200,6 @@ Y: 탁월한 선택이에요!
 ; 호감도 +5
 @printer Narration time:0
 그래. 도움 받을 수 있는 건 받자. 시끄럽지만 친절한 애 같으니
-@printer Dialogue time:0
 J: 고마워, 시간 괜찮아?
 @char Y.Face>윙크,Body>브이
 Y: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
@@ -226,12 +210,10 @@ Y: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
 @hide Y
 @back StreetDay position:8.8,0
 @wait 2
-@printer Dialogue time:0
 @char Y.Face>기본,Body>기본 position:-0.25,-15
 Y: 누나가 묵고 있는 곳에서 조금만 더 나오면 바로 큰 길가에요
 @printer Narration time:0
 유겸은 새하얀 손가락으로 이곳 저곳을 가리켰다
-@printer Dialogue time:0
 @char Y.Face>웃는,Body>기본
 Y: 이쪽으로 쭉 내려가면 마을 회관이 나오고, 반대편으로 가면 이장님 댁이에요
 Y: 주민들은 마을 회관에 자주 모이죠
@@ -239,7 +221,6 @@ Y: 주민들은 마을 회관에 자주 모이죠
 Y: 필요한 게 생기거나 궁금한 게 있을 땐 마을 회관으로 가면 돼요
 @printer Narration time:0
 난 그가 알려준 곳들을 열심히 기억했다
-@printer Dialogue time:0
 @char Y.Face>웃는,Body>기본
 Y: 흠, 이제 어디 먼저 가볼래요?
 @choice 선착장 goto:.Dock set:IsVisitDO+=1
@@ -278,12 +259,10 @@ Y: 보다시피 해록도가 너무너무 아름답잖아요?
 @printer Narration time:0
 @char Y.Face>아련,Body>기본
 유겸은 눈을 내리깐 채 조용히 웃으며 말을 이었다
-@printer Dialogue time:0
 Y: 한 번 오면... 다신 떠나고 싶지 않을 만큼
 @printer Narration time:0
 @char Y.Face>기본,Body>기본
 뭐지, 방금 분위기가 갑자기 묘하게 어른스러워졌는데?	
-@printer Dialogue time:0
 J: 맞아 아름답긴 하더라
 J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @char Y.Face>웃는,Body>기본
@@ -314,7 +293,6 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @hideUI LHFindUI
 @printer Narration time:0
 등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯 하다
-@printer Dialogue time:0
 @char Y.Face>기본,Body>기본 position:-0.25,-15
 Y: 여긴 진짜 별게 없어요!
 Y: 등대 안에 들어가봤자 계단 뿐이죠
@@ -331,7 +309,6 @@ J: 무서워서 빠졌구나
 Y: 당연….이 아니고! 아, 누나!
 @printer Narration time:0
 그가 꽥 소리를 지르는 바람에 귀가 아팠다
-@printer Dialogue time:0
 @char Y.Face>아련,Body>기본
 Y: 아무튼 누나도 여기 혼자 오지말아요!
 Y: 새빨간 데다가 엄청 낡아서 뭔가…. 으스스 하다구요!
@@ -360,7 +337,6 @@ Y: 자 다음은 어디로 가볼까요?
 @showUI ForFindUI
 @wait i
 @hideUI ForFindUI
-@printer Dialogue time:0
 J: 으흠. 공기 좋다.
 J: 섬에 이런 숲 길이 있었구나. 낮에는 산책하기에도 딱 좋겠어!
 @char Y.Face>놀란,Body>입에손 position:-0.25,-15
@@ -372,7 +348,6 @@ J: 유겸이 넌 보기보다 연약하구나. 길도 고르고 별로 경사도
 @printer Narration time:0
 @char Y.Face>아련,Body>기본
 내가 혀를 끌끌 차자 유겸은 못 들은 척 고개를 돌린다
-@printer Dialogue time:0
 @char Y.Face>기본,Body>기본
 J: 근데, 이 위로 쭉 올라가면 뭐가 있는데?
 Y: 선락원이요, 그냥 교회인데 저희 마을에선 선락원이라고 부르고 있어요
@@ -383,7 +358,6 @@ Y: 그곳이 해록도의 중심이거든요
 @printer Narration time:0
 @char Y.Face>기본,Body>기본 scale:1 position:-0.25,-15
 그때, 맞은 편에서 이장님과 주민 한 분이 내려오는 게 보였다
-@printer Dialogue time:0
 @char Headman visible:false avatar:Headman
 Headman: 어어, 유겸이~
 @char Woman visible:false avatar:People
@@ -397,7 +371,6 @@ Headman: 이보다 더 유능한 가이드는 없을거야
 Woman: 해록도만 잘 알게? 요리면 요리, 바느질이면 바느질. 못하는 게 없다니까
 @printer Narration time:0
 아주 해록도 주민들에게 사랑과 관심을 듬뿍 받나보네?
-@printer Dialogue time:0
 @char Y.Face>웃는,Body>입에손
 Y: 지금 외부인 앞이라고 저 띄워주시는 거죠? 사양말고 더 해주세요
 Woman: 아, 요리하니까 생각났는데
@@ -409,7 +382,6 @@ Y: 에이 정말! 제가 하란대로 안 한거 아니에요? 진짜 쉬운데�
 Woman: 말도 마. 계속 타고, 터지고 난리도 아니더라니까
 @printer Narration time:0
 주민의 하소연에 유겸은 제 머리를 긁적이며 내 눈치를 봤다
-@printer Dialogue time:0
 @char Y.Face>아련,Body>기본
 Y: 흐음… 오늘은 지안 누나를 위해 하루를 비우기로 했으니까, 내일…
 J: 난 괜찮아! 웬만한 곳은 다 둘러봤고
@@ -418,7 +390,6 @@ J: 이왕 여기까지 온 거 산책 좀 하다가 돌아가려고
 Y: 흐음… 알겠어요!
 @printer Narration time:0
 유겸은 아쉬운 듯했지만, 이내 주민과 자연스럽게 팔짱을 꼈다
-@printer Dialogue time:0
 @char Y.Face>윙크,Body>브이
 Y: 자자, 우리 누님은 유겸이의 베이킹 교실로 가보자고요!
 @hide Y
