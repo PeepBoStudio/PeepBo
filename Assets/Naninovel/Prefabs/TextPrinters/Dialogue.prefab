@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 222492164724932096}
   - component: {fileID: 114719569182670826}
   - component: {fileID: 245865972693072711}
+  - component: {fileID: 3179479062840158020}
   m_Layer: 5
   m_Name: DialogueText
   m_TagString: Untagged
@@ -368,6 +369,26 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_EffectDistance: {x: 1.5, y: -1.5}
   m_UseGraphicAlpha: 1
+--- !u!114 &3179479062840158020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560104929271160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 650
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &1734554740612872
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +401,7 @@ GameObject:
   - component: {fileID: 222482568275147358}
   - component: {fileID: 114276875307551904}
   - component: {fileID: 114616086780069116}
-  - component: {fileID: 114639911649101898}
+  - component: {fileID: 2558600839672172614}
   m_Layer: 5
   m_Name: TextPanel
   m_TagString: Untagged
@@ -405,7 +426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 510, y: -210}
+  m_AnchoredPosition: {x: 501, y: -210}
   m_SizeDelta: {x: 1000, y: 309}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222482568275147358
@@ -463,10 +484,10 @@ MonoBehaviour:
   m_MinHeight: 250
   m_PreferredWidth: -1
   m_PreferredHeight: -1
-  m_FlexibleWidth: -1
+  m_FlexibleWidth: 250
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &114639911649101898
+--- !u!114 &2558600839672172614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,17 +496,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1734554740612872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 50
-    m_Right: 50
+    m_Left: 80
+    m_Right: 80
     m_Top: 30
     m_Bottom: 10
   m_ChildAlignment: 0
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
