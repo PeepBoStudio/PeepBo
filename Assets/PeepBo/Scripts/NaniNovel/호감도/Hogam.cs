@@ -1,6 +1,7 @@
 using PeepBo.Managers;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,7 +26,7 @@ public class Hogam : MonoBehaviour
         else if (name == "다함")
             image.sprite = 다함;
 
-        var text = image.GetComponentInChildren<Text>();
+        var text = image.GetComponentInChildren<TextMeshProUGUI>();
         text.text = $"호감도 + {_score}";
 
         score = _score;

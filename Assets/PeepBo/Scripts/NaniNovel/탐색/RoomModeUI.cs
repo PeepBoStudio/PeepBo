@@ -4,6 +4,7 @@ using Naninovel.UI;
 using PeepBo.Managers;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -87,7 +88,7 @@ public class RoomModeUI : MonoBehaviour
         if (alreadyFind) return;
 
         obj.GetComponentInChildren<Image>().sprite = findSprite;
-        obj.GetComponentInChildren<Text>().text = obj.name;
+        obj.GetComponentInChildren<TextMeshProUGUI>().text = obj.name;
 
         alreadyFindDict[interactionName] = true;
         findCount++;

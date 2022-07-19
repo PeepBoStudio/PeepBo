@@ -1,6 +1,7 @@
 // Copyright 2017-2021 Elringus (Artyom Sovetnikov). All rights reserved.
 
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -33,12 +34,12 @@ namespace Naninovel.UI
 
         public void OnPress()
         {
-            GetComponentInChildren<Text>().color = Color.black;
+            GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
         }
 
         public void DePress()
         {
-            GetComponentInChildren<Text>().color = Color.white;
+            GetComponentInChildren<TextMeshProUGUI>().color = Color.white;
         }
     }
 }
