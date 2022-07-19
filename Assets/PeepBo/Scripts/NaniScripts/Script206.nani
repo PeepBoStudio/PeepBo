@@ -120,6 +120,7 @@ J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기
 @spawn ShakeBackground
 @stopBgm 메인01
 @sfx 206_문_세게_닫는_소리
+;@back StoreDay.StoreDoor
 @back StoreDay position:10,0 time:0
 J: !!!
 @bgm 110_피_발견
