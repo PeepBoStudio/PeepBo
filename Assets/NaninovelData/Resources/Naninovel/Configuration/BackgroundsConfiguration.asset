@@ -78,18 +78,9 @@ MonoBehaviour:
         y: 0
         width: 1
         height: 1
-      MatchMode: 2
+      MatchMode: 0
       CustomMatchRatio: 1
-      Poses:
-      - name: StoreDoor
-        actorState:
-          appearance: StoreDoor
-          visible: 1
-          position: {x: -4.32, y: -9.6, z: 0}
-          rotation: {x: 0, y: 0, z: 0, w: 0}
-          scale: {x: 1, y: 1, z: 1}
-          tintColor: {r: 1, g: 0.27058825, b: 0.79607844, a: 1}
-        overriddenProperties: []
+      Poses: []
     - Implementation: Naninovel.GenericBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Loader:
