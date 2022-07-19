@@ -55,6 +55,10 @@ namespace Naninovel.Runtime.UI
             {
                 mainTexture = transitionTexture;
                 transitionProgress = 0;
+                //image.gameObject.TryGetComponent<RectTransform>(out var rect);
+                //var width = rect.rect.width;
+                //var height = rect.rect.height;
+                image.SetNativeSize();
             }
         }
     }

@@ -34,6 +34,8 @@ namespace Naninovel.UI
         {
             base.Update();
 
+            RectTransform.localPosition = new Vector3(RectTransform.localPosition.x, RectTransform.localPosition.y, 0);
+
             if (Visible && tintPingPong)
                 UIComponent.color = Color.Lerp(pingColor, pongColor, Mathf.PingPong(Time.time - showTime, pingPongTime));
         }

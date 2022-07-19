@@ -17,7 +17,7 @@ MonoBehaviour:
     Resources:
     - name: Dialogue
       pathPrefix: TextPrinters
-      guid: 1bc08ccd31adff6439e97161aa6e1d8b
+      guid: b731cf4f0e0d55e4ebd35f3247a9a307
   - Id: TextPrinters/870cd28a-da03-4493-8e3d-9060490e5f0f
     Resources:
     - name: Fullscreen
@@ -394,7 +394,7 @@ MonoBehaviour:
     Resources:
     - name: Narration
       pathPrefix: TextPrinters
-      guid: 75afd4694df44dd43ac3831a34704391
+      guid: afa643b9a322bb0428790841dfb36e3c
   - Id: Characters/02dcbd0b-6da9-487e-ab23-b4f1f44c5fcc
     Resources:
     - name: Square
@@ -545,9 +545,9 @@ MonoBehaviour:
     Resources:
     - name: Dialogue_O
       pathPrefix: TextPrinters
-      guid: fa7ff354f13c9e940991c32c2e3f9130
+      guid: 1cb4fe1315f43d94e88e4b906540822b
   - Id: TextPrinters/ccb65af7-d765-42a6-9753-b052f5730364
     Resources:
     - name: Dialogue_A
       pathPrefix: TextPrinters
-      guid: 42951ba35832994439f4a4508df49fea
+      guid: b94329ab94a211e4ca0ba59fdef5944a
