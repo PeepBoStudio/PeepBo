@@ -120,8 +120,7 @@ J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기
 @spawn ShakeBackground
 @stopBgm 메인01
 @sfx 206_문_세게_닫는_소리
-;@back StoreDay.StoreDoor
-@back StoreDay position:10,0 time:0
+@back StoreDay pos:150,50 time:0
 J: !!!
 @bgm 110_피_발견
 @stopSfx 206_문_세게_닫는_소리
@@ -193,7 +192,7 @@ J: 언제부터 날 보고 있던 거야? 나와!
 분명 열리지 않는 문과 씨름하고 있는 내 모습을 계속 지켜보고 있을 터였다
 누구냐는 내 물음에도 문 틈 사이의 눈동자는, 한 번의 깜빡거림도 없이 나를 바라보고만 있었다
 @back StoreEye visible:false wait:false
-@back StoreDay position:10,0
+@back StoreDay pos:150,50
 이렇게 가만히 있을 수만은 없어, 뭐라도 해야해!
 힘이 풀린 몸을 애써 일으켜 문 가까이 다가가려하니,
 순식간에 문이 닫히며 날 지켜보던 시선이 사라졌다
@@ -442,7 +441,7 @@ J: 그런데 이 펜던트가 왜 여기에…
 @hide RoomBackground2-6
 @showUI ExitRoomModeUI time:1.0
 @hideUI ExitRoomModeUI
-@back StoreDay position:10,0
+@back StoreDay pos:150,50
 @printer Narration time:0
 나는 서랍에서 발견한 촛대를 부셔질듯이 세게 움켜쥐고 천천히 반대편 문으로 다가갔다
 그런데,
@@ -478,7 +477,7 @@ J: 일단 빨리 여기서 나간 다음 생각해봐야겠어
 @hide RoomBackground2-6
 @showUI ExitRoomModeUI time:1.0
 @hideUI ExitRoomModeUI
-@back StoreDay position:10,0
+@back StoreDay pos:150,50
 J: 나는 서랍에서 발견한 촛대를 부셔질듯이 세게 움켜쥐고 천천히 문으로 다가갔다
 @printer Narration time:0
 그런데... 아무래도 문이 쉽게 열릴 것 같진 않은데

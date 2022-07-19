@@ -88,7 +88,7 @@ MonoBehaviour:
           position: {x: -4.32, y: -9.6, z: 0}
           rotation: {x: 0, y: 0, z: 0, w: 0}
           scale: {x: 1, y: 1, z: 1}
-          tintColor: {r: 0, g: 0, b: 0, a: 1}
+          tintColor: {r: 1, g: 0.27058825, b: 0.79607844, a: 1}
         overriddenProperties: []
     - Implementation: Naninovel.GenericBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
