@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R3CN70GBX0T",
         "name": "com.Peepbo.RecordofEden",
-        "processId": 13920,
+        "processId": 20876,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -144,6 +144,18 @@
             "deviceId": "R3CN70GBX0T",
             "name": "com.Peepbo.RecordofEden",
             "processId": 13920,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.Peepbo.RecordofEden",
+            "processId": 18294,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.Peepbo.RecordofEden",
+            "processId": 20876,
             "exited": false
         }
     ],
