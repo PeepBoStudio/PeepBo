@@ -97,6 +97,7 @@ MonoBehaviour:
   content: {fileID: 7466899038394840338}
   continueInputTriggers:
   - {fileID: 1560104929271160}
+  - {fileID: 5130183384269965798}
   onTintChanged:
     m_PersistentCalls:
       m_Calls: []

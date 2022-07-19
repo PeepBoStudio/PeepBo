@@ -34,12 +34,12 @@ namespace Naninovel.UI
 
         public void OnPress()
         {
-            GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
+            GetComponentInChildren<TextMeshProUGUI>().color = Color.white;
         }
 
         public void DePress()
         {
-            GetComponentInChildren<TextMeshProUGUI>().color = Color.white;
+            GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
         }
     }
 }
