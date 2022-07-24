@@ -330,6 +330,9 @@ MonoBehaviour:
     - name: ParadiseOutsideNight
       pathPrefix: Backgrounds/MainBackground
       guid: 8b6be6e8d48c75e41903715db6697e47
+    - name: ParadiseOutsideDay_cut
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7a56e97ac117436458f5ed975bcce4e8
     - name: ParadiseInsideNight
       pathPrefix: Backgrounds/MainBackground
       guid: 7568a3c84e928354782ff45d1e00b51f
