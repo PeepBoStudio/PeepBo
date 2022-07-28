@@ -461,4 +461,4 @@ J: 아, 이대로 잠들어버릴지도 모르겠어…
 @hidePrinter
 @back Black time:1
 @wait 1
-@loadScene MainScene
+@endscript

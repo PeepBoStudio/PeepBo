@@ -374,4 +374,4 @@ D: 아마도... 신께서?
 말 그대로 기절하듯 쓰러져 잠에 들고 말았다
 @hidePrinter
 @wait 1
-@loadScene MainScene
+@endscript

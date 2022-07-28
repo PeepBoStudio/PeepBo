@@ -24,8 +24,20 @@ namespace PeepBo.Managers
         }
     }
 
+	[CommandAlias("endscript")] // 스크립트 종료
+	public class AfterEndScript : Command
+	{
+		public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+		{
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            scriptPlayer.Stop();
 
-    [CommandAlias("clicker")]
+            GameManager.LoadMainSceneAndEpisodePopup();
+		}
+	}
+
+
+	[CommandAlias("clicker")]
     public class SwitchToClickerMode : Command
     {
         [ParameterAlias("scriptname")] public StringParameter ScriptName; // 클리커를 실행 할 나니스크립트

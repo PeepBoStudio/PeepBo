@@ -565,4 +565,4 @@ J: 하, 오빠는 도대체 누구야. 힐링하러 왔다가 이게 무슨 꼴�
 아무튼 빨리 여기를 나가자
 @hidePrinter
 @wait 1
-@loadScene MainScene
+@endscript

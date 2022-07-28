@@ -399,4 +399,4 @@ J: 네네. 다음에 뵈어요
 @back ForestDay visible:false wait:false
 @back Black time:1
 @wait 1
-@loadScene MainScene
+@endscript

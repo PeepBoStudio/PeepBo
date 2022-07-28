@@ -1,3 +1,4 @@
+using PeepBo.UI.Popup;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,12 +50,18 @@ namespace PeepBo.Managers
             }
         }
 
-        public static void Test()
+        public static void LoadMainSceneAndEpisodePopup()
         {
-            SceneManager.LoadScene("MainScene");
+            var scene = SceneManager.LoadSceneAsync("MainScene");
+			scene.completed += ShowEpisodePopup;
         }
 
-        private static void InitInputManager()
+		private static void ShowEpisodePopup(AsyncOperation obj)
+		{
+            GameManager.UI.ShowPopupUI<UI_EpisodePopup>();
+		}
+
+		private static void InitInputManager()
         {
             instance.gameObject.AddComponent<InputManager>();
         }

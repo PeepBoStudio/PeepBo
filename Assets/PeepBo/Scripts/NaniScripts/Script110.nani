@@ -297,4 +297,4 @@ First: 그래, 예상했던 그대로야. 하나도 변하지 않았어
 @back CamelliaNight visible:false wait:false
 @back Black time:2
 @wait 1
-@loadScene MainScene
+@endscript

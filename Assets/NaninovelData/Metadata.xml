@@ -169,6 +169,7 @@
           &lt;string&gt;CamelliaNight&lt;/string&gt;
           &lt;string&gt;ParadiseOutsideDay&lt;/string&gt;
           &lt;string&gt;ParadiseOutsideNight&lt;/string&gt;
+          &lt;string&gt;ParadiseOutsideDay_cut&lt;/string&gt;
           &lt;string&gt;ParadiseInsideNight&lt;/string&gt;
           &lt;string&gt;ChurchInTheForest&lt;/string&gt;
           &lt;string&gt;YIllust&lt;/string&gt;
@@ -883,6 +884,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;ParadiseOutsideNight&lt;/Path&gt;
+        &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;ParadiseOutsideDay_cut&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;

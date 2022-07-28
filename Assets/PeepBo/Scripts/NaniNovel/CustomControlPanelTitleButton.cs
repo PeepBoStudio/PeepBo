@@ -1,5 +1,6 @@
 using Naninovel;
 using Naninovel.UI;
+using PeepBo.Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -46,7 +47,7 @@ namespace PeepBo.Nani.Custom
 
         private void GameState_OnResetFinished()
         {
-            SceneManager.LoadScene("MainScene");
+            GameManager.LoadMainSceneAndEpisodePopup();
         }
     }
 }
