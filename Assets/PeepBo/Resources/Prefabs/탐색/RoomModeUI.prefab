@@ -1290,7 +1290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialButton: {fileID: 2601208775037797262}
-  exitButton: {fileID: 3077434723865856378}
+  exitButton: {fileID: 2575793941065825064}
   findSprite: {fileID: 21300000, guid: 780b04c504507154eb7cf3ac0e330c26, type: 3}
   exitSprite: {fileID: 21300000, guid: 3f7de6fe5ce371049b41e2042545ccc3, type: 3}
   findObjectList:
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 3783421781944558841}
   - component: {fileID: 2795365893164946274}
   - component: {fileID: 1745404830309135264}
-  - component: {fileID: 3077434723865856378}
+  - component: {fileID: 2575793941065825064}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3077434723865856378
+--- !u!114 &2575793941065825064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1831,7 +1831,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8155023073252550970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: eaa809694435dc049a6202f6e8ae3f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
