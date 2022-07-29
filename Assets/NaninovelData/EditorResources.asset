@@ -554,3 +554,8 @@ MonoBehaviour:
     - name: Dialogue_A
       pathPrefix: TextPrinters
       guid: b94329ab94a211e4ca0ba59fdef5944a
+  - Id: Characters/a9dfb37f-f5ed-4b43-8fc5-5e454aa0e32f
+    Resources:
+    - name: "\uACE0\uACB0 \uC2E4\uB8E8\uC5E3"
+      pathPrefix: Characters/GSilhouette
+      guid: 6a8aed2aef7f71a45a0ccabcc0dd2fb4

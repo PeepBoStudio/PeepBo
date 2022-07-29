@@ -228,7 +228,7 @@ J: 으, 따라오시는 거 맞잖아요!
 G: 내가 널 왜 따라가, 나도 거기에 머물고 있거든?
 @printer Narration time:0
 남자는 어이없다는 듯 웃으며 말했다.
-뭐야 진작 말하던가.
+아이참, 진작 말하던가.
 다시 뒤돌아 회관으로 가려다 잠시 캐리어를 끌던 손을 주물렀다.
 비포장 된 길에서 한참 캐리어를 끌어서 그런지 손목이 시큰했다.
 @char G.Body>팔짱,Face>무표정
@@ -236,16 +236,16 @@ G: …
 @char G.Body>손머리,Face>무표정
 G: 가지가지하네
 @printer Narration time:0
-@hide G
-; 고결 실루엣
+@hide G wait:false
+@char GSilhouette scale:1.2 position:-0.5,-15
 남자는 한숨을 쉬더니 내 캐리어를 낚아채더니 앞장 서 걸었다
 J: 엇 괜찮은데! 감사합니다!
 @printer Narration time:0
 남자는 대답없이 묵묵히 캐리어를 끌었다
 뭐지, 이 친절한 듯 불친절한 행동은?
 난 거의 뛰다시피 걸으며 그와 속도를 맞췄다
-;@hide 고결 실루엣
-@char G.Body>기본,Face>기본 position:-0.5,-15.5
+@hide GSilhouette wait:false
+@char G.Body>기본,Face>기본 position:-0.5,-15.5 time:0
 J: 그, 성함이 어떻게 되세요?
 @char G.Body>팔짱,Face>거만
 G: 고결
