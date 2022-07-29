@@ -2,7 +2,6 @@
 @set IsVisitDO=0
 @set IsVisitLH=0
 @back Black
-; 메인 bgm
 @bgm 메인00
 @wait 2
 First: ....어나...
@@ -57,7 +56,7 @@ N: 그러니까 거슬리는 행동하지 말고 최대한 조용히 있다가 �
 @char N.Face>짜증,Body>기본 scale:1.3 position:0,-20
 N: 나한테나 다른 주민들한테나
 @hide N time:0 wait:false
-@spawn ShakeBackground
+@spawn ShakeBackground wait:false
 ; 진동
 @sfx 102_문_닫는_소리
 
@@ -70,21 +69,9 @@ J: 아니, 나도 꼭 여기 머물고 싶어서 온 건 아니거든? 정말 �
 일단, 씻고 얼른 나가보자
 @hidePrinter
 
-@back Remine.Dissolve params:100 time:0.8
-@stopBgm 메인00
-@bgm 102_지안_독백
-@wait 2
-First: 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야
-First: 기억이란 생각보다 단순해서 내 입맛대로 보관할 수 있거든
-First: 그야말로 신이 내린 선물이지
-First: 뭐? 거짓말이라고? 넌 쪼그만 게 벌써부터 어른을 의심하니
-@hidePrinter
-@wait 1
-
-@back Remine visible:false time:0
+@back JianRoomDay visible:false time:0
 @back StreetDay position:-8.3,0
-@stopBgm 102_지안_독백
-@bgm 메인00
+@wait 1
 @printer Narration time:0
 문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다
 ; 화면 깜박임
@@ -207,6 +194,7 @@ Y: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
 저 동글동글한 눈빛을 보고도 차갑게 거절할 수 있는 사람이 어딨겠어?
 
 # Walk
+@hidePrinter
 @hide Y
 @back StreetDay position:8.8,0
 @wait 2
@@ -225,7 +213,7 @@ Y: 필요한 게 생기거나 궁금한 게 있을 땐 마을 회관으로 가�
 Y: 흠, 이제 어디 먼저 가볼래요?
 @choice 선착장 goto:.Dock set:IsVisitDO+=1
 @choice 등대 goto:.Lighthouse set:IsVisitLH+=1
-@choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
+;@choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
 @hidePrinter 
 @stop
 
@@ -236,7 +224,7 @@ J: 선착장 먼저 가보자!
 @hide Y
 @back StreetDay visible:false wait:false
 @back DockDay position:0,0
-@sfx 102_선착장_파도소리
+@sfx 102_선착장_파도소리 volume:0.1
 ; 다이어리에 'N'
 @hidePrinter
 @wait 2
@@ -271,7 +259,7 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @stopSfx 102_선착장_파도소리
 @if IsVisitLH==0
     @choice 등대 goto:.Lighthouse set:IsVisitLH+=1
-    @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
+    ;@choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
 @else
     @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
 @endIf
@@ -284,7 +272,7 @@ J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
 @hide Y
 @back StreetDay visible:false wait:false
 @back LighthouseDay position:0,0
-@sfx 102_선착장_파도소리
+@sfx 102_선착장_파도소리 volume:0.1
 ; 다이어리에 'N'
 @hidePrinter
 @wait 2
@@ -317,7 +305,7 @@ Y: 자 다음은 어디로 가볼까요?
 @stopSfx 102_선착장_파도소리
 @if IsVisitDO==0
     @choice 선착장 goto:.Dock set:IsVisitDO+=1
-    @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
+    ;@choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
 @else
     @choice "아니 됐어, 그냥 산책이나 하자" goto:.Forest
 @endIf
