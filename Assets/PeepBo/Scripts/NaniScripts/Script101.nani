@@ -17,7 +17,8 @@ J: 아이참, 그래도 이건 너무 심한 거 아니야?
 J: 으악, 심지어 핸드폰도 안 터지잖아
 @stopSfx 101_폰_에러음
 @hide Phone
-J: 주변에 뭔가 도움될만 한 게 없을끼?
+J: 주변에 뭔가 도움될만 한 게 없을까?
+
 ; ------------ 탐색 -------------
 @hidePrinter 
 @showUI StartRoomModeUI time:1
@@ -343,17 +344,18 @@ J: 윽, 진짜…! 참자 참아!
 @printer Narration time:0
 그나저나 여기가 마을의 중심인 것 같은데 여기라면 핸드폰이 터지지 않을까?!
 @char Phone.impossible position:0,-2.5 scale:0.5
-; 진동
-서둘러 핸드폰을 켜봤지만 기대완 달리 여전히 핸드폰은 먹통이었다.
+@sfx 101_폰_에러음
+서둘러 핸드폰을 켜봤지만 기대완 달리 여전히 핸드폰은 먹통이었다
+@stopSfx 101_폰_에러음
 @hide Phone
 @sfx 101_문여는_소리
 그때, 누군가 회관문을 열고 들어왔다
 @stopSfx 101_문여는_소리
-@spawn ShakeBackground
+@spawn ShakeBackground wait:false
 Woman: 아이고!
 @printer Narration time:0
 날 보자마자 소스라치게 놀라며 뒷걸음질 친 아주머니는,
-황급히 문을 닫고 회관을 나갔다.
+황급히 문을 닫고 회관을 나갔다
 @char G.Body>팔짱,Face>무표정 position:-0.5,-15.5
 G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것처럼 저런다니까
 @hide G
