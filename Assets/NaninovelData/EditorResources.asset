@@ -276,6 +276,9 @@ MonoBehaviour:
     - name: Black
       pathPrefix: Backgrounds/MainBackground
       guid: 014cfd3a9ceda6b4eb26e78e937e8af1
+    - name: Black4
+      pathPrefix: Backgrounds/MainBackground
+      guid: aedb95039a2ae5a44b6ed3d04110fe2b
     - name: Remine
       pathPrefix: Backgrounds/MainBackground
       guid: 9359608e160cac5419760cd575f9aa4b

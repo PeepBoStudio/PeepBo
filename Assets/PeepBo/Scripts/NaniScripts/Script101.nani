@@ -468,7 +468,7 @@ J: 아, 이대로 잠들어버릴지도 모르겠어…
 @wait 1
 
 @stopBgm 메인01
-@back Black time:1 wait:false
+@back Black4 time:1 wait:false
 @bgm 102_지안_독백
 @wait 1
 First: 지안아 이제부터 좋은 것만 보고, 좋은 것만 듣고, 좋은 것만 기억하면서 사는 거야

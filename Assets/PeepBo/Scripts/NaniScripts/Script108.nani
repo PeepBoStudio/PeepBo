@@ -12,7 +12,7 @@ First: 이대로 꾸준히 치료와 상담을 병행한다면
 First: 환경이 크게 바뀌지 않는 한, 곧 완치될 수 있겠습니다
 
 @back Hospital visible:false time:0
-@back Remine
+@back Black4
 @printer Narration time:0
 주말마다 다니던 병원을 나오면서 삼촌은 내 손을 꼭 잡아주었다.
 Uncle: 이제 나도 밤에 편히 잘 수 있겠네. 덕분에 잠귀만 밝아졌는데 말이야
@@ -23,7 +23,7 @@ J: 미안해요, 삼촌. 그리고 고마워…
 나는 이제 완전히, 치료되었다고 생각했다
 @hidePrinter
 
-@back Remine visible:false time:0
+@back Black4 visible:false time:0
 @back StreetNight
 @wait 1
 ; 노이즈 효과
