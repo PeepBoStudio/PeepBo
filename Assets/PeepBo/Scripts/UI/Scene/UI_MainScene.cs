@@ -13,9 +13,11 @@ namespace PeepBo.UI.Scene
         enum GameObjects
         {
             StartButton,
+            Diary,
         }
 
         GameObject startButton;
+        GameObject diaryButton;
 
         private void Start()
             => Init();
@@ -36,11 +38,20 @@ namespace PeepBo.UI.Scene
             startButton = GetObject((int)GameObjects.StartButton);
             AddUIEvent(startButton, OnClickStartButton, Define.UIEvent.Click);
             AddButtonAnim(startButton);
+
+            diaryButton = GetObject((int)GameObjects.Diary);
+            AddUIEvent(diaryButton, OnClickDiaryButton, Define.UIEvent.Click);
+            AddButtonAnim(diaryButton);
         }
 
         private void OnClickStartButton(PointerEventData evt)
         {
             GameManager.UI.ShowPopupUI<UI_EpisodePopup>();
+        }
+
+        private void OnClickDiaryButton(PointerEventData evt)
+        {
+            GameManager.UI.ShowPopupUI<UI_DiaryListPopup>();
         }
     }
 }

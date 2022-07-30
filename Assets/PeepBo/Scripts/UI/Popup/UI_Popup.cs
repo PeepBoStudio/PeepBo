@@ -25,5 +25,9 @@ namespace PeepBo.UI.Popup
         {
             GameManager.UI.ClosePopupUI(this);
         }
+        public virtual void CloseAllPopupUI()
+        {
+            GameManager.UI.CloseAllPopupUI();
+        }
     }
 }
