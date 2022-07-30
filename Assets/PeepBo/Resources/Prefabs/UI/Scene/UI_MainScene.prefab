@@ -1295,7 +1295,7 @@ GameObject:
   - component: {fileID: 3382461432010124519}
   - component: {fileID: 4293553528761797776}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Diary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
