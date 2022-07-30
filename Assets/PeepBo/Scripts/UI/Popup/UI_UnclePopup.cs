@@ -12,7 +12,6 @@ namespace PeepBo.UI.Popup
     public class UI_UnclePopup : UI_Popup
     {
         public Sprite[] sprites;
-        //public int spriteIdx = 0;
 
         enum Images
         {
