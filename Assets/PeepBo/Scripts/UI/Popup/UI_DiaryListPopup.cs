@@ -43,11 +43,11 @@ namespace PeepBo.UI.Popup
             AddButtonAnim(dummy1);
 
             GameObject dummy2 = GetObject((int)GameObjects.Dummy2);
-            AddUIEvent(dummy2, OnClickCloseButton, Define.UIEvent.Click);
+            AddUIEvent(dummy2, OnClickMapButton, Define.UIEvent.Click);
             AddButtonAnim(dummy2);
 
             GameObject dummy3 = GetObject((int)GameObjects.Dummy3);
-            AddUIEvent(dummy3, OnClickCloseButton, Define.UIEvent.Click);
+            AddUIEvent(dummy3, OnClickPeopleButton, Define.UIEvent.Click);
             AddButtonAnim(dummy3);
 
             GameObject dummy4 = GetObject((int)GameObjects.Dummy4);
@@ -58,6 +58,14 @@ namespace PeepBo.UI.Popup
         private void OnClickCloseButton(PointerEventData evt)
         {
             ClosePopupUI();
+        }
+        private void OnClickMapButton(PointerEventData evt)
+        {
+            GameManager.UI.ShowPopupUI<UI_MapPopup>();
+        }
+        private void OnClickPeopleButton(PointerEventData evt)
+        {
+            GameManager.UI.ShowPopupUI<UI_PeoplePopup>();
         }
         private void OnClickUncleButton(PointerEventData evt)
         {
