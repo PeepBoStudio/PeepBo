@@ -159,6 +159,7 @@
         &lt;Type&gt;Backgrounds&lt;/Type&gt;
         &lt;Appearances&gt;
           &lt;string&gt;Black&lt;/string&gt;
+          &lt;string&gt;Black4&lt;/string&gt;
           &lt;string&gt;Remine&lt;/string&gt;
           &lt;string&gt;Hospital&lt;/string&gt;
           &lt;string&gt;JianRoomDay&lt;/string&gt;
@@ -852,6 +853,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;Black&lt;/Path&gt;
+        &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;Black4&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;

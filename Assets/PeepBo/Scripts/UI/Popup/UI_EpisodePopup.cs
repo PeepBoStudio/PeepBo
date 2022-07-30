@@ -13,6 +13,7 @@ namespace PeepBo.UI.Popup
         enum GameObjects
         {
             CloseButton,
+            Dummy0,
             Dummy1,
             Dummy2,
             Dummy3,
@@ -39,6 +40,14 @@ namespace PeepBo.UI.Popup
             GameObject closeButton = GetObject((int)GameObjects.CloseButton);
             AddUIEvent(closeButton, OnClickCloseButton, Define.UIEvent.Click);
             AddButtonAnim(closeButton);
+
+            GameObject dummy0 = GetObject((int)GameObjects.Dummy0);
+            AddUIEvent(dummy0, (a) =>
+            {
+                GameManager.DummyEpisode = "000";
+                SceneManager.LoadScene("InGameScene");
+            }, Define.UIEvent.Click);
+            AddButtonAnim(dummy0);
 
             GameObject dummy1 = GetObject((int)GameObjects.Dummy1);
             AddUIEvent(dummy1, (a) => 
