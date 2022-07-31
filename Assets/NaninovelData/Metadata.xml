@@ -859,6 +859,10 @@
         &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
+        &lt;Path&gt;Captain&lt;/Path&gt;
+        &lt;Type&gt;CharacterAvatars&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
         &lt;Path&gt;Y&lt;/Path&gt;
         &lt;Type&gt;Characters&lt;/Type&gt;
       &lt;/Resource&gt;
