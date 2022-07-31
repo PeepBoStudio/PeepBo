@@ -10,6 +10,7 @@
 
 @spawn ShakeBackground
 J: 우욱! 우웨엑!
+@char Captain visible:false avatar:Captain
 Captain: 아가씨 괜찮아? 멀미약은 먹은 거야?
 J: 우웩! 아니요... 제가 배를 처음 타봐서 멀미가 있는 줄 몰랐어요…
 @printer Narration time:0
@@ -60,6 +61,7 @@ J: 아마 그래서 허가 해주신 게 아닐까요?
 Captain: 아아, 그럴만도 하지
 Captain: 주민 조사하러 가는 공무원은 적어도 일주일은 해록도에 머무니까 말이야
 Captain: 어쩌면 다른 외부인들이랑 달리 주민들이랑 친했을 수도 있겠네
+@hide Captain
 @printer Narration time:0
 해록도에 대해 선장님과 이런저런 얘기를 나누다 보니,
 어느새 저 멀리 삐죽 솟은 외딴 섬 하나가 보였다

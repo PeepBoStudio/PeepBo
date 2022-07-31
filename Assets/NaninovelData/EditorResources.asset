@@ -269,6 +269,9 @@ MonoBehaviour:
     - name: Girl
       pathPrefix: CharacterAvatars
       guid: 2053e88fab47a6141874ea99b58610d0
+    - name: Captain
+      pathPrefix: CharacterAvatars
+      guid: c8c49a303669472438ad0a52e3801a9e
   - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
     Resources:
     - name: Y
