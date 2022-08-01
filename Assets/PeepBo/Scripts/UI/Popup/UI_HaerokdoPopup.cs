@@ -35,9 +35,6 @@ namespace PeepBo.UI.Popup
         public override void Init()
         {
             base.Init();
-            var canvas = GetComponent<Canvas>();
-            canvas.renderMode = RenderMode.ScreenSpaceCamera;
-            canvas.worldCamera = Camera.main;
             BindObjects();
 
             TextMeshProUGUI exp = GetTextPro((int)Texts.explanation);
