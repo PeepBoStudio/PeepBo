@@ -5,6 +5,7 @@ using PeepBo.Managers;
 using UnityEngine.SceneManagement;
 using Naninovel;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace PeepBo.UI.Popup
 {
@@ -14,12 +15,7 @@ namespace PeepBo.UI.Popup
         {
             CloseButton,
             list,
-            선락원,
-            나연의집,
-            마을회관,
-            천사의집,
-            선착장,
-            등대,
+            DetailList,
         }
         private void Start()
                     => Init();
@@ -41,6 +37,19 @@ namespace PeepBo.UI.Popup
             GameObject tolist = GetObject((int)GameObjects.list);
             AddUIEvent(tolist, OnClickListButton, Define.UIEvent.Click);
             AddButtonAnim(tolist);
+
+            GameObject detailList = GetObject((int) GameObjects.DetailList);
+
+            for(int i=0; i<detailList.transform.childCount; i++)
+            {
+                var detail = detailList.transform.GetChild(i).gameObject;
+                AddUIEvent(detail, (_) => 
+                {
+                    var popup = GameManager.UI.ShowPopupUI<UI_MapDetailPopup>();
+                    popup.SetDetailInfo(detail.name);
+                }, Define.UIEvent.Click);
+                AddButtonAnim(detail);
+            }
         }
 
         private void OnClickListButton(PointerEventData evt)
@@ -49,7 +58,7 @@ namespace PeepBo.UI.Popup
         }
         private void OnClickCloseButton(PointerEventData evt)
         {
-            CloseAllPopupUI();
+            ClosePopupUI();
         }
     }
 }

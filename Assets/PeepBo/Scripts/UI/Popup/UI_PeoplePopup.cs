@@ -57,7 +57,7 @@ namespace PeepBo.UI.Popup
         }
         private void OnClickCloseButton(PointerEventData evt)
         {
-            CloseAllPopupUI();
+            ClosePopupUI();
         }
         private void OnClickBeforeButton(PointerEventData evt)
         {
