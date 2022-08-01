@@ -16,6 +16,6 @@ public class TutorialButton : MonoBehaviour, IPointerClickHandler
 
         if (scriptPlayer.Playing || inputManager.ProcessInput) return;
 
-        var tutorial = GameManager.UI.ShowPopupUI<UI_TutorialPopup>();
+        var tutorial = GameManager.UI.ShowPopupUI<UI_RoomTutorialPopup>();
     }
 }

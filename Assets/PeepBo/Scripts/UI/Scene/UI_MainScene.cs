@@ -2,6 +2,7 @@ using Naninovel;
 using PeepBo.Managers;
 using PeepBo.UI.Popup;
 using PeepBo.Utils;
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,7 @@ namespace PeepBo.UI.Scene
         enum GameObjects
         {
             StartButton,
+            Tutorial,
             Diary,
         }
 
@@ -42,6 +44,15 @@ namespace PeepBo.UI.Scene
             diaryButton = GetObject((int)GameObjects.Diary);
             AddUIEvent(diaryButton, OnClickDiaryButton, Define.UIEvent.Click);
             AddButtonAnim(diaryButton);
+
+            GameObject tutorialButton = GetObject((int)GameObjects.Tutorial);
+            AddUIEvent(tutorialButton, OnClickTutorialButton, Define.UIEvent.Click);
+            AddButtonAnim(tutorialButton);
+        }
+
+        private void OnClickTutorialButton(PointerEventData obj)
+        {
+            GameManager.UI.ShowPopupUI<UI_TutorialPopup>();
         }
 
         private void OnClickStartButton(PointerEventData evt)
